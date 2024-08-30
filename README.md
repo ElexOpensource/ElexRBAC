@@ -103,7 +103,31 @@ To integrate the Rbac Dashboard into your application, follow these steps:
         c.SwaggerEndpoint("/api-docs/default/swagger.json", "Default API");
         c.SwaggerEndpoint("/api-docs/rbac/swagger.json", $"RBAC API {_rbacSwaggerVersion}");
     });
-    ````
+    ```
+7. **Create Customer and Generate Token**:
+
+    The RbacSettings.DbConnectionString should point to a database where tables, including master data, have been migrated into the `RBAC` schema after the first run of the application. You will need to create a customer manually and obtain the customer ID. Use the Swagger API endpoint `/Rbacapi/Master/GenerateCustomerToken` to generate a token by providing the customer ID. This token, valid for 120 days, will be required for login.
+
+8. **Retrieving Access Token by Role IDs**
+
+    To retrieve an access token by providing role IDs, you can use the following sample code. This code demonstrates how to interact with the RBAC services to fetch a token based on the role IDs which will:
+
+    ```csharp
+    public class SampleController(IRbacAccessTokenRepository rbacAccessTokenRepository) : Controller
+    {
+        [HttpPost]
+        public async Task<string> GetByRoleIds([FromBody] List<Guid> roleIds)
+        {
+            return await rbacAccessTokenRepository.GetByRoleIds(roleIds);
+        }
+    }
+    ```
+    - `IRbacAccessTokenRepository`: This interface is responsible for interacting with the RBAC services to retrieve the access token.
+    - `GetByRoleIds`: This method accepts a list of roleIds (as GUIDs) and returns the corresponding access token as a string.
+
+9. **Proof of Concept (POC)**
+    
+    A Proof of Concept (POC) demonstrating dashboard implementation and retrieval of an access token by role IDs is available in the repository. This POC provides a practical example of how to implement and test this functionality within your application. Please refer to the POC for detailed guidance and implementation steps.
 
 ## Technologies Used
 - **Blazor**: For building the dashboard UI.

@@ -16,3 +16,6 @@
 /src/TestResults
 /Test/RbacDashboard.Test/bin
 /Test/RbacDashboard.Test/obj
+/Poc/.vs
+/Poc/SampleWebApp/bin
+/Poc/SampleWebApp/obj
