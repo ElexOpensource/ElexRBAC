@@ -1,0 +1,72 @@
+@page "/"
+@layout ApplicationLayout
+
+@attribute [Authorize(Policy = RbacConstants.AuthenticationSchema)]
+<PageTitle>Application</PageTitle>
+
+<RadzenStack>
+
+    <RadzenRow AlignItems="AlignItems.Center">
+
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Applications" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+
+    </RadzenRow>
+
+    <RadzenRow AlignItems="AlignItems.Center">
+
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenTextBox Placeholder="Search ..." style="display: block;" @oninput="@Search" aria-label="Search by all string columns" />
+        </RadzenColumn>
+
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddRow" Variant="Variant.Text" ButtonStyle="ButtonStyle.Primary" />
+                <RadzenButton Icon="cached" Text="Refresh" Click="@RefreshGrid" Variant="Variant.Text" ButtonStyle="ButtonStyle.Secondary" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+    <RadzenRow>
+
+        <RadzenColumn SizeMD=12>
+            <RadzenDataGrid @ref="DataGrid" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PagerHorizontalAlign="HorizontalAlign.Left"
+                            PageSizeOptions=@(new int[]{10, 20, 50, 100}) Data=@FilteredItems AllowColumnResize="true"
+                            Count="@Count" TItem="Application" IsLoading=@IsLoading RowSelect="(row)=>SelectApplication(row)">
+
+                <Columns>
+
+                    <RadzenDataGridColumn TItem="Application" Property="Id" Title="Application Id"></RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Application" Property="ApplicationName" Title="Application Name"></RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Application" Property="CreatedOn" Title="Createdon">
+                        <Template Context="data">
+                            @((data as Application).CreatedOn.ToString("dd/MM/yyyy hh:mm tt"))
+                        </Template>
+                    </RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Application" Filterable="false" Sortable="false" TextAlign="TextAlign.Center">
+                        <Template Context="application">
+                            <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="edit" Size="ButtonSize.Medium"
+                                          Shade="Shade.Default" Variant="Variant.Text"
+                                          Click=@(args => EditRow(application)) @onclick:stopPropagation="true" />
+                            <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                                          Shade="Shade.Default" Variant="Variant.Text"
+                                          Click=@(args => DeleteRow(args, application)) @onclick:stopPropagation="true" />
+                        </Template>
+                    </RadzenDataGridColumn>
+
+                </Columns>
+
+                <EmptyTemplate>
+                    <p style="color: lightgrey; font-size: 24px; text-align: center; margin: 2rem;">No records to display.</p>
+                </EmptyTemplate>
+
+            </RadzenDataGrid>
+
+        </RadzenColumn>
+
+    </RadzenRow>
+
+</RadzenStack>

@@ -1,0 +1,23 @@
+@layout LoginLayout
+@page "/RbacLogin"
+
+<PageTitle>Login</PageTitle>
+
+<RadzenRow>
+    <RadzenColumn SizeMD="12">
+        <EditForm Model="LoginInput" method="post" OnValidSubmit="OnLogin" FormName="login">
+
+            <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@(ErrorMessage != null)" AllowClose=false>@ErrorMessage</RadzenAlert>
+
+            <RadzenStack Size="12" SizeMD="9" Orientation="Orientation.Vertical" Style="margin-bottom:2rem;">
+                <InputText @bind-Value="@LoginInput.Token" class="form-control" placeholder="Enter your token" Style="width: 100%;" />
+            </RadzenStack>
+
+            <RadzenStack Size="12" SizeMD="9" Orientation="Orientation.Vertical">
+                <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="login" Text="Log in" Variant="Variant.Flat" />
+            </RadzenStack>
+
+        </EditForm>
+
+    </RadzenColumn>
+</RadzenRow>

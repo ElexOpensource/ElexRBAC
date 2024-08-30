@@ -1,0 +1,28 @@
+@attribute [Authorize(Policy = RbacConstants.AuthenticationSchema)]
+<PageTitle>@PageTittle</PageTitle>
+
+<RadzenColumn SizeMD=12>
+
+    <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@ErrorVisible">Cannot save application</RadzenAlert>
+
+    <RadzenTemplateForm TItem="Application" Data="@Application" Visible="@(Application != null)" Submit="@FormSubmit">
+            
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="4">
+                <RadzenLabel Text="Application Name" Component="applicationname" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="8">
+                <RadzenTextBox style="display: block; width: 100%" @bind-Value="@Application!.ApplicationName" Name="applicationname" />
+                <RadzenRequiredValidator Component="applicationname" Text="applicationname is required" />
+            </RadzenColumn>
+        </RadzenRow>
+           
+        <RadzenStack  Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+                <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@Cancel"  />
+        </RadzenStack>
+
+    </RadzenTemplateForm>
+
+</RadzenColumn>
+

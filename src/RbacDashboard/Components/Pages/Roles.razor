@@ -1,0 +1,78 @@
+@page "/Roles"
+@attribute [Authorize(Policy = RbacConstants.AuthenticationSchema)]
+
+<PageTitle>Roles</PageTitle>
+
+<RadzenStack>
+
+    <RadzenRow AlignItems="AlignItems.Center">
+
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Roles" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+
+    </RadzenRow>
+
+    <RadzenRow AlignItems="AlignItems.Center">
+
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenTextBox Placeholder="Search ..." style="display: block;" @oninput="@Search" aria-label="Search by all string columns" />
+        </RadzenColumn>
+
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddRow" Variant="Variant.Text" ButtonStyle="ButtonStyle.Primary" />
+                <RadzenButton Icon="cached" Text="Refresh" Click="@RefreshGrid" Variant="Variant.Text" ButtonStyle="ButtonStyle.Secondary" />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+
+    <RadzenRow>
+
+        <RadzenColumn SizeMD=12>
+
+            <RadzenDataGrid @ref="RoleGrid" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PagerHorizontalAlign="HorizontalAlign.Left"
+                            PageSizeOptions=@(new int[]{10, 20, 50, 100}) Data="@FilteredItems" AllowColumnResize="true"
+                            Count="@Count" TItem="Role" IsLoading=@IsLoading>
+
+                <Columns>
+
+                    <RadzenDataGridColumn TItem="Role" Property="Id" Title="Role Id"></RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Role" Property="RoleName" Title="Role Name"></RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Role" Property="TypeMaster.Name" Title="Role Type"></RadzenDataGridColumn>
+
+                    @* <RadzenDataGridColumn TItem="Role" Property="Parent.RoleName" Title="Parent"></RadzenDataGridColumn> *@
+
+                    <RadzenDataGridColumn TItem="Role" Property="CreatedOn" Title="Created On">
+                        <Template Context="data">
+                            @((data as Role).CreatedOn.ToString("dd/MM/yyyy hh:mm tt"))
+                        </Template>
+                    </RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Role" Filterable="false" Sortable="false" TextAlign="TextAlign.Center">
+                        <Template Context="role">
+                            <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="edit" Size="ButtonSize.Medium"
+                                          Shade="Shade.Default" Variant="Variant.Text"
+                                          Click=@(args => EditRow(role)) @onclick:stopPropagation="true" />
+
+                            <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                                          Shade="Shade.Default" Variant="Variant.Text"
+                                          Click=@(args => DeleteRow(args, role)) @onclick:stopPropagation="true" />
+                        </Template>
+                    </RadzenDataGridColumn>
+
+                </Columns>
+
+                <EmptyTemplate>
+                    <p style="color: lightgrey; font-size: 24px; text-align: center; margin: 2rem;">No records to display.</p>
+                </EmptyTemplate>
+
+            </RadzenDataGrid>
+
+        </RadzenColumn>
+
+    </RadzenRow>
+
+</RadzenStack>

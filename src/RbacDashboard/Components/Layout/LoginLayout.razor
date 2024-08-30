@@ -1,0 +1,23 @@
+@inherits LayoutComponentBase
+
+<RadzenComponents @rendermode="InteractiveServer" />
+
+ <RadzenLayout style=@($"background: url('{backgroundImageUrl}'); background-size: cover;")>
+    <RadzenBody>
+        <RadzenStack JustifyContent="Radzen.JustifyContent.Center" Class="rz-mx-auto rz-p-4" Style="max-width: 1440px; height: 100%;">
+            <RadzenCard class="rz-shadow-3 rz-border-radius-4" style="padding: 0; overflow: hidden; background-color: var(--rz-base-background-color);">
+                <RadzenRow Gap="0">
+                    <RadzenColumn Size="12" SizeSM="6" Class="rz-background-color-primary rz-p-12" style="background-image: radial-gradient(circle at 4rem 4rem, var(--rz-primary) 0%, var(--rz-primary-darker) 80%); position: relative;">
+                        <RadzenText TextStyle="TextStyle.DisplayH3" TagName="TagName.H2" Class="rz-color-white rz-mb-6">Welcome!</RadzenText>
+                        <RadzenText TextStyle="TextStyle.H4" Class="rz-color-white">Role Based Access Control</RadzenText>
+                        <RadzenText TextStyle="TextStyle.Body2" Class="rz-color-white">Fill in your token to proceed</RadzenText>
+                    </RadzenColumn>
+                    <RadzenColumn Size="12" SizeSM="6" class="rz-p-12">
+                        @Body
+                    </RadzenColumn>
+                </RadzenRow>
+            </RadzenCard>
+            <RadzenText Text="@($"Role Based Access Control v{Version}, Copyright Ⓒ {Year}")" TextStyle="Radzen.Blazor.TextStyle.Caption" TextAlign="Radzen.TextAlign.Center" Style="width: 100%; margin-top: 20px" TagName="Radzen.Blazor.TagName.P" />
+        </RadzenStack>
+    </RadzenBody>
+</RadzenLayout>

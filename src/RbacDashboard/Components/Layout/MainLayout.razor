@@ -1,0 +1,45 @@
+@inherits LayoutComponentBase
+<RadzenComponents @rendermode="InteractiveAuto" />
+<RadzenLayout>
+
+    <RadzenHeader>
+        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.SpaceBetween" AlignItems="AlignItems.Center" Gap="0">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0">
+                <RadzenSidebarToggle Click="@SidebarToggleClick"></RadzenSidebarToggle>
+                <RadzenLabel Text="Role Base Access Control" />
+            </RadzenStack>
+            <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Right" AlignItems="AlignItems.Center" Gap="0" Style="padding-right: 5px">
+                <RadzenColumn Size="7">
+                    <RadzenStack AlignItems="AlignItems.Center" Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End">
+                        <RadzenProfileMenu Visible="@Security.IsAuthenticated()" Click="@ProfileMenuClick" ShowIcon="false">
+                            <ChildContent>
+                                <RadzenProfileMenuItem Text="Change Application" Value="ChangeApplication" Icon="published_with_changes" />
+                                <RadzenProfileMenuItem Text="Logout" Value="Logout" Icon="power_settings_new" />
+                            </ChildContent>
+                            <Template>
+                                @($"{Security.User?.CustomerName} - {Security.User?.ApplicationName}")
+                            </Template>
+                        </RadzenProfileMenu>
+                    </RadzenStack>
+                </RadzenColumn>
+            </RadzenStack>
+        </RadzenStack>
+    </RadzenHeader>
+
+    <RadzenSidebar Expanded=true style="z-index: 2;width: max-content" Responsive="false">
+        <RadzenPanelMenu DisplayStyle="@(SidebarExpanded ? MenuItemDisplayStyle.IconAndText : MenuItemDisplayStyle.Icon)" ShowArrow="false" Match="NavLinkMatch.All">
+            <RadzenPanelMenuItem Text="Roles" Path="@($"{BaseUrl}Roles")" Icon="engineering" Match="NavLinkMatch.Prefix" />
+            <RadzenPanelMenuItem Text="Access Object" Path="@($"{BaseUrl}Accesses")" Icon="data_object" Match="NavLinkMatch.Prefix" />
+            <RadzenPanelMenuItem Text="Role Access" Path="@($"{BaseUrl}RoleAccesses")" Icon="account_tree" Match="NavLinkMatch.Prefix" />
+        </RadzenPanelMenu>
+    </RadzenSidebar>
+
+    <RadzenBody Expanded="@SidebarExpanded">
+        <RadzenRow class="rz-mx-auto rz-px-4 rz-pt-2 rz-pt-md-4 rz-pt-lg-6 rz-pt-xl-12 rz-pb-2 rz-pb-lg-12" Style="max-width: 1440px;">
+            <RadzenColumn Size="12">
+                @Body
+            </RadzenColumn>
+        </RadzenRow>
+    </RadzenBody>
+
+</RadzenLayout>

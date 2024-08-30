@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/.vs
+/src/RbacDashboard/obj
+/src/RbacDashboard/bin/Debug/net8.0
+/src/RbacDashboard.Asserts/bin/Debug/net8.0
+/src/RbacDashboard.Asserts/obj
+/src/RbacDashboard.BAL/bin/Debug/net8.0
+/src/RbacDashboard.BAL/obj
+/src/RbacDashboard.Common/bin/Debug/net8.0
+/src/RbacDashboard.Common/obj
+/src/RbacDashboard.DAL/bin/Debug/net8.0
+/src/RbacDashboard.DAL/obj

@@ -1,0 +1,39 @@
+@attribute [Authorize(Policy = RbacConstants.AuthenticationSchema)]
+<PageTitle>Add Role Access</PageTitle>
+
+<RadzenColumn SizeMD=12>
+
+    <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@ErrorVisible">Cannot save roleaccess</RadzenAlert>
+
+    <RadzenTemplateForm TItem="Role" Data="@Role" Submit="@FormSubmit">
+
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="2">
+                <RadzenLabel Text="Role" Component="role" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="10">
+                <RadzenTextBox @bind-Value=@Role.RoleName ReadOnly=true style="width: 100%" />
+            </RadzenColumn>
+        </RadzenRow>
+
+        <RadzenRow style="margin-bottom: 1rem">
+            <RadzenColumn SizeMD="2">
+                <RadzenLabel Text="Access" Component="access" style="width: 100%" />
+            </RadzenColumn>
+            <RadzenColumn SizeMD="10">
+                <RadzenDropDown Data="@AccessList" TextProperty="AccessName" ValueProperty="Id" AllowClear="true" Multiple="true" Chips=true
+                                Placeholder="Choose access" Style="display: block; width: 100%" @bind-Value="@SelectedAccess" Name="access" />
+            </RadzenColumn> 
+        </RadzenRow>
+
+
+        
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+            <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+            <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@Cancel" />
+        </RadzenStack>
+
+    </RadzenTemplateForm>
+
+</RadzenColumn>
+

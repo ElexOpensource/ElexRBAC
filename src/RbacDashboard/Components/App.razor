@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="@NavigationManager.BaseUri" />
+
+    <link rel="stylesheet" href="@NavigationManager.ToAbsoluteUri($"{assemblyName}/css/bootstrap/bootstrap.min.css")" />
+    <link rel="stylesheet" href="@NavigationManager.ToAbsoluteUri($"{assemblyName}/Radzen.Blazor/css/material-base.css")" />
+    <link rel="stylesheet" href="@NavigationManager.ToAbsoluteUri($"{assemblyName}/css/site.css")" />
+    <link rel="icon" href="@NavigationManager.ToAbsoluteUri($"{assemblyName}/favicon.ico")" />
+
+    <HeadOutlet @rendermode=@RenderModeForPage />
+    <RadzenTheme Theme="material" @rendermode=@RenderModeForPage />
+</head>
+
+<body>
+    <Routes @rendermode=@RenderModeForPage />
+    <script src="_framework/blazor.web.js"></script>
+    <script src="@NavigationManager.ToAbsoluteUri($"{assemblyName}/Radzen.Blazor/Radzen.Blazor.js")"></script>
+</body>
+
+</html>

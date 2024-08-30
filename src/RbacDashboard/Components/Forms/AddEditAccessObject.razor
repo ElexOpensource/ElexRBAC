@@ -1,0 +1,65 @@
+@attribute [Authorize(Policy = RbacConstants.AuthenticationSchema)]
+<PageTitle>@PageTittle</PageTitle>
+
+<RadzenColumn SizeMD="12">
+    <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@ErrorVisible">Cannot save access</RadzenAlert>
+
+    @if (Access != null)
+    {
+        <RadzenTemplateForm TItem="Access" Data="@Access" Submit="@FormSubmit">
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Name" Component="accessname" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@Access.AccessName" Name="accessname" />
+                </RadzenColumn>
+            </RadzenRow>
+
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Access Type" Component="accesstype" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenDropDownDataGrid Data="@OptionsetMasters" TextProperty="Name" ValueProperty="Id" AllowClear=true
+                                            Placeholder="Choose access type" style="display: block; width: 100%" @bind-Value="@Access.OptionsetMasterId" Name="accesstype"
+                                            SelectedValue=@AccessTypeValue Count=@OptionSetMastersCount LoadData=@LoadAccessType />
+                </RadzenColumn>
+            </RadzenRow>
+
+            @if (PermissionItems != null)
+            {
+                <RadzenRow style="gap: revert-layer;margin-bottom: 1rem;">
+                    <RadzenLabel Text="Permission Set" style="width: 100%" />
+                    <RadzenCheckBoxList Value="@MetaDataValues" TValue="Guid" Change="@UpdateMetaDataValues">
+                        <Items>
+                            @foreach (var item in PermissionItems)
+                            {
+                                <RadzenCheckBoxListItem Text="@item.Label" Value="@item.Id" Style="width: 18.1%;" />
+                            }
+                        </Items>
+                    </RadzenCheckBoxList>
+                </RadzenRow>
+            }
+
+
+            @* <RadzenRow style="margin-bottom: 1rem">
+                <RadzenLabel Text="Attribute" style="width: 100%" />
+                <RadzenColumn Size="4">
+                    <RadzenCheckBox @bind-Value="@IsCanInHerit" /><RadzenLabel Text="Can Inherit" />
+                </RadzenColumn>
+                <RadzenColumn Size="4">
+                    <RadzenCheckBox @bind-Value="@IsGenerateToken" /><RadzenLabel Text="Generate Token" />
+                </RadzenColumn>
+            </RadzenRow> *@
+
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+            <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />
+            <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@Cancel" />
+        </RadzenStack>
+
+        </RadzenTemplateForm>
+    }
+</RadzenColumn>
+
+
