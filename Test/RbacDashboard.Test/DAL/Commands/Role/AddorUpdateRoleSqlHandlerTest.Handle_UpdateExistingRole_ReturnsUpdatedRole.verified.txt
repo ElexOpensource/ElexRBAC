@@ -1,0 +1,6 @@
+﻿{
+  Id: Guid_1,
+  IsActive: false,
+  IsDeleted: false,
+  RoleName: Updated Role
+}

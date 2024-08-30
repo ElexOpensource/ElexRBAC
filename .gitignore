@@ -4,12 +4,15 @@
 
 /src/.vs
 /src/RbacDashboard/obj
-/src/RbacDashboard/bin/Debug/net8.0
-/src/RbacDashboard.Asserts/bin/Debug/net8.0
+/src/RbacDashboard/bin
+/src/RbacDashboard.Asserts/bin
 /src/RbacDashboard.Asserts/obj
-/src/RbacDashboard.BAL/bin/Debug/net8.0
+/src/RbacDashboard.BAL/bin
 /src/RbacDashboard.BAL/obj
-/src/RbacDashboard.Common/bin/Debug/net8.0
+/src/RbacDashboard.Common/bin
 /src/RbacDashboard.Common/obj
-/src/RbacDashboard.DAL/bin/Debug/net8.0
+/src/RbacDashboard.DAL/bin
 /src/RbacDashboard.DAL/obj
+/src/TestResults
+/Test/RbacDashboard.Test/bin
+/Test/RbacDashboard.Test/obj

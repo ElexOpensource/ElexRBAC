@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RbacDashboard.DAL", "RbacDa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RbacDashboard.Asserts", "RbacDashboard.Asserts\RbacDashboard.Asserts.csproj", "{C9FB6BF6-F573-421B-A6F2-3F72A046EB53}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RbacDashboard.Test", "..\Test\RbacDashboard.Test\RbacDashboard.Test.csproj", "{58D0DF38-3C3D-4ED2-B273-BA532740F927}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C9FB6BF6-F573-421B-A6F2-3F72A046EB53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9FB6BF6-F573-421B-A6F2-3F72A046EB53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9FB6BF6-F573-421B-A6F2-3F72A046EB53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58D0DF38-3C3D-4ED2-B273-BA532740F927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D0DF38-3C3D-4ED2-B273-BA532740F927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D0DF38-3C3D-4ED2-B273-BA532740F927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D0DF38-3C3D-4ED2-B273-BA532740F927}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
