@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using RbacDashboard.DAL.Models.Domain;
+using System.Diagnostics.CodeAnalysis;
 
 namespace RbacDashboard.Common;
 
@@ -11,4 +12,6 @@ public static class RbacConstants
     public const string ApplicationId = "AID";
     public const string ApplicationName = "ApplicationName";
     public const int CookieLifeSpanInMinutes = 120;
+
+    public static List<StatusOption> StatusOptions { get; } = [new StatusOption() { Key = true, Value = "Active" }, new StatusOption() { Key = false, Value = "Inactive" }];
 }

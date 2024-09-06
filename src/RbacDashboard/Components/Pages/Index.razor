@@ -17,7 +17,11 @@
     <RadzenRow AlignItems="AlignItems.Center">
 
         <RadzenColumn Size="12" SizeMD="6">
-            <RadzenTextBox Placeholder="Search ..." style="display: block;" @oninput="@Search" aria-label="Search by all string columns" />
+            <RadzenStack Orientation="Orientation.Horizontal" Gap="10px" Style="width: 100%">
+                <RadzenTextBox Placeholder="Search ..." style="display: block;" @oninput="@Search" aria-label="Search by all string columns" />
+                <RadzenDropDown Data="@RbacConstants.StatusOptions" TextProperty="Value" ValueProperty="Key" AllowClear="false" Multiple="false"
+                                Placeholder="Choose access" Style="display: block;" Change="@LoadGridData" @bind-Value="@IsActive" Name="isActive" />
+            </RadzenStack>
         </RadzenColumn>
 
         <RadzenColumn Size="12" SizeMD="6">
@@ -26,19 +30,21 @@
                 <RadzenButton Icon="cached" Text="Refresh" Click="@RefreshGrid" Variant="Variant.Text" ButtonStyle="ButtonStyle.Secondary" />
             </RadzenStack>
         </RadzenColumn>
+
     </RadzenRow>
+
     <RadzenRow>
 
         <RadzenColumn SizeMD=12>
             <RadzenDataGrid @ref="DataGrid" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PagerHorizontalAlign="HorizontalAlign.Left"
-                            PageSizeOptions=@(new int[]{10, 20, 50, 100}) Data=@FilteredItems AllowColumnResize="true"
+                            PageSizeOptions=@(new int[]{10, 20, 50, 100}) Data=@FilteredItems AllowColumnResize="true" AllowRowSelectOnRowClick="@IsActive"
                             Count="@Count" TItem="Application" IsLoading=@IsLoading RowSelect="(row)=>SelectApplication(row)">
 
                 <Columns>
 
-                    <RadzenDataGridColumn TItem="Application" Property="Id" Title="Application Id"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="Application" Property="Id" Title="Id"></RadzenDataGridColumn>
 
-                    <RadzenDataGridColumn TItem="Application" Property="ApplicationName" Title="Application Name"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="Application" Property="ApplicationName" Title="Name"></RadzenDataGridColumn>
 
                     <RadzenDataGridColumn TItem="Application" Property="CreatedOn" Title="Createdon">
                         <Template Context="data">
@@ -48,12 +54,25 @@
 
                     <RadzenDataGridColumn TItem="Application" Filterable="false" Sortable="false" TextAlign="TextAlign.Center">
                         <Template Context="application">
-                            <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="edit" Size="ButtonSize.Medium"
-                                          Shade="Shade.Default" Variant="Variant.Text"
-                                          Click=@(args => EditRow(application)) @onclick:stopPropagation="true" />
-                            <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
-                                          Shade="Shade.Default" Variant="Variant.Text"
-                                          Click=@(args => DeleteRow(args, application)) @onclick:stopPropagation="true" />
+                            @if(IsActive){
+                                <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="edit" Size="ButtonSize.Medium"
+                                              Shade="Shade.Default" Variant="Variant.Text" Disabled="@(!IsActive)" Title="Edit"
+                                              Click=@(args => EditRow(application)) @onclick:stopPropagation="true" />
+
+                                <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="block" Size="ButtonSize.Medium"
+                                              Shade="Shade.Default" Variant="Variant.Text" Title="Deactivate"
+                                              Click=@(args => ChangeStatus(application, RecordStatus.Inactive)) @onclick:stopPropagation="true" />
+                            } else
+                            {
+                                <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="check_circle" Size="ButtonSize.Medium"
+                                              Shade="Shade.Default" Variant="Variant.Text" Title="Activate"
+                                              Click=@(args => ChangeStatus(application, RecordStatus.Active)) @onclick:stopPropagation="true" />
+                                
+                                <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                                              Shade="Shade.Default" Variant="Variant.Text" Title="Delete"
+                                              Click=@(args => ChangeStatus(application, RecordStatus.Delete)) @onclick:stopPropagation="true" />
+                            }
+
                         </Template>
                     </RadzenDataGridColumn>
 

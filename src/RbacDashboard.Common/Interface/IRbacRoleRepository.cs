@@ -1,14 +1,17 @@
-﻿using RbacDashboard.DAL.Models;
+﻿using RbacDashboard.DAL.Enum;
+using RbacDashboard.DAL.Models;
 
 namespace RbacDashboard.Common.Interface;
 
 public interface IRbacRoleRepository
 {
-    Task<List<Role>> GetByApplicationId(Guid customerId);
+    Task<List<Role>> GetByApplicationId(Guid applicationId, bool isActive);
 
-    Task<Role> GetById(Guid applicationId);
+    Task<Role> GetById(Guid roleId);
 
-    Task<Role> AddorUpdate(Role application);
+    Task<Role> AddorUpdate(Role roleId);
 
-    Task Delete(Guid applicationId);
+    Task Delete(Guid roleId);
+
+    Task ChangeStatus(Guid roleId, RecordStatus status);
 }

@@ -16,7 +16,11 @@
     <RadzenRow AlignItems="AlignItems.Center">
 
         <RadzenColumn Size="12" SizeMD="6">
-            <RadzenTextBox Placeholder="Search ..." style="display: block;" @oninput="@Search" aria-label="Search by all string columns" />
+            <RadzenStack Orientation="Orientation.Horizontal" Gap="10px" Style="width: 100%">
+                <RadzenTextBox Placeholder="Search ..." style="display: block;" @oninput="@Search" aria-label="Search by all string columns" />
+                <RadzenDropDown Data="@RbacConstants.StatusOptions" TextProperty="Value" ValueProperty="Key" AllowClear="false" Multiple="false"
+                                Placeholder="Choose access" Style="display: block;" Change="@LoadGridData" @bind-Value="@IsActive" Name="isActive" />
+            </RadzenStack>
         </RadzenColumn>
 
         <RadzenColumn Size="12" SizeMD="6">
@@ -37,11 +41,11 @@
 
                 <Columns>
 
-                    <RadzenDataGridColumn TItem="Role" Property="Id" Title="Role Id"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="Role" Property="Id" Title="Id"></RadzenDataGridColumn>
 
-                    <RadzenDataGridColumn TItem="Role" Property="RoleName" Title="Role Name"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="Role" Property="RoleName" Title="Name"></RadzenDataGridColumn>
 
-                    <RadzenDataGridColumn TItem="Role" Property="TypeMaster.Name" Title="Role Type"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="Role" Property="TypeMaster.Name" Title="Type"></RadzenDataGridColumn>
 
                     @* <RadzenDataGridColumn TItem="Role" Property="Parent.RoleName" Title="Parent"></RadzenDataGridColumn> *@
 
@@ -53,14 +57,28 @@
 
                     <RadzenDataGridColumn TItem="Role" Filterable="false" Sortable="false" TextAlign="TextAlign.Center">
                         <Template Context="role">
-                            <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="edit" Size="ButtonSize.Medium"
-                                          Shade="Shade.Default" Variant="Variant.Text"
-                                          Click=@(args => EditRow(role)) @onclick:stopPropagation="true" />
+                            @if (IsActive)
+                            {
+                                <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="edit" Size="ButtonSize.Medium"
+                                              Shade="Shade.Default" Variant="Variant.Text" Disabled="@(!IsActive)"
+                                              Click=@(args => EditRow(role)) @onclick:stopPropagation="true" />
 
-                            <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
-                                          Shade="Shade.Default" Variant="Variant.Text"
-                                          Click=@(args => DeleteRow(args, role)) @onclick:stopPropagation="true" />
+                                <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="block" Size="ButtonSize.Medium"
+                                              Shade="Shade.Default" Variant="Variant.Text" Title="Deactivate"
+                                              Click=@(args => ChangeStatus(role, RecordStatus.Inactive)) @onclick:stopPropagation="true" />
+                            }
+                            else
+                            {
+                                <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="check_circle" Size="ButtonSize.Medium"
+                                              Shade="Shade.Default" Variant="Variant.Text" Title="Activate"
+                                              Click=@(args => ChangeStatus(role, RecordStatus.Active)) @onclick:stopPropagation="true" />
+
+                                <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
+                                              Shade="Shade.Default" Variant="Variant.Text" Title="Delete"
+                                              Click=@(args => ChangeStatus(role, RecordStatus.Delete)) @onclick:stopPropagation="true" />
+                            }
                         </Template>
+
                     </RadzenDataGridColumn>
 
                 </Columns>

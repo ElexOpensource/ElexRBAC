@@ -4,6 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using RbacDashboard.DAL.Base;
+using RbacDashboard.DAL.Enum;
 
 namespace RbacDashboard.DAL;
 

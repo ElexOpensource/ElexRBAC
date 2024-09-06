@@ -7,6 +7,7 @@ using RbacDashboard.Common.ClientService;
 using RbacDashboard.Common.Authentication;
 using Microsoft.AspNetCore.Components.Web;
 using System.Diagnostics.CodeAnalysis;
+using RbacDashboard.DAL.Enum;
 
 namespace RbacDashboard.Components.Pages;
 
@@ -40,6 +41,8 @@ public partial class Accesses
 
     protected IEnumerable<Access> FilteredItems { get; set; } = [];
 
+    protected bool IsActive { get; set; } = true;
+
     protected bool IsLoading { get; set; } = false;
     #endregion
 
@@ -54,7 +57,7 @@ public partial class Accesses
         try
         {
             IsLoading = true;
-            AccessList = await ApiService.GetAccesses(Guid.Parse(ApplicationId));
+            AccessList = await ApiService.GetAccesses(Guid.Parse(ApplicationId), IsActive);
             FilteredItems = AccessList;
             foreach (var item in FilteredItems)
             {
@@ -64,9 +67,6 @@ public partial class Accesses
                 }
             }
             Count = FilteredItems.Count();
-
-            if (!AccessList.Any())
-                NotificationService.Notify(new NotificationMessage(){ Severity = NotificationSeverity.Info, Detail = $"Accesses not available" });
 
         }
         catch
@@ -99,18 +99,18 @@ public partial class Accesses
         await LoadGridData();
     }
 
-    protected async Task DeleteRow(Access access)
+    protected async Task ChangeStatus(Access access, RecordStatus status)
     {
         try
         {
-            if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+            if (await DialogService.Confirm($"Are you sure you want to {status.ToStatusString()} this record?") == true)
             {
                 if (access.Id != Guid.Empty)
                 {
                     IsLoading = true;
-                    await ApiService.DeleteAccess(access.Id);
-                    NotificationService.Notify(new NotificationMessage() { Severity = NotificationSeverity.Success, Duration = 2000, Detail = $"Role deleted sucessfully" });
-                    await LoadGridData();                        
+                    await ApiService.ChangeAccessStatus(access.Id, status);
+                    NotificationService.Notify(new NotificationMessage() { Severity = NotificationSeverity.Success, Duration = 2000, Detail = $"{status.ToStatusString()} sucessfully" });
+                    await LoadGridData();
                 }
             }
         }
@@ -120,7 +120,7 @@ public partial class Accesses
             {
                 Severity = NotificationSeverity.Error,
                 Summary = $"Error",
-                Detail = $"Unable to delete role"
+                Detail = $"Unable to {status.ToStatusString()} this record"
             });
         }
         finally
