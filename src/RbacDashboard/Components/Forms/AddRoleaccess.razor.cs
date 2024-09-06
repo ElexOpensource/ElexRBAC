@@ -65,7 +65,7 @@ public partial class AddRoleaccess
         Role.RoleName = RoleName;
 
         SelectedAccess = DefaultSelectedAccess;
-        AccessList = await ApiService.GetAccesses(ApplicationId);
+        AccessList = await ApiService.GetAccesses(ApplicationId, true);
     }
 
     protected async Task FormSubmit()

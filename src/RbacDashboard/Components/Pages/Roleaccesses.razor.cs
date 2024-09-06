@@ -179,7 +179,7 @@ public partial class Roleaccesses
 
     protected async Task<List<Role>> GetRoles()
     {
-        var roles = await ApiService.GetRoles(Guid.Parse(ApplicationId));
+        var roles = await ApiService.GetRoles(Guid.Parse(ApplicationId), true);
 
         if (roles.Count == 0)
             NotificationService.Notify(new NotificationMessage() { Severity = NotificationSeverity.Info, Detail = $"Roles not available" });
@@ -191,9 +191,6 @@ public partial class Roleaccesses
     protected async Task<List<RoleAccess>> GetRoleAccessByRoleId()
     {
         var roleAccess = await ApiService.GetRoleAccessByRoleId(SelectedRoleId);
-
-        if (roleAccess.Count == 0)
-            NotificationService.Notify(new NotificationMessage() { Severity = NotificationSeverity.Info, Detail = $"Role is not having any Access yet." });
 
         return roleAccess;
     }

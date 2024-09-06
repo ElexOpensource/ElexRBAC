@@ -14,6 +14,7 @@ using RbacDashboard.Common.Authentication;
 using Microsoft.AspNetCore.Components.Authorization;
 using RbacDashboard.DAL.Base;
 using RbacDashboard.Asserts;
+using RbacDashboard.DAL.Enum;
 
 namespace RbacDashboard;
 

@@ -121,7 +121,7 @@ public partial class AddEditRole
     {
         try
         {
-            Parents = await ApiService.GetRoles(Role.ApplicationId);
+            Parents = await ApiService.GetRoles(Role.ApplicationId, true);
             if (Id != Guid.Empty)
                 Parents = Parents.Where(x => x.Id != Id).ToList();
 

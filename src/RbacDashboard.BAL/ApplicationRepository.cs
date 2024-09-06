@@ -2,6 +2,7 @@
 using RbacDashboard.Common;
 using RbacDashboard.Common.Interface;
 using RbacDashboard.DAL.Commands;
+using RbacDashboard.DAL.Enum;
 
 namespace RbacDashboard.BAL;
 
@@ -31,9 +32,18 @@ public class ApplicationRepository(IMediatorService mediator) : IRbacApplication
         throw new KeyNotFoundException($"Application with id - {applicationId} is not available");
     }
 
-    public async Task<List<Application>> GetByCustomerId(Guid customerId)
+    public async Task<List<Application>> GetByCustomerId(Guid customerId, bool isActive)
     {
-        var applications = await _mediator.SendRequest(new GetApplicationByCustomerId(customerId));
+        var applications = await _mediator.SendRequest(new GetApplicationByCustomerId(customerId, isActive));
         return applications;
+    }
+
+    public async Task ChangeStatus(Guid applicationId, RecordStatus status)
+    {
+        var isStatusChanged = await _mediator.SendRequest(new ChangeApplicationStatus(applicationId, status));
+        if (!isStatusChanged)
+        {
+            throw new KeyNotFoundException($"Application with id - {applicationId} is not available");
+        }
     }
 }

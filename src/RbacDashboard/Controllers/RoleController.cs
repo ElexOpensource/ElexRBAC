@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RbacDashboard.DAL.Models;
 using RbacDashboard.Common.Interface;
+using RbacDashboard.DAL.Enum;
 
 namespace Rbac.Controllers;
 
@@ -18,16 +19,24 @@ public partial class RoleController(IRbacRoleRepository RoleRepository) : Contro
     }
 
     [HttpGet]
-    public async Task<List<Role>> GetByApplicationId(Guid applicationId)
+    public async Task<List<Role>> GetByApplicationId(Guid applicationId, bool isActive = true)
     {
         if (applicationId == Guid.Empty) throw new ArgumentNullException(nameof(applicationId));
-        return await _role.GetByApplicationId(applicationId);
+        return await _role.GetByApplicationId(applicationId, isActive);
     }
 
     [HttpPost]
     public async Task<Role> AddorUpdate([FromBody] Role role)
     {
         return await _role.AddorUpdate(role);
+    }
+
+    [HttpPost]
+    public async Task<OkResult> ChangeStatus(Guid roleId, RecordStatus status)
+    {
+        if (roleId == Guid.Empty) throw new ArgumentNullException(nameof(roleId));
+        await _role.ChangeStatus(roleId, status);
+        return Ok();
     }
 
     [HttpDelete]

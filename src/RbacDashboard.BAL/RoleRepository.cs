@@ -2,6 +2,7 @@
 using RbacDashboard.Common;
 using RbacDashboard.Common.Interface;
 using RbacDashboard.DAL.Commands;
+using RbacDashboard.DAL.Enum;
 
 namespace RbacDashboard.BAL;
 
@@ -14,26 +15,35 @@ public class RoleRepository(IMediatorService mediator) : IRbacRoleRepository
         return await _mediator.SendRequest(new AddorUpdateRole(role));
     }
 
-    public async Task Delete(Guid applicationId)
+    public async Task Delete(Guid roleId)
     {
-        await _mediator.SendRequest(new DeleteRole(applicationId));
+        await _mediator.SendRequest(new DeleteRole(roleId));
     }
 
-    public async Task<Role> GetById(Guid applicationId)
+    public async Task<Role> GetById(Guid roleId)
     {
-        var role = await _mediator.SendRequest(new GetRoleById(applicationId));
+        var role = await _mediator.SendRequest(new GetRoleById(roleId));
 
         if (role != null)
         {
             return role;
         }
 
-        throw new KeyNotFoundException($"Role with id - {applicationId} is not available");
+        throw new KeyNotFoundException($"Role with id - {roleId} is not available");
     }
 
-    public async Task<List<Role>> GetByApplicationId(Guid applicationId)
+    public async Task<List<Role>> GetByApplicationId(Guid applicationId, bool isActive)
     {
-        var roles = await _mediator.SendRequest(new GetRolesByApplicationId(applicationId, true, true));
+        var roles = await _mediator.SendRequest(new GetRolesByApplicationId(applicationId, isActive, true));
         return roles;
+    }
+
+    public async Task ChangeStatus(Guid roleId, RecordStatus status)
+    {
+        var isStatusChanged = await _mediator.SendRequest(new ChangeRoleStatus(roleId, status));
+        if (!isStatusChanged)
+        {
+            throw new KeyNotFoundException($"Role with id - {roleId} is not available");
+        }
     }
 }

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RbacDashboard.DAL.Models;
 using RbacDashboard.Common.Interface;
+using RbacDashboard.DAL.Enum;
 
 namespace Rbac.Controllers;
 
@@ -18,16 +19,24 @@ public partial class ApplicationController(IRbacApplicationRepository applicatio
     }
 
     [HttpGet]
-    public async Task<List<Application>> GetByCustomerId(Guid customerId)
+    public async Task<List<Application>> GetByCustomerId(Guid customerId, bool isActive )
     {
         if (customerId == Guid.Empty) throw new ArgumentNullException(nameof(customerId));
-        return await _application.GetByCustomerId(customerId);
+        return await _application.GetByCustomerId(customerId, isActive);
     }
 
     [HttpPost]
     public async Task<Application> AddorUpdate([FromBody] Application application)
     {
         return await _application.AddorUpdate(application);
+    }
+
+    [HttpPost]
+    public async Task<OkResult> ChangeStatus(Guid applicationId, RecordStatus status)
+    {
+        if (applicationId == Guid.Empty) throw new ArgumentNullException(nameof(applicationId));
+        await _application.ChangeStatus(applicationId, status);
+        return Ok();
     }
 
     [HttpDelete]

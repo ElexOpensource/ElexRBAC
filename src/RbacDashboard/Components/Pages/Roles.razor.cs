@@ -7,6 +7,7 @@ using RbacDashboard.Common.ClientService;
 using RbacDashboard.Common.Authentication;
 using Microsoft.AspNetCore.Components.Web;
 using System.Diagnostics.CodeAnalysis;
+using RbacDashboard.DAL.Enum;
 
 namespace RbacDashboard.Components.Pages;
 
@@ -36,9 +37,11 @@ public partial class Roles
 
     protected RadzenDataGrid<Role> RoleGrid { get; set; } = new RadzenDataGrid<Role>();
 
+    protected IEnumerable<Role> FilteredItems { get; set; } = [];
+
     protected int Count { get; set; } = 0;
 
-    protected IEnumerable<Role> FilteredItems { get; set; } = [];
+    protected bool IsActive { get; set; } = true;
 
     protected bool IsLoading { get; set; } = false;
     #endregion
@@ -55,7 +58,7 @@ public partial class Roles
         try
         {
             IsLoading = true;
-            RolesList = await ApiService.GetRoles(Guid.Parse(ApplicationId));
+            RolesList = await ApiService.GetRoles(Guid.Parse(ApplicationId), IsActive);
             FilteredItems = RolesList;
             foreach (var item in FilteredItems)
             {
@@ -65,9 +68,6 @@ public partial class Roles
                 }
             }
             Count = FilteredItems.Count();
-
-            if (!RolesList.Any())
-                NotificationService.Notify(new NotificationMessage(){ Severity = NotificationSeverity.Info, Detail = $"Roles not available" });
 
         }
         catch
@@ -100,18 +100,18 @@ public partial class Roles
         await LoadGridData();
     }
 
-    protected async Task DeleteRow(MouseEventArgs args, Role role)
+    protected async Task ChangeStatus(Role role, RecordStatus status)
     {
         try
         {
-            if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+            if (await DialogService.Confirm($"Are you sure you want to {status.ToStatusString()} this record?") == true)
             {
                 if (role.Id != Guid.Empty)
                 {
                     IsLoading = true;
-                    await ApiService.DeleteRole(role.Id);
-                    NotificationService.Notify(new NotificationMessage() { Severity = NotificationSeverity.Success, Duration = 2000, Detail = $"Role deleted sucessfully" });
-                    await LoadGridData();                        
+                    await ApiService.ChangeRoleStatus(role.Id, status);
+                    NotificationService.Notify(new NotificationMessage() { Severity = NotificationSeverity.Success, Duration = 2000, Detail = $"{status.ToStatusString()} sucessfully" });
+                    await LoadGridData();
                 }
             }
         }
@@ -121,7 +121,7 @@ public partial class Roles
             {
                 Severity = NotificationSeverity.Error,
                 Summary = $"Error",
-                Detail = $"Unable to delete role"
+                Detail = $"Unable to {status.ToStatusString()} this record"
             });
         }
         finally

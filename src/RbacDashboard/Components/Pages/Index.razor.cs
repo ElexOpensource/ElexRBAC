@@ -7,6 +7,7 @@ using Radzen.Blazor;
 using Microsoft.AspNetCore.Components.Web;
 using RbacDashboard.Components.Forms;
 using System.Diagnostics.CodeAnalysis;
+using RbacDashboard.DAL.Enum;
 
 namespace RbacDashboard.Components.Pages;
 
@@ -38,6 +39,7 @@ public partial class Index
     protected List<Application> FilteredItems { get; set; } = [];
     protected string CustomerId { get; set; } = string.Empty;
     protected int Count { get; set; } = 0;
+    protected bool IsActive { get; set; } = true;
     protected bool IsLoading { get; set; } = false;
     #endregion
 
@@ -52,13 +54,10 @@ public partial class Index
         try
         {
             IsLoading = true;
-            ApplicationList = await ApiService.GetApplications(Guid.Parse(CustomerId));
+            ApplicationList = await ApiService.GetApplications(Guid.Parse(CustomerId), IsActive);
             FilteredItems = ApplicationList;
             Count = FilteredItems.Count;
-
-            if(!ApplicationList.Any())
-                NotificationService.Notify(new NotificationMessage() { Severity = NotificationSeverity.Info, Detail = $"Applications not available" });
-            
+                        
         }
         catch
         {
@@ -90,30 +89,28 @@ public partial class Index
         await LoadGridData();
     }
 
-    protected async Task DeleteRow(MouseEventArgs args, Application application)
+    protected async Task ChangeStatus(Application application, RecordStatus status)
     {
         try
         {
-            if (await DialogService.Confirm("Are you sure you want to delete this record?") == true)
+            if (await DialogService.Confirm($"Are you sure you want to {status.ToStatusString()} this record?") == true)
             {
-                IsLoading = true;
                 if (application.Id != Guid.Empty)
                 {
-                    await ApiService.DeleteApplication(application.Id);
-                    NotificationService.Notify(new NotificationMessage() { Severity = NotificationSeverity.Success, Duration = 2000, Detail = $"Application deleted sucessfully" });
+                    IsLoading = true;
+                    await ApiService.ChangeApplicationStatus(application.Id, status);
+                    NotificationService.Notify(new NotificationMessage() { Severity = NotificationSeverity.Success, Duration = 2000, Detail = $"{status.ToStatusString()} sucessfully" });
                     await LoadGridData();
                 }
-                IsLoading = false;
             }
         }
         catch
         {
-            IsLoading = false;
             NotificationService.Notify(new NotificationMessage
             {
                 Severity = NotificationSeverity.Error,
                 Summary = $"Error",
-                Detail = $"Unable to delete application"
+                Detail = $"Unable to {status.ToStatusString()} this record"
             });
         }
         finally

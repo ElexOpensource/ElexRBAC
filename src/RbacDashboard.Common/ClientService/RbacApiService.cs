@@ -1,4 +1,5 @@
-﻿using RbacDashboard.DAL.Models;
+﻿using RbacDashboard.DAL.Enum;
+using RbacDashboard.DAL.Models;
 using RbacDashboard.DAL.Models.Domain;
 using System.Diagnostics.CodeAnalysis;
 
@@ -31,9 +32,9 @@ public class RbacApiService(IHttpClientFactory factory) : RbacClientBase(factory
     #endregion
 
     #region Application
-    public async Task<List<Application>> GetApplications(Guid customerId)
+    public async Task<List<Application>> GetApplications(Guid customerId, bool isActive = true)
     {
-        var endpoint = $"/{RbacApiBasePath}/Application/GetByCustomerId?customerId={customerId}";
+        var endpoint = $"/{RbacApiBasePath}/Application/GetByCustomerId?customerId={customerId}&isActive={isActive}";
         return await GetAsync<List<Application>>(endpoint);
     }
 
@@ -49,6 +50,11 @@ public class RbacApiService(IHttpClientFactory factory) : RbacClientBase(factory
         return response;
     }
 
+    public async Task ChangeApplicationStatus(Guid applicationId, RecordStatus status)
+    {
+        await PostAsync($"/{RbacApiBasePath}/Application/ChangeStatus?applicationId={applicationId}&status={status}", new object());
+    }
+
     public async Task DeleteApplication(Guid id)
     {
         var endpoint = $"/{RbacApiBasePath}/Application/Delete?applicationId={id}";
@@ -58,9 +64,9 @@ public class RbacApiService(IHttpClientFactory factory) : RbacClientBase(factory
     #endregion
 
     #region Access
-    public async Task<List<Access>> GetAccesses(Guid applicationId)
+    public async Task<List<Access>> GetAccesses(Guid applicationId, bool isActive = true)
     {
-        var endpoint = $"/{RbacApiBasePath}/Access/GetByApplicationId?applicationId={applicationId}";
+        var endpoint = $"/{RbacApiBasePath}/Access/GetByApplicationId?applicationId={applicationId}&isActive={isActive}";
         return await GetAsync<List<Access>>(endpoint);
     }
 
@@ -82,12 +88,17 @@ public class RbacApiService(IHttpClientFactory factory) : RbacClientBase(factory
         return response;
     }
 
+    public async Task ChangeAccessStatus(Guid accessId, RecordStatus status)
+    {
+        await PostAsync($"/{RbacApiBasePath}/Access/ChangeStatus?accessId={accessId}&status={status}", new object());
+    }
+
     #endregion
 
     #region Role
-    public async Task<List<Role>> GetRoles(Guid applicationId)
+    public async Task<List<Role>> GetRoles(Guid applicationId, bool isActive = true)
     {
-        var endpoint = $"/{RbacApiBasePath}/Role/GetByApplicationId?applicationId={applicationId}";
+        var endpoint = $"/{RbacApiBasePath}/Role/GetByApplicationId?applicationId={applicationId}&isActive={isActive}";
         return await GetAsync<List<Role>>(endpoint);
     }
 
@@ -107,6 +118,11 @@ public class RbacApiService(IHttpClientFactory factory) : RbacClientBase(factory
     {
         var endpoint = $"/{RbacApiBasePath}/Role/Delete?roleId={id}";
         await DeleteAsync(endpoint);
+    }
+
+    public async Task ChangeRoleStatus(Guid roleId, RecordStatus status)
+    {
+        await PostAsync($"/{RbacApiBasePath}/Role/ChangeStatus?roleId={roleId}&status={status}", new object());
     }
     #endregion
 
