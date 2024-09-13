@@ -102,6 +102,12 @@ public class RbacApiService(IHttpClientFactory factory) : RbacClientBase(factory
         return await GetAsync<List<Role>>(endpoint);
     }
 
+    public async Task<List<Role>> GetAvailableRolesForParent(Guid applicationId, Guid roleId)
+    {
+        var endpoint = $"/{RbacApiBasePath}/Role/GetAvailableParentsById?applicationId={applicationId}&roleId={roleId}";
+        return await GetAsync<List<Role>>(endpoint);
+    }
+
     public async Task<Role> GetRolById(Guid roleId)
     {
         var endpoint = $"/{RbacApiBasePath}/Role/GetById?roleId={roleId}";

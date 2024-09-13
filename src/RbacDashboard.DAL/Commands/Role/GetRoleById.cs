@@ -11,20 +11,26 @@ namespace RbacDashboard.DAL.Commands;
 /// </summary>
 /// <param name="id">The ID of the Role</param>
 /// <param name="isActive">Indicates whether to filter by active applications</param>
-public class GetRoleById(Guid id, bool isActive = true) : IRequest<Role>
+public class GetRoleById(Guid id, bool isActive = true, bool includeStatusCheck = true) : IRequest<Role>
 {
     public Guid Id { get; } = id;
 
     public bool IsActive { get; } = isActive;
+
+    public bool IncludeStatusCheck { get; } = includeStatusCheck;
 }
 
 public class GetRoleByIdSqlHandler(RbacSqlDbContext dbContext) : SqlRequestHandler<GetRoleById, Role>(dbContext)
 {
     public override async Task<Role> Handle(GetRoleById request, CancellationToken cancellationToken)
     {
-        var role = await _dbContext.Roles
-            .Where(role => role.Id == request.Id && !role.IsDeleted && role.IsActive == request.IsActive)
-            .FirstOrDefaultAsync(cancellationToken);
+        IQueryable<Role> query = _dbContext.Roles
+            .Where(role => role.Id == request.Id && !role.IsDeleted);
+
+        if (request.IncludeStatusCheck)
+            query = query.Where(role => role.IsActive == request.IsActive);
+
+        var role = await query.FirstOrDefaultAsync(cancellationToken);
 
 #pragma warning disable CS8603 // Possible null reference return.
         return role;

@@ -44,6 +44,12 @@ public class AccessRepositoryTest
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRoleAccessByRoleIds>()))
             .ReturnsAsync(roleAccesses);
 
+        _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRoleById>()))
+            .ReturnsAsync(new Role() { ApplicationId = Guid.NewGuid() });
+
+        _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRolesByApplicationId>()))
+            .ReturnsAsync(new List<Role>() { new Role { Id = roleIds.First(), RoleName = "Role one" }, new Role { Id = roleIds.Last(), RoleName = "Role two" } });
+
         _tokenRepositoryMock.Setup(t => t.GenerateJwtToken(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<int>()))
             .Returns("test-token");
 
@@ -51,7 +57,6 @@ public class AccessRepositoryTest
         var result = await _accessTokenRepository.GetByRoleIds(roleIds);
 
         // Assert
-        _mediatorMock.Verify(m => m.SendRequest(It.Is<GetRoleAccessByRoleIds>(req => req.RoleList == roleIds)), Times.Once);
         _tokenRepositoryMock.Verify(t => t.GenerateJwtToken(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<int>()), Times.Once);
         Assert.That(result, Is.EqualTo("test-token"));
     }
@@ -65,11 +70,16 @@ public class AccessRepositoryTest
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRoleAccessByRoleIds>()))
             .ReturnsAsync(new List<RoleAccess>());
 
+        _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRoleById>()))
+            .ReturnsAsync(new Role() { ApplicationId = Guid.NewGuid()});
+
+        _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRolesByApplicationId>()))
+            .ReturnsAsync(new List<Role>());
+
         // Act
         var result = await _accessTokenRepository.GetByRoleIds(roleIds);
 
         // Assert
-        _mediatorMock.Verify(m => m.SendRequest(It.Is<GetRoleAccessByRoleIds>(req => req.RoleList == roleIds)), Times.Once);
         Assert.That(result, Is.EqualTo(string.Empty));
     }
 }

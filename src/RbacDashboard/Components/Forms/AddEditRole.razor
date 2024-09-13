@@ -28,7 +28,7 @@
             </RadzenColumn>
         </RadzenRow>
 
-        @* <RadzenRow style="margin-bottom: 1rem">
+        <RadzenRow style="margin-bottom: 1rem">
             <RadzenColumn SizeMD="3">
                 <RadzenLabel Text="Parent" Component="parent" style="width: 100%" />
             </RadzenColumn>
@@ -37,7 +37,7 @@
                         Placeholder="Choose parent" style="display: block; width: 100%" @bind-Value="@Role.ParentId" Name="parentid"
                                         SelectedValue=@ParentsValue Count=@ParentsCount LoadData=@LoadParents />
             </RadzenColumn>
-        </RadzenRow> *@
+        </RadzenRow>
 
         <RadzenStack  Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
                 <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="Save" Variant="Variant.Flat" />

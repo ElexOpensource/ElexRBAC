@@ -94,7 +94,7 @@ public class AccessTokenRepositoryTest
             .ReturnsAsync(accesses);
 
         // Act
-        var result = await _accessRepository.GetByApplicationId(applicationId);
+        var result = await _accessRepository.GetByApplicationId(applicationId, true);
 
         // Assert
         _mediatorMock.Verify(m => m.SendRequest(It.Is<GetAccessesByApplicationId>(req => req.ApplicationId == applicationId)), Times.Once);

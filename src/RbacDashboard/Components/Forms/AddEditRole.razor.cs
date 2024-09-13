@@ -41,7 +41,7 @@ public partial class AddEditRole
 
     protected Role Role { get; set; } = new Role();
 
-    protected Role ParentsValue { get; set; } = new Role();
+    protected Role? ParentsValue { get; set; } = new Role();
 
     protected TypeMaster RoleTypeValue { get; set; } = new TypeMaster();
 
@@ -63,7 +63,7 @@ public partial class AddEditRole
         if (Id != Guid.Empty)
         {
             PageTittle = "Edit Role";
-            await GetRole();            
+            await GetRole();
         }
         else
         {
@@ -121,16 +121,11 @@ public partial class AddEditRole
     {
         try
         {
-            Parents = await ApiService.GetRoles(Role.ApplicationId, true);
-            if (Id != Guid.Empty)
-                Parents = Parents.Where(x => x.Id != Id).ToList();
-
+            Parents = await ApiService.GetAvailableRolesForParent(Guid.Parse(ApplicationId), Id);
             ParentsCount = Parents.Count();
 
             if (!Equals(Role.ParentId, null))
-#pragma warning disable CS8601 // Possible null reference assignment.
                 ParentsValue = Parents.FirstOrDefault(x => x.Id == Role.ParentId);
-#pragma warning restore CS8601 // Possible null reference assignment.
         }
         catch
         {

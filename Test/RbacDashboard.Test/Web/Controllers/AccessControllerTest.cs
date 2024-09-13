@@ -57,14 +57,14 @@ public class AccessControllerTest
         var applicationId = Guid.NewGuid();
         var accessList = new List<Access> { new Access { ApplicationId = applicationId } };
 
-        _accessRepositoryMock.Setup(repo => repo.GetByApplicationId(applicationId)).ReturnsAsync(accessList);
+        _accessRepositoryMock.Setup(repo => repo.GetByApplicationId(applicationId, true)).ReturnsAsync(accessList);
 
         // Act
         var result = await _controller.GetByApplicationId(applicationId);
 
         // Assert
         Assert.That(result, Is.EqualTo(accessList));
-        _accessRepositoryMock.Verify(repo => repo.GetByApplicationId(applicationId), Times.Once);
+        _accessRepositoryMock.Verify(repo => repo.GetByApplicationId(applicationId, true), Times.Once);
     }
 
     [Test]
@@ -72,7 +72,7 @@ public class AccessControllerTest
     {
         // Act & Assert
         Assert.ThrowsAsync<ArgumentNullException>(() => _controller.GetByApplicationId(Guid.Empty));
-        _accessRepositoryMock.Verify(repo => repo.GetByApplicationId(It.IsAny<Guid>()), Times.Never);
+        _accessRepositoryMock.Verify(repo => repo.GetByApplicationId(It.IsAny<Guid>(), true), Times.Never);
     }
 
     [Test]

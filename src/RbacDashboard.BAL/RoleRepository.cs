@@ -46,4 +46,41 @@ public class RoleRepository(IMediatorService mediator) : IRbacRoleRepository
             throw new KeyNotFoundException($"Role with id - {roleId} is not available");
         }
     }
+
+    public async Task<List<Role>> GetAvailableParentsById(Guid applicationId, Guid currentRoleId)
+    {
+        var allRoles = await _mediator.SendRequest(new GetRolesByApplicationId(applicationId, true, false));
+
+        if(currentRoleId == Guid.Empty)
+        {
+            return allRoles;
+        }
+
+        var childRoleIds = new List<Guid>();
+
+        GetChildRoleIdsInMemory(currentRoleId, allRoles, childRoleIds);
+
+        var availableParents = allRoles
+            .Where(r => r.Id != currentRoleId && !childRoleIds.Contains(r.Id))
+            .ToList();
+
+        return availableParents;
+    }
+
+    private static void GetChildRoleIdsInMemory(Guid parentId, List<Role> allRoles, List<Guid> childRoleIds)
+    {
+        var children = allRoles
+            .Where(r => r.ParentId == parentId)
+            .Select(r => r.Id)
+            .ToList();
+
+        foreach (var childId in children)
+        {
+            if (!childRoleIds.Contains(childId))
+            {
+                childRoleIds.Add(childId);
+                GetChildRoleIdsInMemory(childId, allRoles, childRoleIds);
+            }
+        }
+    }
 }
