@@ -6,7 +6,7 @@ using RbacDashboard.DAL.Models.Domain;
 using RbacDashboard.DAL.Models;
 using RbacDashboard.DAL.Commands;
 
-namespace RbacDashboard.BAL.Test;
+namespace RbacDashboard.Test.BAL;
 
 public class RoleAccessRepositorTest
 {

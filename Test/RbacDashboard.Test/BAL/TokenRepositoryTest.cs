@@ -3,8 +3,9 @@ using Moq;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using RbacDashboard.BAL;
 
-namespace RbacDashboard.BAL.Test;
+namespace RbacDashboard.Test.BAL;
 
 public class TokenRepositoryTest
 {

@@ -36,7 +36,8 @@ builder.Services.AddSwaggerGen(c =>
 var app = builder.Build();
 
 #region Rbac
-app.UseRbac("/Rbac"); 
+var masterData = ServicesBuilderExtensions.LoadMasterDataJson("MasterData");
+app.UseRbac("/Rbac", masterData); 
 #endregion
 
 #region Swagger

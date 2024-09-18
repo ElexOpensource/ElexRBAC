@@ -1,22 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
 
 namespace RbacDashboard.DAL.Models;
 
 [Table("RoleAccess", Schema = "RBAC")]
 [ExcludeFromCodeCoverage(Justification = "Models do not need to be included in code coverage.")]
-public partial class RoleAccess
+public partial class RoleAccess : EntityBase
 {
-    [Key]
-    public Guid Id { get; set; }
-
-    public DateTimeOffset CreatedOn { get; set; }
-
-    public bool IsActive { get; set; }
-
-    public bool IsDeleted { get; set; }
-
     public Guid RoleId { get; set; }
 
     public Guid AccessId { get; set; }

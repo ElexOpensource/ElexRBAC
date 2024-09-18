@@ -1,9 +1,11 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using RbacDashboard.DAL;
 using RbacDashboard.DAL.Base;
 using RbacDashboard.DAL.Data;
 using RbacDashboard.DAL.Enum;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class DependencyInjectionTests : TestBase
 {

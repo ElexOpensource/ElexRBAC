@@ -111,7 +111,7 @@ public partial class Roleaccesses
         await DialogService.OpenAsync<AddRoleaccess>("Add/Update Access", 
             new Dictionary<string, object> { 
                 { "RoleId", SelectedRoleId }, 
-                { "RoleName", RolesList.FirstOrDefault(role => role.Id == SelectedRoleId)?.RoleName ?? string.Empty }, 
+                { "RoleName", RolesList.FirstOrDefault(role => role.Id == SelectedRoleId)?.Name ?? string.Empty }, 
                 { "ApplicationId", Guid.Parse(ApplicationId) } ,
                 { "RoleAccessList", RoleAccessesList }
             });

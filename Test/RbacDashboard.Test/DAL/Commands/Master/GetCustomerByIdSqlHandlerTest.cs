@@ -1,9 +1,8 @@
-﻿
-using Castle.Core.Resource;
-using RbacDashboard.DAL.Commands;
+﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class GetCustomerByIdSqlHandlerTest : TestBase
 {
@@ -14,9 +13,9 @@ public class GetCustomerByIdSqlHandlerTest : TestBase
     [SetUp]
     public void TestSetup()
     {
-        var customer1 = new Customer { Id = _customerId1, CustomerName = "Customer One", IsActive = true, IsDeleted = false };
-        var customer2 = new Customer { Id = _customerId2, CustomerName = "Customer Two", IsActive = true, IsDeleted = true };
-        var customer3 = new Customer { Id = _customerId3, CustomerName = "Customer Three", IsActive = false, IsDeleted = false };
+        var customer1 = new Customer { Id = _customerId1, Name = "Customer One", IsActive = true, IsDeleted = false };
+        var customer2 = new Customer { Id = _customerId2, Name = "Customer Two", IsActive = true, IsDeleted = true };
+        var customer3 = new Customer { Id = _customerId3, Name = "Customer Three", IsActive = false, IsDeleted = false };
         SeedData([customer1, customer2, customer3]);
     }
 

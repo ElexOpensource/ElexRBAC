@@ -20,7 +20,7 @@
                 <RadzenTextBox Placeholder="Search ..." style="display: block;" @oninput="@Search" aria-label="Search by all string columns" />
                 @if (SelectedRole != null)
                 {
-                    <RadzenDropDownDataGrid Data="@RolesList" TextProperty="RoleName" ValueProperty="Id" AllowClear=false
+                    <RadzenDropDownDataGrid Data="@RolesList" TextProperty="Name" ValueProperty="Id" AllowClear=false
                                             Placeholder="Choose role" style="display: block; width: 35%" @bind-Value="@SelectedRoleId" Name="RoleName"
                                             SelectedValue=@SelectedRole Count=@RoleCount LoadData=@LoadRolesData
                                             Change="LoadAccessData" />
@@ -45,9 +45,9 @@
 
                 <Columns>
 
-                    <RadzenDataGridColumn TItem="RoleAccess" Property="Role.RoleName" Title="Role Name"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="RoleAccess" Property="Role.Name" Title="Role Name"></RadzenDataGridColumn>
 
-                    <RadzenDataGridColumn TItem="RoleAccess" Property="Access.AccessName" Title="Access Name"></RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="RoleAccess" Property="Access.Name" Title="Access Name"></RadzenDataGridColumn>
 
                     <RadzenDataGridColumn TItem="RoleAccess" Property="Access.OptionsetMaster.Name" Title="Access Type"></RadzenDataGridColumn>
 

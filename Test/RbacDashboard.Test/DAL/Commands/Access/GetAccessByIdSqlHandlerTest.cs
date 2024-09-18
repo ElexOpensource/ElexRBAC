@@ -1,9 +1,8 @@
-﻿
-
-using RbacDashboard.DAL.Commands;
+﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class GetAccessByIdSqlHandlerTest : TestBase
 {
@@ -13,7 +12,7 @@ public class GetAccessByIdSqlHandlerTest : TestBase
         // Arrange
         using var context = CreateContext();
         var accessId = Guid.NewGuid();
-        var access = new Access { Id = accessId, AccessName = "Test Access", IsActive = true, IsDeleted = false };
+        var access = new Access { Id = accessId, Name = "Test Access", IsActive = true, IsDeleted = false };
         context.Accesses.Add(access);
         await context.SaveChangesAsync();
 
@@ -49,7 +48,7 @@ public class GetAccessByIdSqlHandlerTest : TestBase
         // Arrange
         using var context = CreateContext();
         var accessId = Guid.NewGuid();
-        var access = new Access { Id = accessId, AccessName = "Test Access", IsActive = false, IsDeleted = false };
+        var access = new Access { Id = accessId, Name = "Test Access", IsActive = false, IsDeleted = false };
         context.Accesses.Add(access);
         await context.SaveChangesAsync();
 
@@ -69,7 +68,7 @@ public class GetAccessByIdSqlHandlerTest : TestBase
         // Arrange
         using var context = CreateContext();
         var accessId = Guid.NewGuid();
-        var access = new Access { Id = accessId, AccessName = "Test Access", IsActive = true, IsDeleted = true };
+        var access = new Access { Id = accessId, Name = "Test Access", IsActive = true, IsDeleted = true };
         context.Accesses.Add(access);
         await context.SaveChangesAsync();
 
@@ -89,7 +88,7 @@ public class GetAccessByIdSqlHandlerTest : TestBase
         // Arrange
         using var context = CreateContext();
         var accessId = Guid.NewGuid();
-        var access = new Access { Id = accessId, AccessName = "Active Access", IsActive = true, IsDeleted = false };
+        var access = new Access { Id = accessId, Name = "Active Access", IsActive = true, IsDeleted = false };
         context.Accesses.Add(access);
         await context.SaveChangesAsync();
 
@@ -111,7 +110,7 @@ public class GetAccessByIdSqlHandlerTest : TestBase
         // Arrange
         using var context = CreateContext();
         var accessId = Guid.NewGuid();
-        var access = new Access { Id = accessId, AccessName = "Inactive Access", IsActive = false, IsDeleted = false };
+        var access = new Access { Id = accessId, Name = "Inactive Access", IsActive = false, IsDeleted = false };
         context.Accesses.Add(access);
         await context.SaveChangesAsync();
 
@@ -122,7 +121,7 @@ public class GetAccessByIdSqlHandlerTest : TestBase
         var result = await handler.Handle(request, CancellationToken.None);
 
         // Assert
-        Assert.That(result, Is.Not.Null); 
+        Assert.That(result, Is.Not.Null);
         Assert.That(result.Id, Is.EqualTo(accessId));
         Assert.That(result.IsActive, Is.False);
     }

@@ -6,7 +6,7 @@ using Moq;
 using Rbac.Controllers;
 using System.Security.Claims;
 
-namespace RbacDashboard.Web.Test;
+namespace RbacDashboard.Test.Web;
 
 public class AccountControllerTest
 {
@@ -121,7 +121,7 @@ public class AccountControllerTest
         Assert.That(result.Name, Is.EqualTo(string.Empty));
         Assert.That(result.Claims, Is.Empty);
     }
-        
+
     [Test]
     public async Task CurrentUser_ShouldReturnUnauthenticatedState_WhenPrincipalIsNull()
     {

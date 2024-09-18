@@ -20,7 +20,7 @@ namespace RbacDashboard.DAL.Migrations.SqlMigrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasDefaultSchema("RBAC")
-                .HasAnnotation("ProductVersion", "8.0.7")
+                .HasAnnotation("ProductVersion", "8.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -31,11 +31,6 @@ namespace RbacDashboard.DAL.Migrations.SqlMigrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("(newid())");
-
-                    b.Property<string>("AccessName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
 
                     b.Property<Guid>("ApplicationId")
                         .HasColumnType("uniqueidentifier");
@@ -57,6 +52,11 @@ namespace RbacDashboard.DAL.Migrations.SqlMigrations
 
                     b.Property<string>("MetaData")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<Guid>("OptionsetMasterId")
                         .HasColumnType("uniqueidentifier");
@@ -82,11 +82,6 @@ namespace RbacDashboard.DAL.Migrations.SqlMigrations
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("(newid())");
 
-                    b.Property<string>("ApplicationName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
                     b.Property<DateTimeOffset>("CreatedOn")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetimeoffset")
@@ -104,6 +99,11 @@ namespace RbacDashboard.DAL.Migrations.SqlMigrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
                         .HasDefaultValue(false);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 
@@ -124,11 +124,6 @@ namespace RbacDashboard.DAL.Migrations.SqlMigrations
                         .HasColumnType("datetimeoffset")
                         .HasDefaultValueSql("(getdate())");
 
-                    b.Property<string>("CustomerName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
@@ -138,6 +133,11 @@ namespace RbacDashboard.DAL.Migrations.SqlMigrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
                         .HasDefaultValue(false);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 
@@ -246,13 +246,13 @@ namespace RbacDashboard.DAL.Migrations.SqlMigrations
                         .HasColumnType("bit")
                         .HasDefaultValue(false);
 
-                    b.Property<Guid?>("ParentId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("RoleName")
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<Guid?>("ParentId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("TypeMasterId")
                         .HasColumnType("uniqueidentifier");

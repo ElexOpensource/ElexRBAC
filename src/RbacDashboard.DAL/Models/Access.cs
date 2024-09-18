@@ -7,19 +7,10 @@ namespace RbacDashboard.DAL.Models;
 
 [Table("Access", Schema = "RBAC")]
 [ExcludeFromCodeCoverage(Justification = "Models do not need to be included in code coverage.")]
-public partial class Access
+public partial class Access : EntityBase
 {
-    [Key]
-    public Guid Id { get; set; }
-
-    public DateTimeOffset CreatedOn { get; set; }
-
-    public bool IsActive { get; set; }
-
-    public bool IsDeleted { get; set; }
-
     [StringLength(100)]
-    public string AccessName { get; set; } = null!;
+    public string Name { get; set; } = null!;
 
     public Guid OptionsetMasterId { get; set; }
 

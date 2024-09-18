@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Components.Authorization;
 using RbacDashboard.DAL.Base;
 using RbacDashboard.Asserts;
 using RbacDashboard.DAL.Enum;
+using RbacDashboard.DAL.Commands;
 
 namespace RbacDashboard;
 
@@ -27,6 +28,7 @@ public static class ServicesBuilderExtensions
     private static readonly string _swaggerVersion = $"Build - {File.GetLastWriteTime(System.Reflection.Assembly.GetExecutingAssembly().Location):MM.dd.yyyy.HH.mm}";
     private static string _prefix = string.Empty;
     public static bool _enableSwagger = false;
+    private static IDictionary<RbacTable, string> _masterData = new Dictionary<RbacTable, string>();
 
     /// <summary>
     /// Adds required RBAC services to the service collection.
@@ -52,15 +54,65 @@ public static class ServicesBuilderExtensions
     /// <param name="builder">The application builder.</param>
     /// <param name="prefixPath">The prefix path for RBAC routes.</param>
     /// <returns>The modified application builder.</returns>
-    public static IApplicationBuilder UseRbac([NotNull] this IApplicationBuilder builder, [NotNull] string prefixPath = "/RbacDashboard")
+    public static IApplicationBuilder UseRbac([NotNull] this IApplicationBuilder builder, [NotNull] string prefixPath = "/RbacDashboard", [AllowNull] IDictionary<RbacTable, string> masterData = null)
     {
         ArgumentNullException.ThrowIfNull(builder);
         ArgumentNullException.ThrowIfNull(prefixPath);
 
         _prefix = prefixPath;
+        _masterData = masterData ?? new Dictionary<RbacTable, string>();
         builder.Map(prefixPath, subApp => subApp.UseRbac());
 
         return builder;
+    }
+
+    /// <summary>
+    /// Synchronously loads raw JSON content from files located in a specified folder.
+    /// Each JSON file represents data for a different table, and the function maps each file to its raw JSON string.
+    /// The JSON files should be named after their corresponding RbacTable enum values in lowercase (e.g., "customer.json").
+    /// The data is returned in a dictionary where the key is the RbacTable enum value and the value is the raw JSON string
+    /// for that table.
+    /// </summary>
+    /// <para>The JSON files must be located in a folder relative to the application's base directory.</para>
+    ///
+    /// <param name="folderPath">The relative path to the folder containing JSON files.</param>
+    /// <returns>A dictionary where each key is an RbacTable enum value (derived from JSON file names) and each value is the raw
+    ///         JSON string representing the data for that table.</returns>
+    /// <exception cref="DirectoryNotFoundException">Thrown if the specified directory does not exist.</exception>
+    public static IDictionary<RbacTable, string> LoadMasterDataJson(string folderPath)
+    {
+        var data = new Dictionary<RbacTable, string>();
+        var directoryPath = Path.Combine(AppContext.BaseDirectory, folderPath);
+
+        if (!Directory.Exists(directoryPath))
+            throw new DirectoryNotFoundException($"Directory not found: {directoryPath}");
+
+        var validTableNames = Enum.GetValues(typeof(RbacTable))
+                                   .Cast<RbacTable>()
+                                   .Select(t => t.ToString().ToLower())
+                                   .ToHashSet();
+
+        foreach (var tableName in validTableNames)
+        {
+            var filePath = Path.Combine(directoryPath, $"{tableName}.json");
+
+            if (File.Exists(filePath))
+            {
+                var jsonData = File.ReadAllText(filePath);
+
+                if (!string.IsNullOrEmpty(jsonData))
+                {
+                    var tableEnum = Enum.Parse<RbacTable>(tableName, true);
+                    data[tableEnum] = jsonData;
+                }
+            }
+            else
+            {
+                Console.WriteLine($"File '{tableName}.json' does not exist and will be skipped.");
+            }
+        }
+
+        return data;
     }
 
     /// <summary>
@@ -207,6 +259,11 @@ public static class ServicesBuilderExtensions
             });
         }
         builder.ApplyMigrationsAndSeedData();
+
+        if (_masterData != null)
+        {
+            builder.MigrateRbacData(_masterData);
+        }
         return builder;
     }
 
@@ -281,6 +338,33 @@ public static class ServicesBuilderExtensions
         catch
         {
             throw new InvalidOperationException($"The policy '{RbacConstants.AuthenticationSchema}' was not found in the service collection. Please add the RBAC policy using `AddRbacPolicy` before using `AddRbacService` for registering other services.");
+        }
+    }
+
+    /// <summary>
+    /// Configures the application to perform RBAC data migration using the provided master data.
+    /// This method ensures that RBAC has been registered with <see cref="UseRbac"/> before proceeding.
+    /// The migration process is performed within the application's service scope.
+    ///</summary>
+    ///
+    /// <param name="builder">The application builder.</param>
+    /// <param name="masterData">he provided master data should be a dictionary where the key is an <see cref="RbacTable"/> enum value
+    /// representing the table to migrate, and the value is the raw JSON string representing the data for that table.</param>
+    /// 
+    /// <exception cref="InvalidOperationException">Thrown if <see cref="UseRbac"/> has not been called to register the RBAC application.</exception>
+    /// <exception cref="ArgumentNullException">Thrown if <paramref name="builder"/> or <paramref name="masterData"/> is null.</exception>
+    private static void MigrateRbacData([NotNull] this IApplicationBuilder builder, [NotNull] IDictionary<RbacTable, string> masterData)
+    {
+        ArgumentNullException.ThrowIfNull(builder);
+        ArgumentNullException.ThrowIfNull(masterData);
+
+        using var scope = builder.ApplicationServices.CreateScope();
+        var mediator = scope.ServiceProvider.GetRequiredService<IMediatorService>();
+
+        foreach (var table in masterData)
+        {
+            var command = new DataMigration(table.Value, table.Key);
+            _ = mediator.SendRequest(command).Result;
         }
     }
 }

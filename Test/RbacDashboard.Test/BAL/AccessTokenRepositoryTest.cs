@@ -1,10 +1,11 @@
 ﻿
 using Moq;
+using RbacDashboard.BAL;
 using RbacDashboard.Common;
 using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
 
-namespace RbacDashboard.BAL.Test;
+namespace RbacDashboard.Test.BAL;
 
 public class AccessTokenRepositoryTest
 {
@@ -23,7 +24,7 @@ public class AccessTokenRepositoryTest
     public async Task AddorUpdate_ShouldCallMediatorServiceWithCorrectRequest()
     {
         // Arrange
-        var access = new Access { Id = Guid.NewGuid(), AccessName = "TestAccess" };
+        var access = new Access { Id = Guid.NewGuid(), Name = "TestAccess" };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<AddorUpdateAccess>()))
             .ReturnsAsync(access);
 
@@ -55,7 +56,7 @@ public class AccessTokenRepositoryTest
     {
         // Arrange
         var accessId = Guid.NewGuid();
-        var access = new Access { Id = accessId, AccessName = "TestAccess" };
+        var access = new Access { Id = accessId, Name = "TestAccess" };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetAccessById>()))
             .ReturnsAsync(access);
 
@@ -87,8 +88,8 @@ public class AccessTokenRepositoryTest
         var applicationId = Guid.NewGuid();
         var accesses = new List<Access>
             {
-                new Access { Id = Guid.NewGuid(), AccessName = "Access1" },
-                new Access { Id = Guid.NewGuid(), AccessName = "Access2" }
+                new Access { Id = Guid.NewGuid(), Name = "Access1" },
+                new Access { Id = Guid.NewGuid(), Name = "Access2" }
             };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetAccessesByApplicationId>()))
             .ReturnsAsync(accesses);

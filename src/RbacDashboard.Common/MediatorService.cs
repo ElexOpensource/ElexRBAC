@@ -52,7 +52,7 @@ public class MediatorService(IMediator mediator, ILogger<MediatorService> logger
         catch (Exception ex)
         {
             _logger.LogError(ex, "An unexpected error occurred.");
-            throw new ApplicationException("An unexpected error occurred.");
+            throw;
         }
     }
 

@@ -1,8 +1,8 @@
-﻿
-using RbacDashboard.DAL.Commands;
+﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class AddorUpdateAccessSqlHandlerTest : TestBase
 {
@@ -14,7 +14,7 @@ public class AddorUpdateAccessSqlHandlerTest : TestBase
         var newAccess = new Access
         {
             Id = Guid.Empty,
-            AccessName = "New Access",
+            Name = "New Access",
             IsActive = true,
             IsDeleted = false
         };
@@ -28,7 +28,7 @@ public class AddorUpdateAccessSqlHandlerTest : TestBase
         // Assert
         Assert.That(result, Is.Not.Null);
         Assert.That(result.Id, Is.Not.EqualTo(Guid.Empty));
-        Assert.That(result.AccessName, Is.EqualTo("New Access"));
+        Assert.That(result.Name, Is.EqualTo("New Access"));
     }
 
     [Test]
@@ -40,14 +40,14 @@ public class AddorUpdateAccessSqlHandlerTest : TestBase
         var existingAccess = new Access
         {
             Id = existingAccessId,
-            AccessName = "Existing Access",
+            Name = "Existing Access",
             IsActive = true,
             IsDeleted = false
         };
         context.Accesses.Add(existingAccess);
         await context.SaveChangesAsync();
 
-        existingAccess.AccessName = "Updated Access";
+        existingAccess.Name = "Updated Access";
 
         var handler = new AddorUpdateAccessSqlHandler(context);
         var request = new AddorUpdateAccess(existingAccess);
@@ -58,7 +58,7 @@ public class AddorUpdateAccessSqlHandlerTest : TestBase
         // Assert
         Assert.That(result, Is.Not.Null);
         Assert.That(result.Id, Is.EqualTo(existingAccessId));
-        Assert.That(result.AccessName, Is.EqualTo("Updated Access"));
+        Assert.That(result.Name, Is.EqualTo("Updated Access"));
     }
 
 }

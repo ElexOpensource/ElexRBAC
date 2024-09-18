@@ -1,8 +1,8 @@
-﻿
-using RbacDashboard.DAL.Commands;
+﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class GetRoleByIdSqlHandlerTest : TestBase
 {
@@ -12,7 +12,7 @@ public class GetRoleByIdSqlHandlerTest : TestBase
         SeedData(i => new Role
         {
             Id = Guid.NewGuid(),
-            RoleName = $"Role {i + 1}",
+            Name = $"Role {i + 1}",
             IsActive = i % 2 == 0,
             IsDeleted = i % 3 == 0
         }, 10);

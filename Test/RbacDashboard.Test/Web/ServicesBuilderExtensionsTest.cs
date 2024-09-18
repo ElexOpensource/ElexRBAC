@@ -5,13 +5,13 @@ using Moq;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Hosting;
 
-namespace RbacDashboard.Web.Test;
+namespace RbacDashboard.Test.Web;
 
 internal class ServicesBuilderExtensionsTest
 {
     private Mock<IServiceCollection> _servicesMock;
     private Mock<IConfiguration> _configurationMock;
-    private Mock<IWebHostEnvironment> _environmentMock; 
+    private Mock<IWebHostEnvironment> _environmentMock;
     private Mock<IApplicationBuilder> _builderMock;
     private Mock<AuthorizationOptions> _authorizationOptionsMock;
 
@@ -20,7 +20,7 @@ internal class ServicesBuilderExtensionsTest
     {
         _servicesMock = new Mock<IServiceCollection>();
         _configurationMock = new Mock<IConfiguration>();
-        _environmentMock = new Mock<IWebHostEnvironment>(); 
+        _environmentMock = new Mock<IWebHostEnvironment>();
         _builderMock = new Mock<IApplicationBuilder>();
         _authorizationOptionsMock = new Mock<AuthorizationOptions>();
     }
@@ -39,7 +39,7 @@ internal class ServicesBuilderExtensionsTest
 
         // Act
         services.AddAuthorization(options => { options.AddRbacPolicy(); });
-        ServicesBuilderExtensions.AddRbacService(services, _configurationMock.Object, _environmentMock.Object);
+        services.AddRbacService(_configurationMock.Object, _environmentMock.Object);
 
         // Assert
         Assert.That(services.Any(s => s.ServiceType == typeof(IConfiguration)), Is.True);
@@ -58,7 +58,7 @@ internal class ServicesBuilderExtensionsTest
         _configurationMock.Setup(c => c["RbacSettings:Jwt:ValidAudience"]).Returns("audience");
 
         // Act & Assert
-        Assert.Throws<ArgumentNullException>(() => ServicesBuilderExtensions.AddRbacService(services, _configurationMock.Object, _environmentMock.Object));
+        Assert.Throws<ArgumentNullException>(() => services.AddRbacService(_configurationMock.Object, _environmentMock.Object));
     }
 
     [Test]
@@ -74,7 +74,7 @@ internal class ServicesBuilderExtensionsTest
         _configurationMock.Setup(c => c["RbacSettings:Jwt:IssuerSigningKey"]).Returns("signingKey");
 
         // Act & Assert
-        Assert.Throws<InvalidOperationException>(() => ServicesBuilderExtensions.AddRbacService(services, _configurationMock.Object, _environmentMock.Object));
+        Assert.Throws<InvalidOperationException>(() => services.AddRbacService(_configurationMock.Object, _environmentMock.Object));
     }
 
     [Test]
@@ -88,14 +88,14 @@ internal class ServicesBuilderExtensionsTest
     public void AddRbacService_ShouldThrowArgumentNullException_WhenConfigurationIsNull()
     {
         // Act & Assert
-        Assert.Throws<ArgumentNullException>(() => ServicesBuilderExtensions.AddRbacService(_servicesMock.Object, null!, _environmentMock.Object));
+        Assert.Throws<ArgumentNullException>(() => _servicesMock.Object.AddRbacService(null!, _environmentMock.Object));
     }
 
     [Test]
     public void AddRbacService_ShouldThrowArgumentNullException_WhenEnvironmentIsNull()
     {
         // Act & Assert
-        Assert.Throws<ArgumentNullException>(() => ServicesBuilderExtensions.AddRbacService(_servicesMock.Object, _configurationMock.Object, null!));
+        Assert.Throws<ArgumentNullException>(() => _servicesMock.Object.AddRbacService(_configurationMock.Object, null!));
     }
 
     [Test]
@@ -112,7 +112,7 @@ internal class ServicesBuilderExtensionsTest
 
         // Act
         services.AddAuthorization(options => { options.AddRbacPolicy(); });
-        ServicesBuilderExtensions.AddRbacService(services, _configurationMock.Object, _environmentMock.Object);
+        services.AddRbacService(_configurationMock.Object, _environmentMock.Object);
 
         // Assert
         Assert.That(ServicesBuilderExtensions._enableSwagger, Is.False);

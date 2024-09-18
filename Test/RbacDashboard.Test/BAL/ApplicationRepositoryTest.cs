@@ -1,10 +1,11 @@
 ﻿
 using Moq;
+using RbacDashboard.BAL;
 using RbacDashboard.Common;
 using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
 
-namespace RbacDashboard.BAL.Test;
+namespace RbacDashboard.Test.BAL;
 
 public class ApplicationRepositoryTest
 {
@@ -22,7 +23,7 @@ public class ApplicationRepositoryTest
     public async Task AddorUpdate_ShouldReturnApplication_WhenCalled()
     {
         // Arrange
-        var application = new Application { Id = Guid.NewGuid(), ApplicationName = "TestApplication" };
+        var application = new Application { Id = Guid.NewGuid(), Name = "TestApplication" };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<AddorUpdateApplication>()))
             .ReturnsAsync(application);
 
@@ -65,7 +66,7 @@ public class ApplicationRepositoryTest
     {
         // Arrange
         var applicationId = Guid.NewGuid();
-        var application = new Application { Id = applicationId, ApplicationName = "TestApplication" };
+        var application = new Application { Id = applicationId, Name = "TestApplication" };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetApplicationById>()))
             .ReturnsAsync(application);
 
@@ -84,8 +85,8 @@ public class ApplicationRepositoryTest
         var customerId = Guid.NewGuid();
         var applications = new List<Application>
             {
-                new Application { Id = Guid.NewGuid(), ApplicationName = "TestApplication1" },
-                new Application { Id = Guid.NewGuid(), ApplicationName = "TestApplication2" }
+                new Application { Id = Guid.NewGuid(), Name = "TestApplication1" },
+                new Application { Id = Guid.NewGuid(), Name = "TestApplication2" }
             };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetApplicationByCustomerId>()))
             .ReturnsAsync(applications);

@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class AddorUpdateRoleSqlHandlerTest : TestBase
 {
@@ -14,7 +15,7 @@ public class AddorUpdateRoleSqlHandlerTest : TestBase
         var handler = new AddorUpdateRoleSqlHandler(context);
         var role = new Role
         {
-            RoleName = "New Role",
+            Name = "New Role",
             IsActive = true,
             IsDeleted = false
         };
@@ -26,7 +27,7 @@ public class AddorUpdateRoleSqlHandlerTest : TestBase
         // Assert
         Assert.That(result, Is.Not.Null);
         Assert.That(result.Id, Is.Not.EqualTo(Guid.Empty));
-        Assert.That(result.RoleName, Is.EqualTo("New Role"));
+        Assert.That(result.Name, Is.EqualTo("New Role"));
     }
 
     [Test]
@@ -37,7 +38,7 @@ public class AddorUpdateRoleSqlHandlerTest : TestBase
         var existingRole = new Role
         {
             Id = Guid.NewGuid(),
-            RoleName = "Existing Role",
+            Name = "Existing Role",
             IsActive = true,
             IsDeleted = false
         };
@@ -49,7 +50,7 @@ public class AddorUpdateRoleSqlHandlerTest : TestBase
         var updatedRole = new Role
         {
             Id = existingRole.Id,
-            RoleName = "Updated Role",
+            Name = "Updated Role",
             IsActive = false,
             IsDeleted = false
         };
@@ -61,7 +62,7 @@ public class AddorUpdateRoleSqlHandlerTest : TestBase
         // Assert
         Assert.That(result, Is.Not.Null);
         Assert.That(result.Id, Is.EqualTo(existingRole.Id));
-        Assert.That(result.RoleName, Is.EqualTo("Updated Role"));
+        Assert.That(result.Name, Is.EqualTo("Updated Role"));
         Assert.That(result.IsActive, Is.False);
     }
 
@@ -73,7 +74,7 @@ public class AddorUpdateRoleSqlHandlerTest : TestBase
         var handler = new AddorUpdateRoleSqlHandler(context);
         var role = new Role
         {
-            RoleName = "New Role Without Id",
+            Name = "New Role Without Id",
             IsActive = true,
             IsDeleted = false
         };
@@ -85,7 +86,7 @@ public class AddorUpdateRoleSqlHandlerTest : TestBase
         // Assert
         Assert.That(result, Is.Not.Null);
         Assert.That(result.Id, Is.Not.EqualTo(Guid.Empty));
-        Assert.That(result.RoleName, Is.EqualTo("New Role Without Id"));
+        Assert.That(result.Name, Is.EqualTo("New Role Without Id"));
         Assert.That(await context.Roles.CountAsync(), Is.EqualTo(1));
     }
 }

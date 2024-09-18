@@ -7,7 +7,6 @@ using Microsoft.Extensions.Logging;
 using RbacDashboard.DAL.Commands;
 using RbacDashboard.Common.Interface;
 using RbacDashboard.DAL.Models.Domain;
-using Microsoft.IdentityModel.Tokens;
 
 namespace RbacDashboard.Common.Authentication;
 
@@ -59,7 +58,7 @@ public class RbacSignInManager( UserManager<RbacApplicationUser> userManager,
             var user = new RbacApplicationUser
             {
                 CustomerId = customer.Id.ToString(),
-                CustomerName = customer.CustomerName,
+                CustomerName = customer.Name,
                 ApplicationId = string.Empty,
                 ApplicationName = string.Empty,
             };
@@ -106,7 +105,7 @@ public class RbacSignInManager( UserManager<RbacApplicationUser> userManager,
         var app = await _mediator.SendRequest(new GetApplicationById(Guid.Parse(user.ApplicationId)));
 
         user.ApplicationId = app?.Id.ToString()!;
-        user.ApplicationName = app?.ApplicationName?.ToString()!;
+        user.ApplicationName = app?.Name?.ToString()!;
 
         var principal = await _claimsFactory.CreateAsync(user);
         ((ClaimsIdentity)principal.Identity!).AddClaim(new Claim(RbacConstants.ApplicationId, user.ApplicationId));

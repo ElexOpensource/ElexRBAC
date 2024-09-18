@@ -1,13 +1,10 @@
-﻿
-
-using DocumentFormat.OpenXml.Math;
-using DocumentFormat.OpenXml.Spreadsheet;
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Moq;
+using RbacDashboard.Common;
 using RbacDashboard.Common.Authentication;
 using RbacDashboard.Common.Interface;
 using RbacDashboard.DAL.Commands;
@@ -15,7 +12,7 @@ using RbacDashboard.DAL.Models;
 using RbacDashboard.DAL.Models.Domain;
 using System.Security.Claims;
 
-namespace RbacDashboard.Common.Test;
+namespace RbacDashboard.Test.Common;
 
 public class RbacSignInManagerTest
 {
@@ -95,7 +92,7 @@ public class RbacSignInManagerTest
 
         _tokenRepositoryMock.Setup(t => t.ValidateJwtToken(userId)).Returns(principalMock.Object);
 
-        var customer = new Customer { Id = Guid.NewGuid(), CustomerName = "Test Customer" };
+        var customer = new Customer { Id = Guid.NewGuid(), Name = "Test Customer" };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetCustomerById>()))
         .ReturnsAsync(customer);
 
@@ -138,7 +135,7 @@ public class RbacSignInManagerTest
 
         _tokenRepositoryMock.Setup(t => t.ValidateJwtToken(userId)).Returns(principalMock.Object);
 
-        var customer = new Customer { Id = Guid.NewGuid(), CustomerName = "Test Customer" };
+        var customer = new Customer { Id = Guid.NewGuid(), Name = "Test Customer" };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetCustomerById>()))
                      .ReturnsAsync(customer);
 
@@ -247,7 +244,7 @@ public class RbacSignInManagerTest
 
         _tokenRepositoryMock.Setup(t => t.ValidateJwtToken(userId)).Returns(principalMock.Object);
 
-        var customer = new Customer { Id = Guid.NewGuid(), CustomerName = "Test Customer" };
+        var customer = new Customer { Id = Guid.NewGuid(), Name = "Test Customer" };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetCustomerById>()))
         .ReturnsAsync(customer);
 
@@ -301,12 +298,12 @@ public class RbacSignInManagerTest
 
         _tokenRepositoryMock.Setup(t => t.ValidateJwtToken(userId)).Returns(principalMock.Object);
 
-        var customer = new Customer { Id = Guid.NewGuid(), CustomerName = "Test Customer" };
+        var customer = new Customer { Id = Guid.NewGuid(), Name = "Test Customer" };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetCustomerById>()))
         .ReturnsAsync(customer);
 
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetApplicationById>()))
-        .ReturnsAsync(new Application() { Id = Guid.NewGuid(), ApplicationName = "App Name"});
+        .ReturnsAsync(new Application() { Id = Guid.NewGuid(), Name = "App Name" });
 
         _claimsFactoryMock.Setup(m => m.CreateAsync(It.IsAny<RbacApplicationUser>())).ReturnsAsync(new ClaimsPrincipal(claimsIdentityMock.Object));
 
@@ -357,12 +354,12 @@ public class RbacSignInManagerTest
 
         _tokenRepositoryMock.Setup(t => t.ValidateJwtToken(userId)).Returns(principalMock.Object);
 
-        var customer = new Customer { Id = Guid.NewGuid(), CustomerName = "Test Customer" };
+        var customer = new Customer { Id = Guid.NewGuid(), Name = "Test Customer" };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetCustomerById>()))
         .ReturnsAsync(customer);
 
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetApplicationById>()))
-        .ReturnsAsync(new Application() { Id = Guid.NewGuid(), ApplicationName = "App Name" });
+        .ReturnsAsync(new Application() { Id = Guid.NewGuid(), Name = "App Name" });
 
         _claimsFactoryMock.Setup(m => m.CreateAsync(It.IsAny<RbacApplicationUser>())).ReturnsAsync(new ClaimsPrincipal(claimsIdentityMock.Object));
 
@@ -413,12 +410,12 @@ public class RbacSignInManagerTest
 
         _tokenRepositoryMock.Setup(t => t.ValidateJwtToken(userId)).Returns(principalMock.Object);
 
-        var customer = new Customer { Id = Guid.NewGuid(), CustomerName = "Test Customer" };
+        var customer = new Customer { Id = Guid.NewGuid(), Name = "Test Customer" };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetCustomerById>()))
-        .ReturnsAsync((Customer) null);
+        .ReturnsAsync((Customer)null);
 
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetApplicationById>()))
-        .ReturnsAsync(new Application() { Id = Guid.NewGuid(), ApplicationName = "App Name" });
+        .ReturnsAsync(new Application() { Id = Guid.NewGuid(), Name = "App Name" });
 
         _claimsFactoryMock.Setup(m => m.CreateAsync(It.IsAny<RbacApplicationUser>())).ReturnsAsync(new ClaimsPrincipal(claimsIdentityMock.Object));
 

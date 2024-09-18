@@ -1,7 +1,8 @@
 ﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class GetOptionsetMastersSqlHandlerTest : TestBase
 {
@@ -12,7 +13,7 @@ public class GetOptionsetMastersSqlHandlerTest : TestBase
         {
             Id = Guid.NewGuid(),
             Name = $"Optionset {i + 1}",
-            JsonObject = string.Empty ,
+            JsonObject = string.Empty,
             IsActive = i % 2 == 0,
             IsDeleted = i % 3 == 0
         }, 15);

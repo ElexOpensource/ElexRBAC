@@ -3,7 +3,7 @@ using Moq;
 using Rbac.Controllers;
 using RbacDashboard.Common.Interface;
 
-namespace RbacDashboard.Web.Test;
+namespace RbacDashboard.Test.Web;
 
 public class AccessTokenControllerTest
 {

@@ -3,9 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Rbac.Controllers;
 using RbacDashboard.Common.Interface;
+using RbacDashboard.DAL.Enum;
 using RbacDashboard.DAL.Models;
 
-namespace RbacDashboard.Web.Test;
+namespace RbacDashboard.Test.Web;
 
 public class RoleControllerTest
 {
@@ -33,7 +34,7 @@ public class RoleControllerTest
     {
         // Arrange
         var roleId = Guid.NewGuid();
-        var expectedRole = new Role { Id = roleId, RoleName = "Admin" };
+        var expectedRole = new Role { Id = roleId, Name = "Admin" };
 
         _roleRepositoryMock
             .Setup(repo => repo.GetById(roleId))
@@ -53,8 +54,8 @@ public class RoleControllerTest
         var applicationId = Guid.NewGuid();
         var expectedRoles = new List<Role>
         {
-            new Role { Id = Guid.NewGuid(), RoleName = "Admin", ApplicationId = applicationId },
-            new Role { Id = Guid.NewGuid(), RoleName = "User", ApplicationId = applicationId }
+            new Role { Id = Guid.NewGuid(), Name = "Admin", ApplicationId = applicationId },
+            new Role { Id = Guid.NewGuid(), Name = "User", ApplicationId = applicationId }
         };
 
         _roleRepositoryMock
@@ -69,13 +70,36 @@ public class RoleControllerTest
     }
 
     [Test]
+    public async Task GetAvailableParentsById_ShouldReturnParentRoles_WhenValidApplicationIdProvided()
+    {
+        // Arrange
+        var applicationId = Guid.NewGuid();
+        var roleId = Guid.NewGuid();
+        var expectedRoles = new List<Role>
+        {
+            new Role { Id = Guid.NewGuid(), Name = "Admin", ApplicationId = applicationId },
+            new Role { Id = Guid.NewGuid(), Name = "User", ApplicationId = applicationId }
+        };
+
+        _roleRepositoryMock
+            .Setup(repo => repo.GetAvailableParentsById(applicationId, roleId))
+            .ReturnsAsync(expectedRoles);
+
+        // Act
+        var result = await _roleController.GetAvailableParentsById(applicationId, roleId);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(expectedRoles));
+    }
+
+    [Test]
     public async Task AddorUpdate_ShouldReturnRole_WhenRoleIsAddedOrUpdated()
     {
         // Arrange
         var role = new Role
         {
             Id = Guid.NewGuid(),
-            RoleName = "User"
+            Name = "User"
         };
 
         _roleRepositoryMock
@@ -129,6 +153,17 @@ public class RoleControllerTest
     }
 
     [Test]
+    public void GetAvailableParentsById_ShouldThrowArgumentNullException_WhenApplicationIdIsEmpty()
+    {
+        // Arrange
+        var applicationId = Guid.Empty;
+
+        // Act & Assert
+        var ex = Assert.ThrowsAsync<ArgumentNullException>(async () => await _roleController.GetAvailableParentsById(applicationId, Guid.NewGuid()));
+        Assert.That(ex.ParamName, Is.EqualTo(nameof(applicationId)));
+    }
+
+    [Test]
     public void Delete_ShouldThrowArgumentNullException_WhenRoleIdIsEmpty()
     {
         // Arrange
@@ -136,6 +171,35 @@ public class RoleControllerTest
 
         // Act & Assert
         var ex = Assert.ThrowsAsync<ArgumentNullException>(async () => await _roleController.Delete(roleId));
+        Assert.That(ex.ParamName, Is.EqualTo(nameof(roleId)));
+    }
+
+    [Test]
+    public async Task ChangeStatus_ShouldReturnOk_WhenValidRoleIdProvided()
+    {
+        // Arrange
+        var roleId = Guid.NewGuid();
+
+        _roleRepositoryMock
+            .Setup(repo => repo.ChangeStatus(roleId, RecordStatus.Active))
+            .Returns(Task.CompletedTask);
+
+        // Act
+        var result = await _roleController.ChangeStatus(roleId, RecordStatus.Active);
+
+        // Assert
+        Assert.That(result, Is.InstanceOf<OkResult>());
+    }
+
+
+    [Test]
+    public void ChangeStatus_ShouldThrowArgumentNullException_WhenRoleIdIsEmpty()
+    {
+        // Arrange
+        var roleId = Guid.Empty;
+
+        // Act & Assert
+        var ex = Assert.ThrowsAsync<ArgumentNullException>(async () => await _roleController.ChangeStatus(roleId, RecordStatus.Active));
         Assert.That(ex.ParamName, Is.EqualTo(nameof(roleId)));
     }
 }

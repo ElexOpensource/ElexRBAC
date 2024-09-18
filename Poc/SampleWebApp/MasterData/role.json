@@ -1,0 +1,146 @@
+﻿[
+	{
+		"Id": "3547D812-2B80-4C7F-BC29-1BFEA2DB3CCC",
+		"CreatedOn": "2024-08-21T12:44:19.6170000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "Approver Two",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "ABC5BDCF-5765-45A0-A857-1E620CFAF7AE",
+		"CreatedOn": "2024-07-13T17:53:49.1770000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "Approver",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "920ADBFF-C20B-4CDF-8C21-4323A67BC548",
+		"CreatedOn": "2024-07-03T14:30:03.5000000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "Admin",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "C31E6372-0B46-4381-A503-71252889B80D",
+		"CreatedOn": "2024-07-13T17:37:27.6730000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "StageUser2",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "8C91AE82-5E8C-4197-BDE0-769018E0821D",
+		"CreatedOn": "2024-07-13T17:49:02.5110000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "Qc",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "CFD131BF-C736-4390-B940-7BD9B37F6FD2",
+		"CreatedOn": "2024-07-23T12:03:25.4880000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "Procurement Manager",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "11AB1529-2BFD-46B2-8FC2-8DD24C3ED17F",
+		"CreatedOn": "2024-06-10T19:19:58.7920000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "Super Admin",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "D0006E22-AC14-41B9-95C8-A041AFC39752",
+		"CreatedOn": "2024-07-13T17:29:31.5660000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "StageUser1",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "605081B4-36F7-41C6-87BE-A1FBF786CEF1",
+		"CreatedOn": "2024-08-21T12:21:07.0580000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "Admin",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "89212816-3732-42EA-B471-AD2B175639CA",
+		"CreatedOn": "2024-07-13T17:44:51.0260000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "StageUser3",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "49A3E657-A938-4F58-B284-C1BC4CAFF070",
+		"CreatedOn": "2024-07-03T15:16:24.4890000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "Candidate",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "4326B98E-7438-4D14-B922-CCCF564A18B7",
+		"CreatedOn": "2024-07-03T15:16:03.5380000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "Power user",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "CF5E45C6-72A3-4D46-BB35-D67BF429EA3F",
+		"CreatedOn": "2024-06-10T19:20:19.2370000+05:30",
+		"IsActive": true,
+		"IsDeleted": true,
+		"Name": "Supplier one",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "036969A5-D88F-4A42-BE4A-DBDD7B9D260B",
+		"CreatedOn": "2024-07-12T23:43:01.1030000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "Supplier",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "290B4C5C-F6D6-4992-8F33-DD8B338F0D6A",
+		"CreatedOn": "2024-07-12T23:42:01.6630000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "Supplier Admin",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	},
+	{
+		"Id": "6F9C2A0F-4348-4B59-8FD1-ED666F708E76",
+		"CreatedOn": "2024-07-03T14:29:39.2380000+05:30",
+		"IsActive": true,
+		"IsDeleted": true,
+		"Name": "user",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"TypeMasterId": "DEE990A2-6FEF-4AD4-B560-C1F32C701677"
+	}
+]

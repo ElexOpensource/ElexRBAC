@@ -1,7 +1,8 @@
 ﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class GetApplicationByIdSqlHandlerTest : TestBase
 {
@@ -11,7 +12,7 @@ public class GetApplicationByIdSqlHandlerTest : TestBase
         SeedData(i => new Application
         {
             Id = Guid.NewGuid(),
-            ApplicationName = $"App {i + 1}",
+            Name = $"App {i + 1}",
             CustomerId = Guid.NewGuid(),
             IsActive = true,
             IsDeleted = false

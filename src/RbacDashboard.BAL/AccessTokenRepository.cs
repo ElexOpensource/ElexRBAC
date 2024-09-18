@@ -4,6 +4,7 @@ using RbacDashboard.DAL.Commands;
 using RbacDashboard.Common.Interface;
 using RbacDashboard.DAL.Models.Domain;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.DAL.Enum;
 
 namespace RbacDashboard.BAL;
 
@@ -12,6 +13,11 @@ public class AccessTokenRepository(IMediatorService mediator, IRbacTokenReposito
     private readonly IMediatorService _mediator = mediator;
 
     private readonly IRbacTokenRepository _token = tokenRepository;
+
+    public async Task<bool> DataMigration(string masterData, RbacTable table)
+    {
+        return await _mediator.SendRequest(new DataMigration(masterData, table));
+    }
 
     public async Task<string> GetByRoleIds(List<Guid> roleIds)
     {
@@ -32,7 +38,7 @@ public class AccessTokenRepository(IMediatorService mediator, IRbacTokenReposito
                .Select(roleAccess => new
                {
                    AccessId = roleAccess.AccessId,
-                   AccessName = roleAccess?.Access?.AccessName,
+                   AccessName = roleAccess?.Access?.Name,
                    AccessJson = JsonConvert.DeserializeObject<AccessJSON>(roleAccess?.Access.MetaData ?? "")
                })
                .Where(item => item.AccessJson != null && item.AccessJson.CanInherit == true)
@@ -47,7 +53,7 @@ public class AccessTokenRepository(IMediatorService mediator, IRbacTokenReposito
                 .Select(roleAccess => new
                 {
                     AccessId = roleAccess.AccessId,
-                    AccessName = roleAccess?.Access?.AccessName,
+                    AccessName = roleAccess?.Access?.Name,
                     AccessJson = JsonConvert.DeserializeObject<AccessJSON>(roleAccess.IsOverwrite ? roleAccess.AccessMetaData : roleAccess.Access.MetaData ?? "")
                 })
                 .Where(item => item.AccessJson != null)
@@ -75,7 +81,6 @@ public class AccessTokenRepository(IMediatorService mediator, IRbacTokenReposito
                                         .Select(pGroup => pGroup.First())
                                         .ToList()
                     }).ToList();
-
 #pragma warning restore CS8604 // Possible null reference argument.
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
 

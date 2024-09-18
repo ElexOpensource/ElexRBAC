@@ -1,8 +1,8 @@
-﻿
-using RbacDashboard.DAL.Commands;
+﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class GetApplicationsByCustomerIdSqlHandlerTest : TestBase
 {
@@ -14,10 +14,10 @@ public class GetApplicationsByCustomerIdSqlHandlerTest : TestBase
         _customerId = Guid.NewGuid();
         var _anotherCustomerId = Guid.NewGuid();
 
-        SeedData(i => new Customer 
+        SeedData(i => new Customer
         {
-            Id = (i % 2 == 0) ? _customerId : _anotherCustomerId,
-            CustomerName = $"Customer {i +1}",
+            Id = i % 2 == 0 ? _customerId : _anotherCustomerId,
+            Name = $"Customer {i + 1}",
             IsActive = i % 2 == 0,
             IsDeleted = false
         }, 2);
@@ -25,8 +25,8 @@ public class GetApplicationsByCustomerIdSqlHandlerTest : TestBase
         SeedData(i => new Application
         {
             Id = Guid.NewGuid(),
-            ApplicationName = $"Application {i + 1}",
-            CustomerId = (i % 2 == 0) ? _customerId : _anotherCustomerId,
+            Name = $"Application {i + 1}",
+            CustomerId = i % 2 == 0 ? _customerId : _anotherCustomerId,
             IsActive = i % 2 == 0,
             IsDeleted = false
         }, 10);
