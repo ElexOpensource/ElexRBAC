@@ -5,6 +5,11 @@ using RbacDashboard.DAL.Enum;
 
 namespace RbacDashboard.DAL.Commands;
 
+/// <summary>
+/// Update role status based on the Id and Status
+/// </summary>
+/// <param name="id">Role Id</param>
+/// <param name="status">Status</param>
 public class ChangeRoleStatus(Guid id, RecordStatus status) : IRequest<bool>
 {
     public Guid Id { get; } = id;

@@ -5,6 +5,12 @@ using RbacDashboard.DAL.Enum;
 
 namespace RbacDashboard.DAL.Commands;
 
+
+/// <summary>
+/// Update access status based on the Id and Status
+/// </summary>
+/// <param name="id">Access Id</param>
+/// <param name="status">Status</param>
 public class ChangeAccessStatus(Guid id, RecordStatus status) : IRequest<bool>
 {
     public Guid Id { get; } = id;

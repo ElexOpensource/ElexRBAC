@@ -7,9 +7,11 @@ public interface IRbacRoleRepository
 {
     Task<List<Role>> GetByApplicationId(Guid applicationId, bool isActive);
 
+    Task<List<Role>> GetAvailableParentsById(Guid applicationId, Guid roleId);
+
     Task<Role> GetById(Guid roleId);
 
-    Task<Role> AddorUpdate(Role roleId);
+    Task<Role> AddorUpdate(Role role);
 
     Task Delete(Guid roleId);
 

@@ -58,7 +58,7 @@ public class RoleControllerTest
         };
 
         _roleRepositoryMock
-            .Setup(repo => repo.GetByApplicationId(applicationId))
+            .Setup(repo => repo.GetByApplicationId(applicationId, true))
             .ReturnsAsync(expectedRoles);
 
         // Act

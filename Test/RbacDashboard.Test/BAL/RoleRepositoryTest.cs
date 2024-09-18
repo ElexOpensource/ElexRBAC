@@ -92,7 +92,7 @@ public class RoleRepositoryTest
                      .ReturnsAsync(roles);
 
         // Act
-        var result = await _repository.GetByApplicationId(applicationId);
+        var result = await _repository.GetByApplicationId(applicationId, true);
 
         // Assert
         Assert.That(result, Is.EqualTo(roles));

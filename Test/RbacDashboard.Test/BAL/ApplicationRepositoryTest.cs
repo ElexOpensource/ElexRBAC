@@ -91,7 +91,7 @@ public class ApplicationRepositoryTest
             .ReturnsAsync(applications);
 
         // Act
-        var result = await _applicationRepository.GetByCustomerId(customerId);
+        var result = await _applicationRepository.GetByCustomerId(customerId, true);
 
         // Assert
         _mediatorMock.Verify(m => m.SendRequest(It.Is<GetApplicationByCustomerId>(req => req.CustomerId == customerId)), Times.Once);

@@ -65,11 +65,11 @@ public class ApplicationControllerTest
         };
 
         _applicationRepositoryMock
-            .Setup(repo => repo.GetByCustomerId(validCustomerId))
+            .Setup(repo => repo.GetByCustomerId(validCustomerId, true))
             .ReturnsAsync(expectedApplications);
 
         // Act
-        var result = await _controller.GetByCustomerId(validCustomerId);
+        var result = await _controller.GetByCustomerId(validCustomerId, true);
 
         // Assert
         Assert.That(result, Is.EqualTo(expectedApplications));
@@ -82,7 +82,7 @@ public class ApplicationControllerTest
         var emptyGuid = Guid.Empty;
 
         // Act & Assert
-        Assert.ThrowsAsync<ArgumentNullException>(() => _controller.GetByCustomerId(emptyGuid));
+        Assert.ThrowsAsync<ArgumentNullException>(() => _controller.GetByCustomerId(emptyGuid, true));
     }
 
     [Test]

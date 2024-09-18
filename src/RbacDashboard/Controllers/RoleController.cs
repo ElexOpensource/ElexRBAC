@@ -25,6 +25,13 @@ public partial class RoleController(IRbacRoleRepository RoleRepository) : Contro
         return await _role.GetByApplicationId(applicationId, isActive);
     }
 
+    [HttpGet]
+    public async Task<List<Role>> GetAvailableParentsById(Guid applicationId, Guid roleId)
+    {
+        if (applicationId == Guid.Empty) throw new ArgumentNullException(nameof(applicationId));
+        return await _role.GetAvailableParentsById(applicationId, roleId);
+    }
+
     [HttpPost]
     public async Task<Role> AddorUpdate([FromBody] Role role)
     {
