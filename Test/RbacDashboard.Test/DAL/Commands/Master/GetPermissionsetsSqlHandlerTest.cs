@@ -1,7 +1,8 @@
 ﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class GetPermissionsetsSqlHandlerTest : TestBase
 {

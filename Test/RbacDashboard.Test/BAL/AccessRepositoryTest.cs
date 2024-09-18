@@ -3,8 +3,9 @@ using RbacDashboard.Common.Interface;
 using RbacDashboard.Common;
 using RbacDashboard.DAL.Models;
 using RbacDashboard.DAL.Commands;
+using RbacDashboard.BAL;
 
-namespace RbacDashboard.BAL.Test;
+namespace RbacDashboard.Test.BAL;
 
 public class AccessRepositoryTest
 {
@@ -31,13 +32,13 @@ public class AccessRepositoryTest
                 {
                     RoleId = roleIds[0],
                     AccessId = Guid.NewGuid(),
-                    Access = new Access { AccessName = "TestAccess1", MetaData = "{\"Permissions\": [{\"Id\": \"" + Guid.NewGuid() + "\", \"Name\": \"Read\"}], \"CanInherit\": true, \"GenerateToken\": true}" }
+                    Access = new Access { Name = "TestAccess1", MetaData = "{\"Permissions\": [{\"Id\": \"" + Guid.NewGuid() + "\", \"Name\": \"Read\"}], \"CanInherit\": true, \"GenerateToken\": true}" }
                 },
                 new RoleAccess
                 {
                     RoleId = roleIds[1],
                     AccessId = Guid.NewGuid(),
-                    Access = new Access { AccessName = "TestAccess2", MetaData = "{\"Permissions\": [{\"Id\": \"" + Guid.NewGuid() + "\", \"Name\": \"Read\"}], \"CanInherit\": true, \"GenerateToken\": true}" }
+                    Access = new Access { Name = "TestAccess2", MetaData = "{\"Permissions\": [{\"Id\": \"" + Guid.NewGuid() + "\", \"Name\": \"Read\"}], \"CanInherit\": true, \"GenerateToken\": true}" }
                 }
             };
 
@@ -48,7 +49,7 @@ public class AccessRepositoryTest
             .ReturnsAsync(new Role() { ApplicationId = Guid.NewGuid() });
 
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRolesByApplicationId>()))
-            .ReturnsAsync(new List<Role>() { new Role { Id = roleIds.First(), RoleName = "Role one" }, new Role { Id = roleIds.Last(), RoleName = "Role two" } });
+            .ReturnsAsync(new List<Role>() { new Role { Id = roleIds.First(), Name = "Role one" }, new Role { Id = roleIds.Last(), Name = "Role two" } });
 
         _tokenRepositoryMock.Setup(t => t.GenerateJwtToken(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<int>()))
             .Returns("test-token");
@@ -71,10 +72,78 @@ public class AccessRepositoryTest
             .ReturnsAsync(new List<RoleAccess>());
 
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRoleById>()))
-            .ReturnsAsync(new Role() { ApplicationId = Guid.NewGuid()});
+            .ReturnsAsync(new Role() { ApplicationId = Guid.NewGuid() });
 
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRolesByApplicationId>()))
             .ReturnsAsync(new List<Role>());
+
+        // Act
+        var result = await _accessTokenRepository.GetByRoleIds(roleIds);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(string.Empty));
+    }
+
+    [Test]
+    public async Task GetByRoleIds_ShouldReturnJwtToken_WhenAccessMetaDataExists()
+    {
+        // Arrange
+        var roleId = Guid.NewGuid();
+        var roleIds = new List<Guid> { roleId };
+        var applicationId = Guid.NewGuid();
+
+        var role = new Role { Id = roleId, ApplicationId = applicationId, Name = "Role 1" };
+        var allRoles = new List<Role>
+        {
+            role,
+            new Role { Id = Guid.NewGuid(), ParentId = roleId, Name = "Child Role" },
+        };
+
+        var roleAccess = new RoleAccess
+        {
+            RoleId = roleId,
+            AccessId = Guid.NewGuid(),
+            Access = new Access { Name = "Access 1", MetaData = "{\"Permissions\": [{\"Id\": \"" + Guid.NewGuid() + "\", \"Name\": \"Read\"}], \"CanInherit\": true, \"GenerateToken\": true}" }
+        };
+
+        _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRoleById>()))
+            .ReturnsAsync(role);
+        _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRolesByApplicationId>()))
+            .ReturnsAsync(allRoles);
+        _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRoleAccessByRoleIds>()))
+            .ReturnsAsync(new List<RoleAccess> { roleAccess });
+
+        _tokenRepositoryMock.Setup(t => t.GenerateJwtToken(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<int>()))
+            .Returns("test-token");
+
+        // Act
+        var result = await _accessTokenRepository.GetByRoleIds(roleIds);
+
+        // Assert
+        Assert.That(result, Is.EqualTo("test-token"));
+    }
+
+    [Test]
+    public async Task GetByRoleIds_ShouldReturnEmptyString_WhenNoAccessMetaDataExists()
+    {
+        // Arrange
+        var roleId = Guid.NewGuid();
+        var roleIds = new List<Guid> { roleId };
+        var applicationId = Guid.NewGuid();
+
+        var role = new Role { Id = roleId, ApplicationId = applicationId, Name = "Role 1" };
+        var allRoles = new List<Role>
+        {
+            role,
+            new Role { Id = Guid.NewGuid(), ParentId = roleId, Name = "Child Role" }
+        };
+
+        _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRoleById>()))
+            .ReturnsAsync(role);
+        _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRolesByApplicationId>()))
+            .ReturnsAsync(allRoles);
+        _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRoleAccessByRoleIds>()))
+            .ReturnsAsync(new List<RoleAccess>());
 
         // Act
         var result = await _accessTokenRepository.GetByRoleIds(roleIds);

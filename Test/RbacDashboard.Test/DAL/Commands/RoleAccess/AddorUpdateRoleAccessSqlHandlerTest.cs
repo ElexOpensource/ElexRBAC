@@ -1,8 +1,8 @@
-﻿
-using RbacDashboard.DAL.Commands;
+﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class AddorUpdateRoleAccessSqlHandlerTest : TestBase
 {
@@ -26,7 +26,7 @@ public class AddorUpdateRoleAccessSqlHandlerTest : TestBase
             Id = _roleId,
             ApplicationId = Guid.NewGuid(),
             TypeMasterId = typeMasters[i % typeMasters.Count].Id,
-            RoleName = $"Role {i + 1}",
+            Name = $"Role {i + 1}",
             IsActive = true,
             IsDeleted = false
         }, 1);
@@ -35,7 +35,7 @@ public class AddorUpdateRoleAccessSqlHandlerTest : TestBase
         {
             Id = _AccessId,
             ApplicationId = Guid.NewGuid(),
-            AccessName = $"Access {i + 1}",
+            Name = $"Access {i + 1}",
             MetaData = string.Empty,
             IsActive = true,
             IsDeleted = false

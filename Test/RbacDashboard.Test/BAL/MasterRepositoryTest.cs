@@ -5,8 +5,9 @@ using RbacDashboard.Common;
 using RbacDashboard.DAL.Models.Domain;
 using RbacDashboard.DAL.Models;
 using RbacDashboard.DAL.Commands;
+using RbacDashboard.BAL;
 
-namespace RbacDashboard.BAL.Test;
+namespace RbacDashboard.Test.BAL;
 
 public class MasterRepositoryTest
 {
@@ -40,7 +41,7 @@ public class MasterRepositoryTest
     {
         // Arrange
         var customerId = Guid.NewGuid();
-        var customer = new Customer { Id = customerId, CustomerName = "Test Customer" };
+        var customer = new Customer { Id = customerId, Name = "Test Customer" };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetCustomerById>()))
                      .ReturnsAsync(customer);
         _tokenRepositoryMock.Setup(t => t.GenerateJwtToken(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<int>())).Returns("jwt_token");
@@ -61,8 +62,8 @@ public class MasterRepositoryTest
         var applicationId = Guid.NewGuid();
         var roles = new List<Role>
         {
-            new Role { Id = Guid.NewGuid(), RoleName = "Role1" },
-            new Role { Id = Guid.NewGuid(), RoleName = "Role2" }
+            new Role { Id = Guid.NewGuid(), Name = "Role1" },
+            new Role { Id = Guid.NewGuid(), Name = "Role2" }
         };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetRolesByApplicationId>()))
                      .ReturnsAsync(roles);
@@ -74,7 +75,7 @@ public class MasterRepositoryTest
         _mediatorMock.Verify(m => m.SendRequest(It.Is<GetRolesByApplicationId>(req => req.ApplicationId == applicationId)), Times.Once);
         Assert.That(result, Has.Count.EqualTo(roles.Count));
         Assert.That(result, Is.All.InstanceOf<Option>());
-        Assert.That(result.Select(o => o.Label), Is.EquivalentTo(roles.Select(r => r.RoleName)));
+        Assert.That(result.Select(o => o.Label), Is.EquivalentTo(roles.Select(r => r.Name)));
     }
 
     [Test]
@@ -84,8 +85,8 @@ public class MasterRepositoryTest
         var applicationId = Guid.NewGuid();
         var accesses = new List<Access>
         {
-            new Access { Id = Guid.NewGuid(), AccessName = "Access1" },
-            new Access { Id = Guid.NewGuid(), AccessName = "Access2" }
+            new Access { Id = Guid.NewGuid(), Name = "Access1" },
+            new Access { Id = Guid.NewGuid(), Name = "Access2" }
         };
         _mediatorMock.Setup(m => m.SendRequest(It.IsAny<GetAccessesByApplicationId>()))
                      .ReturnsAsync(accesses);
@@ -97,7 +98,7 @@ public class MasterRepositoryTest
         _mediatorMock.Verify(m => m.SendRequest(It.Is<GetAccessesByApplicationId>(req => req.ApplicationId == applicationId)), Times.Once);
         Assert.That(result, Has.Count.EqualTo(accesses.Count));
         Assert.That(result, Is.All.InstanceOf<Option>());
-        Assert.That(result.Select(o => o.Label), Is.EquivalentTo(accesses.Select(a => a.AccessName)));
+        Assert.That(result.Select(o => o.Label), Is.EquivalentTo(accesses.Select(a => a.Name)));
     }
 
     [Test]

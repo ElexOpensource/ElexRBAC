@@ -1,9 +1,8 @@
-﻿
-using DocumentFormat.OpenXml.InkML;
-using RbacDashboard.DAL.Commands;
+﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class GetAccessMetadataByRoleIdsSqlHandlerTest : TestBase
 {
@@ -15,7 +14,7 @@ public class GetAccessMetadataByRoleIdsSqlHandlerTest : TestBase
         SeedData(i => new Role
         {
             Id = Guid.NewGuid(),
-            RoleName = $"Role {i + 1}",
+            Name = $"Role {i + 1}",
             IsActive = true,
             IsDeleted = false
         }, 3);
@@ -23,10 +22,10 @@ public class GetAccessMetadataByRoleIdsSqlHandlerTest : TestBase
         SeedData(i => new Access
         {
             Id = Guid.NewGuid(),
-            AccessName = $"Access {i + 1}",
+            Name = $"Access {i + 1}",
             IsActive = true,
             IsDeleted = false
-        }, 3); 
+        }, 3);
 
         // Seed role accesses with valid role and access IDs
         var roles = context.Roles.ToList();

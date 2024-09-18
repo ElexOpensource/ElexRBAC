@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace RbacDashboard.DAL.Models.Domain;
+﻿namespace RbacDashboard.DAL.Models.Domain;
 
 public class RbacApplicationUser
 {

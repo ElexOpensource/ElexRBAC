@@ -7,19 +7,10 @@ namespace RbacDashboard.DAL.Models;
 
 [Table("Customer", Schema = "RBAC")]
 [ExcludeFromCodeCoverage(Justification = "Models do not need to be included in code coverage.")]
-public partial class Customer
+public partial class Customer : EntityBase
 {
-    [Key]
-    public Guid Id { get; set; }
-
-    public DateTimeOffset CreatedOn { get; set; }
-
-    public bool IsActive { get; set; }
-
-    public bool IsDeleted { get; set; }
-
     [StringLength(100)]
-    public string CustomerName { get; set; } = null!;
+    public string Name { get; set; } = null!;
 
     [InverseProperty("Customer")]
     [JsonIgnore]

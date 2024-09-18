@@ -3,9 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Rbac.Controllers;
 using RbacDashboard.Common.Interface;
+using RbacDashboard.DAL.Enum;
 using RbacDashboard.DAL.Models;
 
-namespace RbacDashboard.Web.Test;
+namespace RbacDashboard.Test.Web;
 
 public class ApplicationControllerTest
 {
@@ -20,7 +21,7 @@ public class ApplicationControllerTest
     }
 
     [TearDown]
-    public void TearDown() 
+    public void TearDown()
     {
         _controller.Dispose();
     }
@@ -30,7 +31,7 @@ public class ApplicationControllerTest
     {
         // Arrange
         var validApplicationId = Guid.NewGuid();
-        var expectedApplication = new Application { Id = validApplicationId, ApplicationName = "Test Application" };
+        var expectedApplication = new Application { Id = validApplicationId, Name = "Test Application" };
 
         _applicationRepositoryMock
             .Setup(repo => repo.GetById(validApplicationId))
@@ -60,8 +61,8 @@ public class ApplicationControllerTest
         var validCustomerId = Guid.NewGuid();
         var expectedApplications = new List<Application>
         {
-            new Application { Id = Guid.NewGuid(), ApplicationName = "App 1" },
-            new Application { Id = Guid.NewGuid(), ApplicationName = "App 2" }
+            new Application { Id = Guid.NewGuid(), Name = "App 1" },
+            new Application { Id = Guid.NewGuid(), Name = "App 2" }
         };
 
         _applicationRepositoryMock
@@ -89,8 +90,8 @@ public class ApplicationControllerTest
     public async Task AddorUpdate_ShouldReturnApplication_WhenValidApplicationProvided()
     {
         // Arrange
-        var newApplication = new Application { ApplicationName = "New Application" };
-        var expectedApplication = new Application { Id = Guid.NewGuid(), ApplicationName = "New Application" };
+        var newApplication = new Application { Name = "New Application" };
+        var expectedApplication = new Application { Id = Guid.NewGuid(), Name = "New Application" };
 
         _applicationRepositoryMock
             .Setup(repo => repo.AddorUpdate(newApplication))
@@ -128,5 +129,32 @@ public class ApplicationControllerTest
 
         // Act & Assert
         Assert.ThrowsAsync<ArgumentNullException>(() => _controller.Delete(emptyGuid));
+    }
+
+    [Test]
+    public async Task ChangeStatus_ShouldReturnOk_WhenValidIdProvided()
+    {
+        // Arrange
+        var validApplicationId = Guid.NewGuid();
+
+        _applicationRepositoryMock
+            .Setup(repo => repo.ChangeStatus(validApplicationId, RecordStatus.Active))
+            .Returns(Task.CompletedTask);
+
+        // Act
+        var result = await _controller.ChangeStatus(validApplicationId, RecordStatus.Active);
+
+        // Assert
+        Assert.That(result, Is.TypeOf<OkResult>());
+    }
+
+    [Test]
+    public void ChangeStatus_ShouldThrowArgumentNullException_WhenEmptyIdProvided()
+    {
+        // Arrange
+        var emptyGuid = Guid.Empty;
+
+        // Act & Assert
+        Assert.ThrowsAsync<ArgumentNullException>(() => _controller.ChangeStatus(emptyGuid, RecordStatus.Active));
     }
 }

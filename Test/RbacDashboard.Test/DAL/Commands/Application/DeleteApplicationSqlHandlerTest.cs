@@ -2,8 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class DeleteApplicationSqlHandlerTest : TestBase
 {
@@ -13,7 +14,7 @@ public class DeleteApplicationSqlHandlerTest : TestBase
         // Arrange
         using var context = CreateContext();
         var applicationId = Guid.NewGuid();
-        var application = new Application { Id = applicationId, ApplicationName = "Test Application", CustomerId = Guid.NewGuid(), IsActive = true, IsDeleted = false };
+        var application = new Application { Id = applicationId, Name = "Test Application", CustomerId = Guid.NewGuid(), IsActive = true, IsDeleted = false };
         context.Applications.Add(application);
         await context.SaveChangesAsync();
 

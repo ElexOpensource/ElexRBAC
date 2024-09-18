@@ -24,10 +24,10 @@ public class MasterRepository(IMediatorService mediator, IRbacTokenRepository to
         return optionName.ToUpper() switch
         {
             "ROLE" => (await _mediator.SendRequest(new GetRolesByApplicationId(applicationId)))
-                        .Select(role => new Option { Id = role.Id, Label = role.RoleName })
+                        .Select(role => new Option { Id = role.Id, Label = role.Name })
                         .ToList(),
             "ACCESS" => (await _mediator.SendRequest(new GetAccessesByApplicationId(applicationId)))
-                        .Select(access => new Option { Id = access.Id, Label = access.AccessName })
+                        .Select(access => new Option { Id = access.Id, Label = access.Name })
                         .ToList(),
             _ => throw new Exception($"Invalid Option Name - {optionName} : it must be `ROLE` or `ACCESS`"),
         };

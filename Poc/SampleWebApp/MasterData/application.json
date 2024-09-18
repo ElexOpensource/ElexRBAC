@@ -1,0 +1,10 @@
+﻿[
+	{
+		"Id": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"CreatedOn": "2024-06-10T19:18:41.5730000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "DEV",
+		"CustomerId": "22458E38-D12C-4B95-A0AF-33AE557692FD"
+	}
+]

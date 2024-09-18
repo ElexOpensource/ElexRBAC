@@ -1,0 +1,812 @@
+﻿[
+	{
+		"Id": "AA1769EF-0978-492E-9299-01C5500B273E",
+		"CreatedOn": "2024-07-03T13:25:28.1020000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/assest",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "765E2F5A-F854-475B-84B5-03601CB5DA2B",
+		"CreatedOn": "2024-07-04T02:35:00.9610000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/user",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "928FBE17-CCDF-4765-A246-072ECCBA57AB",
+		"CreatedOn": "2024-07-09T13:31:11.8900000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/overview",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "FAA81271-06BC-4FCB-8B15-08606BD9B6F1",
+		"CreatedOn": "2024-07-04T02:32:53.8770000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/questionMaster/Question",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "889474AB-B559-4F9D-8180-0A12C6F24A3E",
+		"CreatedOn": "2024-07-09T12:17:34.4370000+05:30",
+		"IsActive": true,
+		"IsDeleted": true,
+		"Name": "/product/exportTemplate/exportTemplate",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "7C135EDB-FC32-435A-AED5-0CD3E230DE9B",
+		"CreatedOn": "2024-08-19T17:58:40.3870000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/activity",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "B71A139A-6FA7-442E-9A0F-0D4B5F701B95",
+		"CreatedOn": "2024-08-02T17:29:57.0380000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/metaData",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "D4D86ADE-43D9-43F0-BD65-0E6A1445A58A",
+		"CreatedOn": "2024-06-12T00:08:12.7570000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/questionMaster",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "F761DAB9-7026-450C-A95A-118699D6B86B",
+		"CreatedOn": "2024-06-10T19:20:39.0570000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/userManagement",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":true,\"GenerateToken\":true}"
+	},
+	{
+		"Id": "939853F3-FFC5-4637-8336-13763F8E605E",
+		"CreatedOn": "2024-07-04T02:22:08.1900000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/chart",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "CF5B22BE-E0E1-4C67-A907-179E959DF956",
+		"CreatedOn": "2024-08-02T17:24:32.6930000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/integration",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "D95471A3-D17C-4AFE-A9A0-17F4348A7961",
+		"CreatedOn": "2024-07-13T19:48:43.0490000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/inputTemplate/filedataValue",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Nate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "74911751-2AD4-4E12-A245-18A6F25830D2",
+		"CreatedOn": "2024-07-14T14:37:08.8630000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/SupplierAssessment",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "2A904B6E-099E-45A9-B347-1964E438CA4D",
+		"CreatedOn": "2024-07-11T16:39:55.4360000+05:30",
+		"IsActive": true,
+		"IsDeleted": true,
+		"Name": "/product/query/queries",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "EDB223B3-7A64-44E2-834E-1B5D9C1A3930",
+		"CreatedOn": "2024-07-04T02:41:06.3460000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/questionMaster",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "A5A53BBC-BE79-42E6-87C1-1D2AD3C33715",
+		"CreatedOn": "2024-07-24T11:16:22.8600000+05:30",
+		"IsActive": true,
+		"IsDeleted": true,
+		"Name": "/product/chart",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "8CB2A229-5DB4-4E9D-AF49-21932A3D1BA9",
+		"CreatedOn": "2024-07-03T13:26:12.8410000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/help",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "A952C743-F4F2-442D-998E-21F8E4926A08",
+		"CreatedOn": "2024-07-04T02:33:59.7500000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/roles",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "5BDD2311-E42F-4B60-A8FF-245B6DDB1E72",
+		"CreatedOn": "2024-07-03T13:32:43.0830000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/settings/attributes",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "1A63BC5D-52BD-4E08-9A5D-257F866EA82A",
+		"CreatedOn": "2024-07-12T09:44:02.4190000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/photoShoot/photoshootBase",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "CA12A7BF-DE08-4EA9-A961-26B50302A298",
+		"CreatedOn": "2024-07-30T11:33:57.4390000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/activity/schedule",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "6855E504-8C64-4CA6-9890-27A32497FDF1",
+		"CreatedOn": "2024-07-08T18:10:09.8610000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/photoShoot/photoshootBase",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "48AD93B4-846A-4D2E-8AD1-2910832B9B0F",
+		"CreatedOn": "2024-07-04T02:41:59.9490000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/questionMaster/Question",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "0A403999-8F61-47BD-9406-2A51F2BB9C0A",
+		"CreatedOn": "2024-07-09T12:16:21.4010000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/export/import/template",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "D823792E-4C8E-4C4F-A5C2-30982F1D97B8",
+		"CreatedOn": "2024-07-09T11:59:34.4320000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/query/queries",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "E5783B8E-91B4-48BF-A7DA-344260E39E24",
+		"CreatedOn": "2024-07-11T12:47:03.1150000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/activity/notification",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "64C7E391-BA08-470C-943E-362556944824",
+		"CreatedOn": "2024-08-19T18:02:53.2540000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "0DDAD5DE-993D-4C65-AEAB-39D7CFA68C75",
+		"CreatedOn": "2024-07-11T14:59:56.0060000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/data",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "EF06178E-FD57-431B-946E-39DFCEE09EED",
+		"CreatedOn": "2024-07-03T13:27:03.7720000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "catalog settings",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "F9A5B813-84E8-4226-B409-3A966705A44C",
+		"CreatedOn": "2024-07-13T17:17:57.0160000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/geography/city",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "E0C83752-6675-4099-8E72-3B8A524E9B05",
+		"CreatedOn": "2024-07-12T09:53:17.2580000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/query/queries",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "D5107CAD-4190-46D8-B5ED-3E7602FEE0E2",
+		"CreatedOn": "2024-07-03T13:27:53.4790000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "automation",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "5FABB038-12BF-4F32-AFA6-58858BF0266A",
+		"CreatedOn": "2024-07-11T16:20:46.4380000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/exportTemplate/exportTemplate",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "9BE59028-4E2E-4361-AAC7-58BD1AC53295",
+		"CreatedOn": "2024-07-12T09:46:06.2460000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/marketPlace",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "80A49259-08B2-453D-AFA8-5B6E5A2E3090",
+		"CreatedOn": "2024-07-04T02:39:09.7260000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/supplierQASheet",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "9811B753-8501-4A66-AFCB-5B78307CDB55",
+		"CreatedOn": "2024-07-03T13:18:55.2060000+05:30",
+		"IsActive": true,
+		"IsDeleted": true,
+		"Name": "/activity",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "FD238B2C-D445-4288-A72E-5E9AE3F65B1E",
+		"CreatedOn": "2024-07-03T13:34:08.1120000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/settings/associationTypes",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "0005BBF7-9506-4EB7-A90F-5F04BD10FEE6",
+		"CreatedOn": "2024-07-03T13:32:55.5440000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/settings/families",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "75BEE502-56EA-4641-90EA-62F4048FD94F",
+		"CreatedOn": "2024-07-03T13:34:31.5920000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/settings/measurements",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "E324DEEE-868C-4638-98BB-65BCD428FEE2",
+		"CreatedOn": "2024-07-04T02:28:28.9880000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/supplierQAForm",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "71B155C4-F41A-4C4D-B13F-65C0F5223EED",
+		"CreatedOn": "2024-07-04T02:27:34.2290000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/system/Dashboard",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "E8B8A3BB-818B-459B-8124-6EE8122A01F5",
+		"CreatedOn": "2024-07-03T13:25:14.3580000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/entity",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "B4837D0D-B81B-441F-9DDF-7DB15B98EE76",
+		"CreatedOn": "2024-07-03T13:31:48.9270000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/settings/currencies",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "80226D28-31A1-442E-8636-7FAE4405A363",
+		"CreatedOn": "2024-07-17T13:15:51.0570000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/productTemplates",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "5A67B938-E396-4314-BA79-80641CFEEA5B",
+		"CreatedOn": "2024-07-04T02:30:12.5940000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/SupplierQASheet",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "4789235C-B941-4286-8146-85E5AAC82BB1",
+		"CreatedOn": "2024-07-03T13:24:45.1540000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/export",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "797D6088-E217-4F00-8F9A-8682C2EAFDE1",
+		"CreatedOn": "2024-07-25T17:21:05.7950000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/process",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "D6DBDCED-6209-450B-A90C-8BB13AE43B85",
+		"CreatedOn": "2024-07-22T15:41:20.9390000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/sla",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "AFC2DD58-457E-4A5C-9ABE-8E7A31A488E4",
+		"CreatedOn": "2024-07-03T13:24:57.1330000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/import",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "0A72D5CD-57F6-49CC-8CF0-93E9A2E52C3B",
+		"CreatedOn": "2024-07-09T09:59:49.8580000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/dashboard",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "F717BEB5-6C7D-4B44-A229-A467CDA4EA27",
+		"CreatedOn": "2024-07-04T15:18:10.6550000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/product",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "2E61F5C4-2CD3-4870-B73F-A46E068CEDAA",
+		"CreatedOn": "2024-07-24T11:23:33.1280000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/sla",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "27FB0D6F-69B1-451B-9206-A7AA9DDC5283",
+		"CreatedOn": "2024-07-04T02:37:10.7640000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/SupplierForm",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "72391B38-BA9C-48CF-9B9F-A82B86177AB9",
+		"CreatedOn": "2024-07-23T17:36:18.3000000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/import/editattribute",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "D9A7EF42-0263-42FA-B904-ABC377E1DA78",
+		"CreatedOn": "2024-07-03T13:33:13.2760000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/settings/groupTypes",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "8C1F827D-9E37-456B-9E22-AEF814099BDE",
+		"CreatedOn": "2024-07-03T13:25:44.0480000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "445BFA25-0242-4F02-B5DE-B1D1A75DBB2F",
+		"CreatedOn": "2024-07-24T11:20:53.4290000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/studio/studioCapacity",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "CFFAA139-B134-4E71-BDDA-B41A4FBE95FD",
+		"CreatedOn": "2024-07-04T02:40:06.3260000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/SupplierOrgCreation",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "85CED144-842E-4C90-BE33-BBCD4215931C",
+		"CreatedOn": "2024-07-12T11:54:44.9240000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/export/import/exportTemplate/exportTemplate",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "6939B1C7-D1AB-497A-8E43-BCA31C930E67",
+		"CreatedOn": "2024-07-03T13:30:37.8390000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/settings/categories",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "ABC142A7-CBF8-4F75-8B33-BD98973B1D45",
+		"CreatedOn": "2024-07-03T13:31:32.1860000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/settings/locales",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "71DF226C-9CC0-44A5-8B4B-C2604A753F2F",
+		"CreatedOn": "2024-07-08T18:09:37.8520000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/studio/studioCapacity",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "938630F6-27BB-487A-AD0F-C5FBAFAD62B1",
+		"CreatedOn": "2024-07-03T13:27:31.0880000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "product settings",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "2F3D6879-63AE-4F47-BA62-CB7801C43807",
+		"CreatedOn": "2024-07-04T02:36:16.0450000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/familes",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "98547D9C-CABB-4CBC-A05A-CEF279BC1229",
+		"CreatedOn": "2024-07-03T13:33:51.2980000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/settings/groups",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "363C7F3B-2A84-4D14-B41F-D902E50F9DA0",
+		"CreatedOn": "2024-07-03T13:24:29.9290000+05:30",
+		"IsActive": true,
+		"IsDeleted": true,
+		"Name": "/product",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "3F4C8B2F-D98B-414C-BDE6-DB123B19F903",
+		"CreatedOn": "2024-08-21T12:27:59.4550000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/chart",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "909C2149-D432-42AD-ABC5-DD22B8BC6E9A",
+		"CreatedOn": "2024-07-11T12:46:25.2340000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/activity/task",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "D952D62F-DC3E-4454-A078-DF017D5BCA16",
+		"CreatedOn": "2024-07-12T09:47:54.7050000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/exportTemplate/exportTemplate",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "91696036-8A78-4FAD-9AFC-E01E11D49982",
+		"CreatedOn": "2024-07-03T13:31:11.3090000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/settings/channels",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "821F10D3-4746-450D-95F2-E4AB5FF672E3",
+		"CreatedOn": "2024-07-09T12:03:33.0520000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/export/import",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "6A7FAED7-B651-4D8E-B920-E4B8E008BC9B",
+		"CreatedOn": "2024-07-12T17:56:57.0520000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/studio/photographer",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "4FE2346F-AFEB-4B58-8271-E9143A638959",
+		"CreatedOn": "2024-07-04T02:31:03.5160000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/supplier",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "DB2EE6EA-5172-4D54-82BD-EAB210F383FA",
+		"CreatedOn": "2024-09-03T11:36:10.8440000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/mapping",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "FBBCAD4E-A00B-46B0-B434-EFC47D32C2C1",
+		"CreatedOn": "2024-07-12T09:51:57.4920000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/import/template",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "AA05C77A-B2F4-4FC1-8B8A-F3EEBEFE6BC7",
+		"CreatedOn": "2024-07-10T15:13:34.2610000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/marketPlace",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "E8F2A0DE-6ED7-4716-81EE-F3FEF7FAFFB3",
+		"CreatedOn": "2024-07-18T10:11:18.7780000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/import/attribute",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "602F56FF-3480-44AA-BF94-F53DCBD58E27",
+		"CreatedOn": "2024-07-04T21:00:36.6130000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/setting/ProductSettings/Studio/StudioCapacity",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "983BD72F-3B12-43AD-85BF-FB34AE01E775",
+		"CreatedOn": "2024-07-03T13:25:57.6120000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/system",
+		"OptionsetMasterId": "DEAF670F-A562-4020-BFED-3ECB137F6AEB",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "E926F733-9616-4003-BB46-FBB49CE9CB81",
+		"CreatedOn": "2024-07-17T12:21:40.9900000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/product/productList",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151bd\",\"Label\":\"Access\"},{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	},
+	{
+		"Id": "1CBAADBB-2393-40A7-A1CA-FE50A3388110",
+		"CreatedOn": "2024-07-03T13:32:16.2560000+05:30",
+		"IsActive": true,
+		"IsDeleted": false,
+		"Name": "/settings/attributeGroups",
+		"OptionsetMasterId": "FC6B96FB-46D2-4B2C-BB99-ACC18CFCC209",
+		"ApplicationId": "200EBECE-F232-43AC-BB11-5D7C2B2A1481",
+		"MetaData": "{\"Permissions\":[{\"Id\":\"8350b797-4383-45c5-93ff-6b5e434151ba\",\"Label\":\"Navigate\"}],\"CanInherit\":false,\"GenerateToken\":false}"
+	}
+]

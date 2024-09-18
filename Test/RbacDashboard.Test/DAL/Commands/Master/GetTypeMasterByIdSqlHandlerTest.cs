@@ -1,7 +1,8 @@
 ﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class GetTypeMasterByIdSqlHandlerTest : TestBase
 {
@@ -9,9 +10,9 @@ public class GetTypeMasterByIdSqlHandlerTest : TestBase
     public void TestSetup()
     {
         SeedData(i => new TypeMaster
-        { 
+        {
             Id = Guid.NewGuid(),
-            Name = $"Type {i +1 }", 
+            Name = $"Type {i + 1}",
             IsActive = i % 2 == 0,
             IsDeleted = i % 3 == 0
         }, 15);
@@ -54,7 +55,7 @@ public class GetTypeMasterByIdSqlHandlerTest : TestBase
     public async Task Handle_DeletedTypeMasters_ReturnsEmptyList()
     {
         // Arrange
-        using var context = CreateContext();        
+        using var context = CreateContext();
         var handler = new GetTypeMasterByIdSqlHandler(context);
         var request = new GetAllTypeMaster();
 

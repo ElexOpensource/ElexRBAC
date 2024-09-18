@@ -2,10 +2,11 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 using Moq;
+using RbacDashboard.Common;
 using RbacDashboard.Common.Authentication;
 using System.Security.Claims;
 
-namespace RbacDashboard.Common.Test;
+namespace RbacDashboard.Test.Common;
 
 public class RbacSecurityServiceTest
 {
@@ -19,7 +20,7 @@ public class RbacSecurityServiceTest
     {
 
         _navigationManagerMock = new Mock<NavigationManager>();
-        _httpClientFactoryMock = new Mock<IHttpClientFactory>(); 
+        _httpClientFactoryMock = new Mock<IHttpClientFactory>();
         _httpClient = new HttpClient(new Mock<HttpMessageHandler>().Object);
 
         _httpClientFactoryMock

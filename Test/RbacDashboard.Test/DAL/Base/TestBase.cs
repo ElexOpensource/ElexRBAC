@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RbacDashboard.DAL.Data;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL.Base;
 
 /// <summary>
 /// An abstract base class for unit tests that involve the RbacSqlDbContext using an in-memory database.

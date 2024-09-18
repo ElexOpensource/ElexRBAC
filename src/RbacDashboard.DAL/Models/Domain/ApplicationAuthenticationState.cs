@@ -1,5 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
-
 namespace RbacDashboard.DAL.Models.Domain;
 
 public class ApplicationClaim

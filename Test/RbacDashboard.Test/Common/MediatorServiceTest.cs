@@ -2,8 +2,9 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Moq;
+using RbacDashboard.Common;
 
-namespace RbacDashboard.Common.Test;
+namespace RbacDashboard.Test.Common;
 
 public class MediatorServiceTest
 {
@@ -71,7 +72,7 @@ public class MediatorServiceTest
         // Arrange
         var requestMock = new Mock<IRequest<string>>();
         var exceptionMessage = "No service for type 'MediatR.IRequestHandler`";
-            
+
         _mediatorMock
             .Setup(m => m.Send(requestMock.Object, It.IsAny<CancellationToken>()))
             .Throws(new InvalidOperationException(exceptionMessage));
@@ -96,7 +97,7 @@ public class MediatorServiceTest
     {
         // Arrange
         var requestMock = new Mock<IRequest<string>>();
-        var unexpectedException = new Exception("An unexpected error occurred.");
+        var unexpectedException = new ApplicationException("An unexpected error occurred.");
 
         _mediatorMock
             .Setup(m => m.Send(requestMock.Object, It.IsAny<CancellationToken>()))

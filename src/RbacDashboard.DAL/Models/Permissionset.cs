@@ -6,17 +6,8 @@ namespace RbacDashboard.DAL.Models;
 
 [Table("Permissionset", Schema = "RBAC")]
 [ExcludeFromCodeCoverage(Justification = "Models do not need to be included in code coverage.")]
-public partial class Permissionset
+public partial class Permissionset : EntityBase
 {
-    [Key]
-    public Guid Id { get; set; }
-
-    public DateTimeOffset CreatedOn { get; set; }
-
-    public bool IsActive { get; set; }
-
-    public bool IsDeleted { get; set; }
-
     [StringLength(100)]
     public string Name { get; set; } = null!;
 

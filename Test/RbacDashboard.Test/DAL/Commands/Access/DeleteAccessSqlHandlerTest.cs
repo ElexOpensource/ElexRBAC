@@ -1,8 +1,8 @@
-﻿
-using RbacDashboard.DAL.Commands;
+﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class DeleteAccessSqlHandlerTest : TestBase
 {
@@ -12,7 +12,7 @@ public class DeleteAccessSqlHandlerTest : TestBase
         // Arrange
         using var context = CreateContext();
         var accessId = Guid.NewGuid();
-        var access = new Access { Id = accessId, AccessName = "Test Access" , IsActive = true, IsDeleted = false };
+        var access = new Access { Id = accessId, Name = "Test Access", IsActive = true, IsDeleted = false };
         context.Accesses.Add(access);
         await context.SaveChangesAsync();
 

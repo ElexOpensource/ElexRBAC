@@ -1,8 +1,8 @@
-﻿
-using RbacDashboard.DAL.Commands;
+﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class GetRolesByApplicationIdSqlHandlerTest : TestBase
 {
@@ -23,10 +23,10 @@ public class GetRolesByApplicationIdSqlHandlerTest : TestBase
             Id = Guid.NewGuid(),
             ApplicationId = Guid.NewGuid(),
             TypeMasterId = typeMasters[i % typeMasters.Count].Id,
-            RoleName = $"Role {i + 1}",
+            Name = $"Role {i + 1}",
             IsActive = i % 2 == 0,
             IsDeleted = i % 3 == 0
-        }, 10);        
+        }, 10);
     }
 
     [Test]

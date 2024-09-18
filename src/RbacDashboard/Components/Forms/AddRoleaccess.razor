@@ -12,7 +12,7 @@
                 <RadzenLabel Text="Role" Component="role" style="width: 100%" />
             </RadzenColumn>
             <RadzenColumn SizeMD="10">
-                <RadzenTextBox @bind-Value=@Role.RoleName ReadOnly=true style="width: 100%" />
+                <RadzenTextBox @bind-Value=@Role.Name ReadOnly=true style="width: 100%" />
             </RadzenColumn>
         </RadzenRow>
 
@@ -21,7 +21,7 @@
                 <RadzenLabel Text="Access" Component="access" style="width: 100%" />
             </RadzenColumn>
             <RadzenColumn SizeMD="10">
-                <RadzenDropDown Data="@AccessList" TextProperty="AccessName" ValueProperty="Id" AllowClear="true" Multiple="true" Chips=true
+                <RadzenDropDown Data="@AccessList" TextProperty="Name" ValueProperty="Id" AllowClear="true" Multiple="true" Chips=true
                                 Placeholder="Choose access" Style="display: block; width: 100%" @bind-Value="@SelectedAccess" Name="access" />
             </RadzenColumn> 
         </RadzenRow>

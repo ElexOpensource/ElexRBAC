@@ -1,8 +1,8 @@
-﻿
-using RbacDashboard.DAL.Commands;
+﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class GetAccessesByApplicationIdSqlHandlerTest : TestBase
 {
@@ -14,8 +14,8 @@ public class GetAccessesByApplicationIdSqlHandlerTest : TestBase
         var applicationId = Guid.NewGuid();
         var accesses = new List<Access>
         {
-            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, AccessName = "Access 1", IsActive = true, IsDeleted = false },
-            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, AccessName = "Access 2", IsActive = true, IsDeleted = false }
+            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, Name = "Access 1", IsActive = true, IsDeleted = false },
+            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, Name = "Access 2", IsActive = true, IsDeleted = false }
         };
         context.Accesses.AddRange(accesses);
         await context.SaveChangesAsync();
@@ -56,8 +56,8 @@ public class GetAccessesByApplicationIdSqlHandlerTest : TestBase
         var applicationId = Guid.NewGuid();
         var accesses = new List<Access>
         {
-            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, AccessName = "Access 1", IsActive = false, IsDeleted = false },
-            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, AccessName = "Access 2", IsActive = false, IsDeleted = false }
+            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, Name = "Access 1", IsActive = false, IsDeleted = false },
+            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, Name = "Access 2", IsActive = false, IsDeleted = false }
         };
         context.Accesses.AddRange(accesses);
         await context.SaveChangesAsync();
@@ -81,8 +81,8 @@ public class GetAccessesByApplicationIdSqlHandlerTest : TestBase
         var applicationId = Guid.NewGuid();
         var accesses = new List<Access>
         {
-            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, AccessName = "Access 1", IsActive = true, IsDeleted = true },
-            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, AccessName = "Access 2", IsActive = true, IsDeleted = true }
+            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, Name = "Access 1", IsActive = true, IsDeleted = true },
+            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, Name = "Access 2", IsActive = true, IsDeleted = true }
         };
         context.Accesses.AddRange(accesses);
         await context.SaveChangesAsync();
@@ -107,8 +107,8 @@ public class GetAccessesByApplicationIdSqlHandlerTest : TestBase
         var optionsetMaster = new OptionsetMaster { Id = Guid.NewGuid(), Name = "Test Optionset", JsonObject = string.Empty };
         var accesses = new List<Access>
         {
-            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, AccessName = "Access 1", IsActive = true, IsDeleted = false, OptionsetMasterId = optionsetMaster.Id },
-            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, AccessName = "Access 2", IsActive = true, IsDeleted = false, OptionsetMasterId = optionsetMaster.Id }
+            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, Name = "Access 1", IsActive = true, IsDeleted = false, OptionsetMasterId = optionsetMaster.Id },
+            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, Name = "Access 2", IsActive = true, IsDeleted = false, OptionsetMasterId = optionsetMaster.Id }
         };
         context.Accesses.AddRange(accesses);
         context.OptionsetMasters.Add(optionsetMaster);
@@ -135,8 +135,8 @@ public class GetAccessesByApplicationIdSqlHandlerTest : TestBase
         var applicationId = Guid.NewGuid();
         var accesses = new List<Access>
         {
-            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, AccessName = "Access 1", IsActive = false, IsDeleted = false },
-            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, AccessName = "Access 2", IsActive = false, IsDeleted = false }
+            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, Name = "Access 1", IsActive = false, IsDeleted = false },
+            new Access { Id = Guid.NewGuid(), ApplicationId = applicationId, Name = "Access 2", IsActive = false, IsDeleted = false }
         };
         context.Accesses.AddRange(accesses);
         await context.SaveChangesAsync();

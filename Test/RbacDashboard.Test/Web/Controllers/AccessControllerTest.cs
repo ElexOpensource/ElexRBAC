@@ -4,9 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Rbac.Controllers;
 using RbacDashboard.Common.Interface;
+using RbacDashboard.DAL.Enum;
 using RbacDashboard.DAL.Models;
 
-namespace RbacDashboard.Web.Test;
+namespace RbacDashboard.Test.Web;
 
 public class AccessControllerTest
 {
@@ -20,8 +21,9 @@ public class AccessControllerTest
         _controller = new AccessController(_accessRepositoryMock.Object);
     }
 
-    [TearDown] 
-    public void Teardown() {
+    [TearDown]
+    public void Teardown()
+    {
         _controller.Dispose();
     }
 
@@ -72,7 +74,7 @@ public class AccessControllerTest
     {
         // Act & Assert
         Assert.ThrowsAsync<ArgumentNullException>(() => _controller.GetByApplicationId(Guid.Empty));
-        _accessRepositoryMock.Verify(repo => repo.GetByApplicationId(It.IsAny<Guid>(), true), Times.Never);
+        _accessRepositoryMock.Verify(repo => repo.GetByApplicationId(It.IsAny<Guid>(), It.IsAny<bool>()), Times.Never);
     }
 
     [Test]
@@ -113,5 +115,29 @@ public class AccessControllerTest
         // Act & Assert
         Assert.ThrowsAsync<ArgumentNullException>(() => _controller.Delete(Guid.Empty));
         _accessRepositoryMock.Verify(repo => repo.Delete(It.IsAny<Guid>()), Times.Never);
+    }
+
+    [Test]
+    public async Task ChangeStatus_ShouldReturnOkResult_WhenAccessIdIsValid()
+    {
+        // Arrange
+        var accessId = Guid.NewGuid();
+
+        _accessRepositoryMock.Setup(repo => repo.ChangeStatus(accessId, RecordStatus.Active)).Returns(Task.CompletedTask);
+
+        // Act
+        var result = await _controller.ChangeStatus(accessId, RecordStatus.Active);
+
+        // Assert
+        Assert.That(result, Is.TypeOf<OkResult>());
+        _accessRepositoryMock.Verify(repo => repo.ChangeStatus(accessId, RecordStatus.Active), Times.Once);
+    }
+
+    [Test]
+    public void ChangeStatus_ShouldThrowArgumentNullException_WhenAccessIdIsEmpty()
+    {
+        // Act & Assert
+        Assert.ThrowsAsync<ArgumentNullException>(() => _controller.ChangeStatus(Guid.Empty, RecordStatus.Active));
+        _accessRepositoryMock.Verify(repo => repo.ChangeStatus(It.IsAny<Guid>(), RecordStatus.Active), Times.Never);
     }
 }

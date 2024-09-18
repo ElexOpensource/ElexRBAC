@@ -20,7 +20,7 @@ namespace RbacDashboard.DAL.Migrations.PostgreSqlMigrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasDefaultSchema("RBAC")
-                .HasAnnotation("ProductVersion", "8.0.7")
+                .HasAnnotation("ProductVersion", "8.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -31,11 +31,6 @@ namespace RbacDashboard.DAL.Migrations.PostgreSqlMigrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid")
                         .HasDefaultValueSql("uuid_generate_v4()");
-
-                    b.Property<string>("AccessName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
 
                     b.Property<Guid>("ApplicationId")
                         .HasColumnType("uuid");
@@ -57,6 +52,11 @@ namespace RbacDashboard.DAL.Migrations.PostgreSqlMigrations
 
                     b.Property<string>("MetaData")
                         .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<Guid>("OptionsetMasterId")
                         .HasColumnType("uuid");
@@ -82,11 +82,6 @@ namespace RbacDashboard.DAL.Migrations.PostgreSqlMigrations
                         .HasColumnType("uuid")
                         .HasDefaultValueSql("uuid_generate_v4()");
 
-                    b.Property<string>("ApplicationName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
-
                     b.Property<DateTimeOffset>("CreatedOn")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp with time zone")
@@ -104,6 +99,11 @@ namespace RbacDashboard.DAL.Migrations.PostgreSqlMigrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("boolean")
                         .HasDefaultValue(false);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.HasKey("Id");
 
@@ -124,11 +124,6 @@ namespace RbacDashboard.DAL.Migrations.PostgreSqlMigrations
                         .HasColumnType("timestamp with time zone")
                         .HasDefaultValueSql("NOW()");
 
-                    b.Property<string>("CustomerName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
-
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("boolean")
@@ -138,6 +133,11 @@ namespace RbacDashboard.DAL.Migrations.PostgreSqlMigrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("boolean")
                         .HasDefaultValue(false);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.HasKey("Id");
 
@@ -246,13 +246,13 @@ namespace RbacDashboard.DAL.Migrations.PostgreSqlMigrations
                         .HasColumnType("boolean")
                         .HasDefaultValue(false);
 
-                    b.Property<Guid?>("ParentId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("RoleName")
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("character varying(100)");
+
+                    b.Property<Guid?>("ParentId")
+                        .HasColumnType("uuid");
 
                     b.Property<Guid>("TypeMasterId")
                         .HasColumnType("uuid");

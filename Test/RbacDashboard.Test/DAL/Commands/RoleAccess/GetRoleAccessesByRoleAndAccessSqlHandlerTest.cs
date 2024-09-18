@@ -1,9 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using RbacDashboard.DAL.Commands;
-using RbacDashboard.DAL.Data;
+﻿using RbacDashboard.DAL.Commands;
 using RbacDashboard.DAL.Models;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class GetRoleAccessesByRoleAndAccessSqlHandlerTest : TestBase
 {
@@ -21,7 +20,7 @@ public class GetRoleAccessesByRoleAndAccessSqlHandlerTest : TestBase
             {
                 Id = Guid.NewGuid(),
                 ApplicationId = Guid.NewGuid(),
-                RoleName = $"Role {i + 1}",
+                Name = $"Role {i + 1}",
                 IsActive = i % 2 == 0,
                 IsDeleted = false,
                 TypeMaster = new TypeMaster
@@ -35,7 +34,7 @@ public class GetRoleAccessesByRoleAndAccessSqlHandlerTest : TestBase
             Access = new Access
             {
                 Id = Guid.NewGuid(),
-                AccessName = $"Access {i + 1}",
+                Name = $"Access {i + 1}",
                 ApplicationId = Guid.NewGuid(),
                 IsActive = i % 2 == 0,
                 IsDeleted = false,

@@ -41,4 +41,10 @@
 		</Reference>
 	</ItemGroup>
 
+	<ItemGroup>
+		<Content Update="MasterData\**\*.*">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+	
 </Project>

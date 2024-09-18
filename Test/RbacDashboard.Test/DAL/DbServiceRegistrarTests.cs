@@ -1,11 +1,10 @@
-﻿
-using MediatR;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using RbacDashboard.DAL.Data;
 using RbacDashboard.DAL.Base;
 using Microsoft.EntityFrameworkCore;
+using RbacDashboard.Test.DAL.Base;
 
-namespace RbacDashboard.DAL.Test;
+namespace RbacDashboard.Test.DAL;
 
 public class DbServiceRegistrarTests : TestBase
 {

@@ -62,7 +62,7 @@ public partial class AddRoleaccess
 
         Role.Id = RoleId;
         Role.ApplicationId = ApplicationId;
-        Role.RoleName = RoleName;
+        Role.Name = RoleName;
 
         SelectedAccess = DefaultSelectedAccess;
         AccessList = await ApiService.GetAccesses(ApplicationId, true);

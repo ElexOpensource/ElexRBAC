@@ -45,7 +45,7 @@ public partial class AddEditAccessObject
 
     protected bool ErrorVisible { get; set; } = false;
 
-    protected Access Access { get; set; } = new Access{ AccessName = string.Empty, OptionsetMasterId = Guid.Empty };
+    protected Access Access { get; set; } = new Access{ Name = string.Empty, OptionsetMasterId = Guid.Empty };
 
     protected int OptionSetMastersCount { get; set; } = 0;
 
@@ -78,7 +78,7 @@ public partial class AddEditAccessObject
             PageTittle = "Add Access Object";
             Access = new Access
             {
-                AccessName = string.Empty,
+                Name = string.Empty,
                 IsActive = true,
                 IsDeleted = false,
                 ApplicationId = Guid.Parse(ApplicationId),

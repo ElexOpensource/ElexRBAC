@@ -6,7 +6,7 @@ using RbacDashboard.Common.Interface;
 using RbacDashboard.DAL.Models.Domain;
 using RbacDashboard.DAL.Models;
 
-namespace RbacDashboard.Web.Test;
+namespace RbacDashboard.Test.Web;
 
 public class MasterControllerTest
 {
