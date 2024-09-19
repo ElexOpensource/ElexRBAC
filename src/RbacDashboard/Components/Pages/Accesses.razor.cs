@@ -132,7 +132,7 @@ public partial class Accesses
     protected async Task Search(ChangeEventArgs args)
     {
         IsLoading = true;
-        string[] columnNames = { "AccessName", "MetaData", "CreatedOn", "OptionsetMaster.Name" };
+        string[] columnNames = { "Name", "MetaData", "CreatedOn", "OptionsetMaster.Name" };
         FilteredItems = AccessList.Where(item => string.IsNullOrEmpty(args?.Value?.ToString()) ||
                 columnNames.Any(column =>
                 {

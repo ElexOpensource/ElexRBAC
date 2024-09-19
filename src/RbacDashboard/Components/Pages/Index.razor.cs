@@ -122,7 +122,7 @@ public partial class Index
     protected async Task Search(ChangeEventArgs args)
     {
         IsLoading = true;
-        string[] columnNames = { "ApplicationName", "CreatedOn" };
+        string[] columnNames = { "Name", "CreatedOn" };
         FilteredItems = ApplicationList.Where(item => string.IsNullOrEmpty(args?.Value?.ToString()) ||
                 columnNames.Any(column =>
                 {

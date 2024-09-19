@@ -133,7 +133,7 @@ public partial class Roles
     protected async Task Search(ChangeEventArgs args)
     {
         IsLoading = true;
-        string[] columnNames = { "RoleName", "CreatedOn", "TypeMaster.Name", "Parent.RoleName" };
+        string[] columnNames = { "Name", "CreatedOn", "TypeMaster.Name", "Parent.Name" };
         FilteredItems = RolesList.Where(item => string.IsNullOrEmpty(args?.Value?.ToString()) ||
                 columnNames.Any(column =>
                 {
