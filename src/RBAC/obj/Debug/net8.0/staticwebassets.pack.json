@@ -1,0 +1,313 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RBAC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RBAC.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Images\\login.jpg",
+      "PackagePath": "staticwebassets\\Images\\login.jpg"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Images\\logo.png",
+      "PackagePath": "staticwebassets\\Images\\logo.png"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\Radzen.Blazor.js",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\Radzen.Blazor.js"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\dark-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\dark-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\dark-wcag.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\dark-wcag.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\dark.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\dark.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\default-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\default-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\default-wcag.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\default-wcag.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\default.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\default.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\fluent-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\fluent-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\fluent-dark-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\fluent-dark-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\fluent-dark.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\fluent-dark.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\fluent.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\fluent.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\humanistic-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-dark-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\humanistic-dark-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-dark-wcag.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\humanistic-dark-wcag.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-dark.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\humanistic-dark.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-wcag.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\humanistic-wcag.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\humanistic.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\material-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-dark-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\material-dark-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-dark-wcag.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\material-dark-wcag.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-dark.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\material-dark.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-wcag.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\material-wcag.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\material.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material3-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\material3-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material3-dark-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\material3-dark-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material3-dark.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\material3-dark.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material3.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\material3.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\software-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-dark-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\software-dark-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-dark-wcag.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\software-dark-wcag.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-dark.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\software-dark.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-wcag.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\software-wcag.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\software.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\standard-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-dark-base.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\standard-dark-base.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-dark-wcag.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\standard-dark-wcag.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-dark.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\standard-dark.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-wcag.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\standard-wcag.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard.css",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\css\\standard.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\MaterialIcons-Regular.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\MaterialIcons-Regular.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\MaterialSymbolsOutlined.woff2",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\MaterialSymbolsOutlined.woff2"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\RobotoFlex.woff2",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\RobotoFlex.woff2"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSans3VF-Italic.ttf.woff2",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSans3VF-Italic.ttf.woff2"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSans3VF-Upright.ttf.woff2",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSans3VF-Upright.ttf.woff2"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Black.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSansPro-Black.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-BlackIt.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSansPro-BlackIt.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Bold.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSansPro-Bold.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-BoldIt.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSansPro-BoldIt.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-ExtraLight.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSansPro-ExtraLight.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-ExtraLightIt.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSansPro-ExtraLightIt.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-It.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSansPro-It.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Light.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSansPro-Light.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-LightIt.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSansPro-LightIt.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Regular.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSansPro-Regular.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Semibold.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSansPro-Semibold.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-SemiboldIt.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\SourceSansPro-SemiboldIt.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v15-latin-300.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\roboto-v15-latin-300.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v15-latin-700.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\roboto-v15-latin-700.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v15-latin-regular.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\roboto-v15-latin-regular.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-300.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\roboto-v30-latin-300.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-500.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\roboto-v30-latin-500.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-700.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\roboto-v30-latin-700.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-regular.woff",
+      "PackagePath": "staticwebassets\\Radzen.Blazor\\fonts\\roboto-v30-latin-regular.woff"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\ProjectRbac\\RBAC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RBAC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RBAC.props",
+      "PackagePath": "build\\RBAC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RBAC.props",
+      "PackagePath": "buildMultiTargeting\\RBAC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RBAC.props",
+      "PackagePath": "buildTransitive\\RBAC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ProjectRbac\\RBAC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\layout\\applicationlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\layout\\applicationlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\bal\\accessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:bal\\accessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\layout\\loginlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\layout\\loginlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\forms\\addeditrole.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\forms\\addeditrole.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\forms\\editroleaccess.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\forms\\editroleaccess.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\forms\\addroleaccess.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\forms\\addroleaccess.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\forms\\addeditapplication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\forms\\addeditapplication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccessRepository.cs",
+              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\BAL\\AccessRepository.cs",
+              "RelativeDocumentMoniker": "BAL\\AccessRepository.cs",
+              "ToolTip": "C:\\ProjectRbac\\RBAC\\BAL\\AccessRepository.cs",
+              "RelativeToolTip": "BAL\\AccessRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T04:47:41.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\App.razor",
+              "RelativeDocumentMoniker": "Components\\App.razor",
+              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\App.razor",
+              "RelativeToolTip": "Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T10:32:58.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Index.razor",
+              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Pages\\Index.razor",
+              "RelativeToolTip": "Components\\Pages\\Index.razor",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T08:58:16.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationLayout.razor",
+              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Layout\\ApplicationLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\ApplicationLayout.razor",
+              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Layout\\ApplicationLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\ApplicationLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T09:32:15.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginLayout.razor",
+              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Layout\\LoginLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\LoginLayout.razor",
+              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Layout\\LoginLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\LoginLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T09:32:33.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddEditRole.razor",
+              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\AddEditRole.razor",
+              "RelativeDocumentMoniker": "Components\\Forms\\AddEditRole.razor",
+              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\AddEditRole.razor",
+              "RelativeToolTip": "Components\\Forms\\AddEditRole.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T09:29:11.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditRoleaccess.razor",
+              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\EditRoleaccess.razor",
+              "RelativeDocumentMoniker": "Components\\Forms\\EditRoleaccess.razor",
+              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\EditRoleaccess.razor",
+              "RelativeToolTip": "Components\\Forms\\EditRoleaccess.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T09:29:06.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddRoleaccess.razor",
+              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\AddRoleaccess.razor",
+              "RelativeDocumentMoniker": "Components\\Forms\\AddRoleaccess.razor",
+              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\AddRoleaccess.razor",
+              "RelativeToolTip": "Components\\Forms\\AddRoleaccess.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T09:29:04.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddEditApplication.razor",
+              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\AddEditApplication.razor",
+              "RelativeDocumentMoniker": "Components\\Forms\\AddEditApplication.razor",
+              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\AddEditApplication.razor",
+              "RelativeToolTip": "Components\\Forms\\AddEditApplication.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T09:17:09.582Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
