@@ -31,8 +31,14 @@
 
         <RadzenColumn Size="12" SizeMD="6">
             <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
-                <RadzenButton Icon="add_circle_outline" Text="Add" Click="@AddRow" Variant="Variant.Text" ButtonStyle="ButtonStyle.Primary" />
-                <RadzenButton Icon="cached" Text="Refresh" Click="@RefreshGrid" Variant="Variant.Text" ButtonStyle="ButtonStyle.Secondary" />
+                <RadzenButton Click="@AddRow" Variant="Variant.Text" ButtonStyle="ButtonStyle.Primary">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <span>Add</span>
+                </RadzenButton>
+                <RadzenButton Click="@RefreshGrid" Variant="Variant.Text" ButtonStyle="ButtonStyle.Secondary">
+                    <i class="fa fa-retweet" aria-hidden="true"></i>
+                    <span>Refresh</span>
+                </RadzenButton>
             </RadzenStack>
         </RadzenColumn>
     </RadzenRow>
@@ -65,23 +71,33 @@
                         <Template Context="role">
                             @if (IsActive)
                             {
-                                <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="edit" Size="ButtonSize.Medium"
-                                              Shade="Shade.Default" Variant="Variant.Text" Disabled="@(!IsActive)"
-                                              Click=@(args => EditRow(role)) @onclick:stopPropagation="true" />
+                                <RadzenButton Click=@(args => EditRow(role)) @onclick:stopPropagation="true" Variant="Variant.Text"
+                                              Disabled="@(!IsActive)" ButtonStyle="ButtonStyle.Success" Size="ButtonSize.Medium" Shade="Shade.Default">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    <span>Edit</span>
+                                </RadzenButton>
 
-                                <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="block" Size="ButtonSize.Medium"
-                                              Shade="Shade.Default" Variant="Variant.Text" Title="Deactivate"
-                                              Click=@(args => ChangeStatus(role, RecordStatus.Inactive)) @onclick:stopPropagation="true" />
+                                <RadzenButton Click=@(args => ChangeStatus(role, RecordStatus.Inactive)) @onclick:stopPropagation="true"
+                                              Variant="Variant.Text" ButtonStyle="ButtonStyle.Danger" Shade="Shade.Default" Size="ButtonSize.Medium">
+                                    <i class="fa fa-ban" aria-hidden="true"></i>
+                                    <span>Deactivate</span>
+                                </RadzenButton>
                             }
                             else
                             {
-                                <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="check_circle" Size="ButtonSize.Medium"
-                                              Shade="Shade.Default" Variant="Variant.Text" Title="Activate"
-                                              Click=@(args => ChangeStatus(role, RecordStatus.Active)) @onclick:stopPropagation="true" />
+                               <RadzenButton ButtonStyle="ButtonStyle.Success" Size="ButtonSize.Medium"
+                                      Shade="Shade.Default" Variant="Variant.Text"
+                                      Click=@(args => ChangeStatus(role, RecordStatus.Active)) @onclick:stopPropagation="true">
+                                      <i class="fa fa-check" aria-hidden="true"></i>
+                                      <span>Activate</span>
+                                 </RadzenButton/>
 
-                                <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
-                                              Shade="Shade.Default" Variant="Variant.Text" Title="Delete"
-                                              Click=@(args => ChangeStatus(role, RecordStatus.Delete)) @onclick:stopPropagation="true" />
+                                <RadzenButton ButtonStyle="ButtonStyle.Danger" Size="ButtonSize.Medium"
+                                        Shade="Shade.Default" Variant="Variant.Text"
+                                        Click=@(args => ChangeStatus(role, RecordStatus.Delete)) @onclick:stopPropagation="true">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <span>Delete</span>
+                                </RadzenButton>
                             }
                         </Template>
 

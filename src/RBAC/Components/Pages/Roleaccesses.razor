@@ -35,8 +35,14 @@
 
         <RadzenColumn Size="12" SizeMD="6">
             <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
-                <RadzenButton Icon="add_circle_outline" Disabled="@(SelectedRole == null)" Text="Add Access " Click="@AddRow" Variant="Variant.Text" ButtonStyle="ButtonStyle.Primary" />
-                <RadzenButton Icon="cached" Text="Refresh" Click="@RefreshGrid" Variant="Variant.Text" ButtonStyle="ButtonStyle.Secondary" />
+                <RadzenButton Click="@AddRow" Variant="Variant.Text" ButtonStyle="ButtonStyle.Primary">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <span>Add</span>
+                </RadzenButton>
+                <RadzenButton Click="@RefreshGrid" Variant="Variant.Text" ButtonStyle="ButtonStyle.Secondary">
+                    <i class="fa fa-retweet" aria-hidden="true"></i>
+                    <span>Refresh</span>
+                </RadzenButton>
             </RadzenStack>
         </RadzenColumn>
     </RadzenRow>
@@ -70,13 +76,19 @@
 
                     <RadzenDataGridColumn TItem="RoleAccess" Filterable="false" Sortable="false" TextAlign="TextAlign.Center">
                         <Template Context="roleaccess">
-                            <RadzenButton ButtonStyle="ButtonStyle.Success" Icon="edit" Size="ButtonSize.Medium"
+                            <RadzenButton ButtonStyle="ButtonStyle.Success" Size="ButtonSize.Medium"
                                           Shade="Shade.Default" Variant="Variant.Text"
-                                          Click=@(args => EditRow(roleaccess)) @onclick:stopPropagation="true" />
+                                          Click=@(args => EditRow(roleaccess)) @onclick:stopPropagation="true">
+                                           <i class="fa fa-pencil" aria-hidden="true"></i>
+                                           <span>Edit</span>
+                             </RadzenButton>
 
                             <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
                                           Shade="Shade.Default" Variant="Variant.Text"
-                                          Click=@(args => DeleteRow(args, roleaccess)) @onclick:stopPropagation="true" />
+                                          Click=@(args => DeleteRow(args, roleaccess)) @onclick:stopPropagation="true">
+                                           <i class="fa fa-ban" aria-hidden="true"></i>
+                                          <span>Delete</span>
+                             </RadzenButton>
                         </Template>
                     </RadzenDataGridColumn>
 
