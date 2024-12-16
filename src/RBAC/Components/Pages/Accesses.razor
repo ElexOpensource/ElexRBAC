@@ -1,10 +1,4 @@
 ﻿@page "/Accesses"
-@using Microsoft.AspNetCore.Authorization
-@using Radzen
-@using Radzen.Blazor
-@using global::RBAC.RBAC.Common
-@using global::RBAC.RBAC.DAL.Enum
-@using global::RBAC.RBAC.DAL.Models
 @attribute [Authorize(Policy = RbacConstants.AuthenticationSchema)]
 
 <PageTitle>Access Object</PageTitle>
@@ -73,13 +67,11 @@
                                 <RadzenButton Click=@(args => EditRow(access)) @onclick:stopPropagation="true" Variant="Variant.Text"
                                               Disabled="@(!IsActive)" ButtonStyle="ButtonStyle.Success" Size="ButtonSize.Medium" Shade="Shade.Default">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
-                                    <span>Edit</span>
                                 </RadzenButton>
 
                                 <RadzenButton Click=@(args => ChangeStatus(access, RecordStatus.Inactive)) @onclick:stopPropagation="true"
                                               Variant="Variant.Text" ButtonStyle="ButtonStyle.Danger" Shade="Shade.Default" Size="ButtonSize.Medium">
                                     <i class="fa fa-ban" aria-hidden="true"></i>
-                                    <span>Deactivate</span>
                                 </RadzenButton>
                             }
                             else
@@ -88,14 +80,12 @@
                                     Shade="Shade.Default" Variant="Variant.Text"
                                     Click=@(args => ChangeStatus(access, RecordStatus.Active)) @onclick:stopPropagation="true">
                                     <i class="fa fa-check" aria-hidden="true"></i>
-                                    <span>Activate</span>
                                 </RadzenButton/>
 
                                 <RadzenButton ButtonStyle="ButtonStyle.Danger" Size="ButtonSize.Medium"
                                     Shade="Shade.Default" Variant="Variant.Text"
                                     Click=@(args => ChangeStatus(access, RecordStatus.Delete)) @onclick:stopPropagation="true">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <span>Delete</span>
                                 </RadzenButton>
                             }
                         </Template>

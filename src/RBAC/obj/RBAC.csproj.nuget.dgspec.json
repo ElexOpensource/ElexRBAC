@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjectRbac\\RBAC\\RBAC.csproj": {}
+    "C:\\RBAC\\ElexRBAC\\src\\RBAC\\RBAC.csproj": {}
   },
   "projects": {
-    "C:\\ProjectRbac\\RBAC\\RBAC.csproj": {
+    "C:\\RBAC\\ElexRBAC\\src\\RBAC\\RBAC.csproj": {
       "version": "1.2.3",
       "restore": {
-        "projectUniqueName": "C:\\ProjectRbac\\RBAC\\RBAC.csproj",
+        "projectUniqueName": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\RBAC.csproj",
         "projectName": "RBAC",
-        "projectPath": "C:\\ProjectRbac\\RBAC\\RBAC.csproj",
+        "projectPath": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\RBAC.csproj",
         "packagesPath": "C:\\Users\\hi\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjectRbac\\RBAC\\obj\\",
+        "outputPath": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

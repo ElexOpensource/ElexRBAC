@@ -1,9 +1,4 @@
 ﻿@page "/RoleAccesses"
-@using Microsoft.AspNetCore.Authorization
-@using Radzen
-@using Radzen.Blazor
-@using global::RBAC.RBAC.Common
-@using global::RBAC.RBAC.DAL.Models
 @attribute [Authorize(Policy = RbacConstants.AuthenticationSchema)]
 
 <PageTitle>Role Access</PageTitle>
@@ -80,14 +75,12 @@
                                           Shade="Shade.Default" Variant="Variant.Text"
                                           Click=@(args => EditRow(roleaccess)) @onclick:stopPropagation="true">
                                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                                           <span>Edit</span>
                              </RadzenButton>
 
                             <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
                                           Shade="Shade.Default" Variant="Variant.Text"
                                           Click=@(args => DeleteRow(args, roleaccess)) @onclick:stopPropagation="true">
                                            <i class="fa fa-ban" aria-hidden="true"></i>
-                                          <span>Delete</span>
                              </RadzenButton>
                         </Template>
                     </RadzenDataGridColumn>

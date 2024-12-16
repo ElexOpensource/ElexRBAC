@@ -1,41 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\ProjectRbac\\RBAC\\",
+  "WorkspaceRootPath": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\pages\\roles.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\pages\\roles.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\pages\\roleaccesses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\pages\\roleaccesses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\pages\\accesses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\pages\\accesses.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\authentication\\changeapplication.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\authentication\\changeapplication.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\forms\\addeditaccessobject.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\forms\\addeditaccessobject.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\layout\\applicationlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\layout\\applicationlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\layout\\applicationlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\bal\\accessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:bal\\accessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\layout\\loginlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\layout\\loginlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\layout\\loginlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\forms\\addeditrole.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\forms\\addeditrole.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\forms\\addeditrole.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\forms\\editroleaccess.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\forms\\editroleaccess.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\forms\\editroleaccess.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\forms\\addroleaccess.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\forms\\addroleaccess.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\forms\\addroleaccess.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\projectrbac\\rbac\\components\\forms\\addeditapplication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|c:\\rbac\\elexrbac\\src\\rbac\\components\\forms\\addeditapplication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1DECB454-A803-4D7B-9BE0-5663CA1A7FFF}|RBAC.csproj|solutionrelative:components\\forms\\addeditapplication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -46,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,60 +90,128 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccessRepository.cs",
-              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\BAL\\AccessRepository.cs",
-              "RelativeDocumentMoniker": "BAL\\AccessRepository.cs",
-              "ToolTip": "C:\\ProjectRbac\\RBAC\\BAL\\AccessRepository.cs",
-              "RelativeToolTip": "BAL\\AccessRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABoAAAA",
+              "DocumentIndex": 4,
+              "Title": "ChangeApplication.razor.cs",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Authentication\\ChangeApplication.razor.cs",
+              "RelativeDocumentMoniker": "Components\\Authentication\\ChangeApplication.razor.cs",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Authentication\\ChangeApplication.razor.cs",
+              "RelativeToolTip": "Components\\Authentication\\ChangeApplication.razor.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAD4vysAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T04:47:41.698Z"
+              "WhenOpened": "2024-12-13T09:21:59.601Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.razor",
-              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\App.razor",
-              "RelativeDocumentMoniker": "Components\\App.razor",
-              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\App.razor",
-              "RelativeToolTip": "Components\\App.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAtAAAA",
+              "DocumentIndex": 2,
+              "Title": "Accesses.razor",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Pages\\Accesses.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Accesses.razor",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Pages\\Accesses.razor",
+              "RelativeToolTip": "Components\\Pages\\Accesses.razor",
+              "ViewState": "AQIAADQAAAAAAAAAAAD4v1cAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T10:32:58.157Z"
+              "WhenOpened": "2024-12-13T05:00:27.962Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Index.razor",
-              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Pages\\Index.razor",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Pages\\Index.razor",
               "RelativeDocumentMoniker": "Components\\Pages\\Index.razor",
-              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Pages\\Index.razor",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Pages\\Index.razor",
               "RelativeToolTip": "Components\\Pages\\Index.razor",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAXAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAFUAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-11T08:58:16.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicationLayout.razor",
-              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Layout\\ApplicationLayout.razor",
-              "RelativeDocumentMoniker": "Components\\Layout\\ApplicationLayout.razor",
-              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Layout\\ApplicationLayout.razor",
-              "RelativeToolTip": "Components\\Layout\\ApplicationLayout.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAmAAAA",
+              "DocumentIndex": 1,
+              "Title": "Roleaccesses.razor",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Pages\\Roleaccesses.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Roleaccesses.razor",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Pages\\Roleaccesses.razor",
+              "RelativeToolTip": "Components\\Pages\\Roleaccesses.razor",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAFIAAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-11T09:32:15.527Z"
+              "WhenOpened": "2024-12-13T05:18:25.756Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Roles.razor",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Pages\\Roles.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Roles.razor",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Pages\\Roles.razor",
+              "RelativeToolTip": "Components\\Pages\\Roles.razor",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEgAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T05:18:34.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddEditAccessObject.razor",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Forms\\AddEditAccessObject.razor",
+              "RelativeDocumentMoniker": "Components\\Forms\\AddEditAccessObject.razor",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Forms\\AddEditAccessObject.razor",
+              "RelativeToolTip": "Components\\Forms\\AddEditAccessObject.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T09:19:10.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\App.razor",
+              "RelativeDocumentMoniker": "Components\\App.razor",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\App.razor",
+              "RelativeToolTip": "Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T10:32:58.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationLayout.razor",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Layout\\ApplicationLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\ApplicationLayout.razor",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Layout\\ApplicationLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\ApplicationLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T09:32:15.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T06:29:35.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "LoginLayout.razor",
-              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Layout\\LoginLayout.razor",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Layout\\LoginLayout.razor",
               "RelativeDocumentMoniker": "Components\\Layout\\LoginLayout.razor",
-              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Layout\\LoginLayout.razor",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Layout\\LoginLayout.razor",
               "RelativeToolTip": "Components\\Layout\\LoginLayout.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -131,11 +219,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "AddEditRole.razor",
-              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\AddEditRole.razor",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Forms\\AddEditRole.razor",
               "RelativeDocumentMoniker": "Components\\Forms\\AddEditRole.razor",
-              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\AddEditRole.razor",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Forms\\AddEditRole.razor",
               "RelativeToolTip": "Components\\Forms\\AddEditRole.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -143,11 +231,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "EditRoleaccess.razor",
-              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\EditRoleaccess.razor",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Forms\\EditRoleaccess.razor",
               "RelativeDocumentMoniker": "Components\\Forms\\EditRoleaccess.razor",
-              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\EditRoleaccess.razor",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Forms\\EditRoleaccess.razor",
               "RelativeToolTip": "Components\\Forms\\EditRoleaccess.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -155,11 +243,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "AddRoleaccess.razor",
-              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\AddRoleaccess.razor",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Forms\\AddRoleaccess.razor",
               "RelativeDocumentMoniker": "Components\\Forms\\AddRoleaccess.razor",
-              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\AddRoleaccess.razor",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Forms\\AddRoleaccess.razor",
               "RelativeToolTip": "Components\\Forms\\AddRoleaccess.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -167,11 +255,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "AddEditApplication.razor",
-              "DocumentMoniker": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\AddEditApplication.razor",
+              "DocumentMoniker": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Forms\\AddEditApplication.razor",
               "RelativeDocumentMoniker": "Components\\Forms\\AddEditApplication.razor",
-              "ToolTip": "C:\\ProjectRbac\\RBAC\\Components\\Forms\\AddEditApplication.razor",
+              "ToolTip": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\Components\\Forms\\AddEditApplication.razor",
               "RelativeToolTip": "Components\\Forms\\AddEditApplication.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
