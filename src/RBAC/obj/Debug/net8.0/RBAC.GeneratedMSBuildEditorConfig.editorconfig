@@ -9,87 +9,87 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RBAC
 build_property.RootNamespace = RBAC
-build_property.ProjectDir = C:\RBAC\ElexRBAC\src\RBAC\
+build_property.ProjectDir = C:\ProjectRbac\RBAC\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\RBAC\ElexRBAC\src\RBAC
+build_property.MSBuildProjectDirectory = C:\ProjectRbac\RBAC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/App.razor]
+[C:/ProjectRbac/RBAC/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Authentication/ChangeApplication.razor]
+[C:/ProjectRbac/RBAC/Components/Authentication/ChangeApplication.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBdXRoZW50aWNhdGlvblxDaGFuZ2VBcHBsaWNhdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Authentication/Login.razor]
+[C:/ProjectRbac/RBAC/Components/Authentication/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBdXRoZW50aWNhdGlvblxMb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Forms/AddEditAccessObject.razor]
+[C:/ProjectRbac/RBAC/Components/Forms/AddEditAccessObject.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb3Jtc1xBZGRFZGl0QWNjZXNzT2JqZWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Forms/AddEditApplication.razor]
+[C:/ProjectRbac/RBAC/Components/Forms/AddEditApplication.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb3Jtc1xBZGRFZGl0QXBwbGljYXRpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Forms/AddEditRole.razor]
+[C:/ProjectRbac/RBAC/Components/Forms/AddEditRole.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb3Jtc1xBZGRFZGl0Um9sZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Forms/AddRoleaccess.razor]
+[C:/ProjectRbac/RBAC/Components/Forms/AddRoleaccess.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb3Jtc1xBZGRSb2xlYWNjZXNzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Forms/EditRoleaccess.razor]
+[C:/ProjectRbac/RBAC/Components/Forms/EditRoleaccess.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb3Jtc1xFZGl0Um9sZWFjY2Vzcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Layout/LoginLayout.razor]
+[C:/ProjectRbac/RBAC/Components/Layout/LoginLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTG9naW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Pages/Accesses.razor]
+[C:/ProjectRbac/RBAC/Components/Pages/Accesses.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2Nlc3Nlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Pages/Index.razor]
+[C:/ProjectRbac/RBAC/Components/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Pages/Roleaccesses.razor]
+[C:/ProjectRbac/RBAC/Components/Pages/Roleaccesses.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSb2xlYWNjZXNzZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Pages/Roles.razor]
+[C:/ProjectRbac/RBAC/Components/Pages/Roles.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSb2xlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Pages/_imports.razor]
+[C:/ProjectRbac/RBAC/Components/Pages/_imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xfaW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/RedirectToLogin.razor]
+[C:/ProjectRbac/RBAC/Components/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSZWRpcmVjdFRvTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Routes.razor]
+[C:/ProjectRbac/RBAC/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/_Imports.razor]
+[C:/ProjectRbac/RBAC/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Layout/ApplicationLayout.razor]
+[C:/ProjectRbac/RBAC/Components/Layout/ApplicationLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQXBwbGljYXRpb25MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-4v4vizvcy6
 
-[C:/RBAC/ElexRBAC/src/RBAC/Components/Layout/MainLayout.razor]
+[C:/ProjectRbac/RBAC/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-y5on8o3xti

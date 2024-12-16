@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0mfwk3We4vI=",
+  "dgSpecHash": "TxVD/km5gRo=",
   "success": true,
-  "projectFilePath": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\RBAC.csproj",
+  "projectFilePath": "C:\\ProjectRbac\\RBAC\\RBAC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hi\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\hi\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

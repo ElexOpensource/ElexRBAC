@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BUwuu+yMzh75n8Gnig3VmmpdYzci6FUbkvYe/yNz8c8=",
+  "Hash": "OgyL/1H2ByUmB7nJx687fZRA6s/COGfKvgBBnno6T/w=",
   "Source": "RBAC",
   "BasePath": "_content/RBAC",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "RBAC\\wwwroot",
       "Source": "RBAC",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\RBAC.styles.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\RBAC.styles.css",
       "SourceId": "RBAC",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "RBAC.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\RBAC.styles.css"
+      "OriginalItemSpec": "C:\\ProjectRbac\\RBAC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\RBAC.styles.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RBAC.bundle.scp.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RBAC.bundle.scp.css",
       "SourceId": "RBAC",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "RBAC.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RBAC.bundle.scp.css"
+      "OriginalItemSpec": "C:\\ProjectRbac\\RBAC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RBAC.bundle.scp.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\app.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\app.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\background.png",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\background.png",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "background.png",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\background.png"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\css\\fontawesome.min.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\css\\fontawesome.min.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "css/fontawesome.min.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\fontawesome.min.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\css\\site.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\css\\site.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\favicon.ico",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\favicon.ico",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Images\\login.jpg",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Images\\login.jpg",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Images/login.jpg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\login.jpg"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Images\\logo.png",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Images\\logo.png",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Images/logo.png",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\logo.png"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\dark.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\dark.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/dark.css",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\dark.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\dark-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\dark-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/dark-base.css",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\dark-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\dark-wcag.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\dark-wcag.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/dark-wcag.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\dark-wcag.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\default.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\default.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/default.css",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\default.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\default-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\default-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/default-base.css",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\default-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\default-wcag.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\default-wcag.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/default-wcag.css",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\default-wcag.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\fluent.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\fluent.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/fluent.css",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\fluent.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\fluent-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\fluent-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/fluent-base.css",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\fluent-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\fluent-dark.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\fluent-dark.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/fluent-dark.css",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\fluent-dark.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\fluent-dark-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\fluent-dark-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/fluent-dark-base.css",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\fluent-dark-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/humanistic.css",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\humanistic.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/humanistic-base.css",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\humanistic-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-dark.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-dark.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/humanistic-dark.css",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\humanistic-dark.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-dark-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-dark-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/humanistic-dark-base.css",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\humanistic-dark-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-dark-wcag.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-dark-wcag.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/humanistic-dark-wcag.css",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\humanistic-dark-wcag.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-wcag.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\humanistic-wcag.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/humanistic-wcag.css",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\humanistic-wcag.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/material.css",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\material.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material3.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material3.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/material3.css",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\material3.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material3-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material3-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/material3-base.css",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\material3-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material3-dark.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material3-dark.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/material3-dark.css",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\material3-dark.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material3-dark-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material3-dark-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/material3-dark-base.css",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\material3-dark-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/material-base.css",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\material-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-dark.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-dark.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/material-dark.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\material-dark.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-dark-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-dark-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/material-dark-base.css",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\material-dark-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-dark-wcag.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-dark-wcag.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/material-dark-wcag.css",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\material-dark-wcag.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-wcag.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\material-wcag.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/material-wcag.css",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\material-wcag.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/software.css",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\software.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/software-base.css",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\software-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-dark.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-dark.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/software-dark.css",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\software-dark.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-dark-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-dark-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/software-dark-base.css",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\software-dark-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-dark-wcag.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-dark-wcag.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/software-dark-wcag.css",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\software-dark-wcag.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-wcag.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\software-wcag.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/software-wcag.css",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\software-wcag.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/standard.css",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\standard.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/standard-base.css",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\standard-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-dark.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-dark.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/standard-dark.css",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\standard-dark.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-dark-base.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-dark-base.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/standard-dark-base.css",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\standard-dark-base.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-dark-wcag.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-dark-wcag.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/standard-dark-wcag.css",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\standard-dark-wcag.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-wcag.css",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\css\\standard-wcag.css",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/css/standard-wcag.css",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\css\\standard-wcag.css"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\MaterialIcons-Regular.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\MaterialIcons-Regular.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/MaterialIcons-Regular.woff",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\MaterialIcons-Regular.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\MaterialSymbolsOutlined.woff2",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\MaterialSymbolsOutlined.woff2",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/MaterialSymbolsOutlined.woff2",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\MaterialSymbolsOutlined.woff2"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\RobotoFlex.woff2",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\RobotoFlex.woff2",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/RobotoFlex.woff2",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\RobotoFlex.woff2"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v15-latin-300.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v15-latin-300.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/roboto-v15-latin-300.woff",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\roboto-v15-latin-300.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v15-latin-700.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v15-latin-700.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/roboto-v15-latin-700.woff",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\roboto-v15-latin-700.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v15-latin-regular.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v15-latin-regular.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/roboto-v15-latin-regular.woff",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\roboto-v15-latin-regular.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-300.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-300.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/roboto-v30-latin-300.woff",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-300.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-500.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-500.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/roboto-v30-latin-500.woff",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-500.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-700.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-700.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/roboto-v30-latin-700.woff",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-700.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-regular.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-regular.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/roboto-v30-latin-regular.woff",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\roboto-v30-latin-regular.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSans3VF-Italic.ttf.woff2",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSans3VF-Italic.ttf.woff2",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSans3VF-Italic.ttf.woff2",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSans3VF-Italic.ttf.woff2"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSans3VF-Upright.ttf.woff2",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSans3VF-Upright.ttf.woff2",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSans3VF-Upright.ttf.woff2",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSans3VF-Upright.ttf.woff2"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Black.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Black.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSansPro-Black.woff",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Black.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-BlackIt.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-BlackIt.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSansPro-BlackIt.woff",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-BlackIt.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Bold.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Bold.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSansPro-Bold.woff",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Bold.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-BoldIt.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-BoldIt.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSansPro-BoldIt.woff",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-BoldIt.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-ExtraLight.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-ExtraLight.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSansPro-ExtraLight.woff",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-ExtraLight.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-ExtraLightIt.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-ExtraLightIt.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSansPro-ExtraLightIt.woff",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-ExtraLightIt.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-It.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-It.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSansPro-It.woff",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-It.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Light.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Light.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSansPro-Light.woff",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Light.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-LightIt.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-LightIt.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSansPro-LightIt.woff",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-LightIt.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Regular.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Regular.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSansPro-Regular.woff",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Regular.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Semibold.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Semibold.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSansPro-Semibold.woff",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-Semibold.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-SemiboldIt.woff",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-SemiboldIt.woff",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/fonts/SourceSansPro-SemiboldIt.woff",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\Radzen.Blazor\\fonts\\SourceSansPro-SemiboldIt.woff"
     },
     {
-      "Identity": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\Radzen.Blazor\\Radzen.Blazor.js",
+      "Identity": "C:\\ProjectRbac\\RBAC\\wwwroot\\Radzen.Blazor\\Radzen.Blazor.js",
       "SourceId": "RBAC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\RBAC\\ElexRBAC\\src\\RBAC\\wwwroot\\",
+      "ContentRoot": "C:\\ProjectRbac\\RBAC\\wwwroot\\",
       "BasePath": "_content/RBAC",
       "RelativePath": "Radzen.Blazor/Radzen.Blazor.js",
       "AssetKind": "All",
