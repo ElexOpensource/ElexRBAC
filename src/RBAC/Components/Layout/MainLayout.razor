@@ -13,8 +13,8 @@
                     <RadzenStack AlignItems="AlignItems.Center" Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End">
                         <RadzenProfileMenu Visible="@Security.IsAuthenticated()" Click="@ProfileMenuClick" ShowIcon="false">
                             <ChildContent>
-                                <RadzenProfileMenuItem Text="Change Application" Value="ChangeApplication" Icon="published_with_changes" />
-                                <RadzenProfileMenuItem Text="Logout" Value="Logout" Icon="power_settings_new" />
+                                <RadzenProfileMenuItem Text="Change Application" Value="ChangeApplication" Icon="<i class='fa fa-retweet'></i>" />
+                                <RadzenProfileMenuItem Text="Logout" Value="Logout" Icon="<i class='fa fa-sign-out'></i>" />
                             </ChildContent>
                             <Template>
                                 @($"{Security.User?.CustomerName} - {Security.User?.ApplicationName}")
@@ -28,7 +28,7 @@
 
     <RadzenSidebar Expanded=true style="z-index: 2;width: max-content" Responsive="false">
         <RadzenPanelMenu DisplayStyle="@(SidebarExpanded ? MenuItemDisplayStyle.IconAndText : MenuItemDisplayStyle.Icon)" ShowArrow="false" Match="NavLinkMatch.All">
-            <RadzenPanelMenuItem Text="Roles" Path="@($"{BaseUrl}Roles")" Icon="<i class='fa-solid fa-users''></i>" Match="NavLinkMatch.Prefix" />
+            <RadzenPanelMenuItem Text="Roles" Path="@($"{BaseUrl}Roles")" Icon="<i class='fa-solid fa-users'></i>" Match="NavLinkMatch.Prefix" />
             <RadzenPanelMenuItem Text="Access Object" Path="@($"{BaseUrl}Accesses")" Icon="<i class='fas fa-cogs'></i>" Match="NavLinkMatch.Prefix" />
             <RadzenPanelMenuItem Text="Role Access" Path="@($"{BaseUrl}RoleAccesses")" Icon="<i class='fas fa-project-diagram'></i>" Match="NavLinkMatch.Prefix" />
         </RadzenPanelMenu>

@@ -73,25 +73,25 @@
                             @if (IsActive)
                             {
                                 <RadzenButton Click=@(args => EditRow(role)) @onclick:stopPropagation="true" Variant="Variant.Text"
-                                              Disabled="@(!IsActive)" ButtonStyle="ButtonStyle.Success" Size="ButtonSize.Medium" Shade="Shade.Default">
+                                              Disabled="@(!IsActive)" ButtonStyle="ButtonStyle.Success" Size="ButtonSize.Medium" title="Edit" Shade="Shade.Default">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </RadzenButton>
 
                                 <RadzenButton Click=@(args => ChangeStatus(role, RecordStatus.Inactive)) @onclick:stopPropagation="true"
-                                              Variant="Variant.Text" ButtonStyle="ButtonStyle.Danger" Shade="Shade.Default" Size="ButtonSize.Medium">
+                                              Variant="Variant.Text" ButtonStyle="ButtonStyle.Danger" Shade="Shade.Default" title="Deactivate" Size="ButtonSize.Medium">
                                     <i class="fa fa-ban" aria-hidden="true"></i>
                                 </RadzenButton>
                             }
                             else
                             {
                                <RadzenButton ButtonStyle="ButtonStyle.Success" Size="ButtonSize.Medium"
-                                      Shade="Shade.Default" Variant="Variant.Text"
+                                      Shade="Shade.Default" Variant="Variant.Text" title="Activate"
                                       Click=@(args => ChangeStatus(role, RecordStatus.Active)) @onclick:stopPropagation="true">
                                       <i class="fa fa-check" aria-hidden="true"></i>
                                  </RadzenButton/>
 
                                 <RadzenButton ButtonStyle="ButtonStyle.Danger" Size="ButtonSize.Medium"
-                                        Shade="Shade.Default" Variant="Variant.Text"
+                                        Shade="Shade.Default" Variant="Variant.Text" title="Delete"
                                         Click=@(args => ChangeStatus(role, RecordStatus.Delete)) @onclick:stopPropagation="true">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                 </RadzenButton>

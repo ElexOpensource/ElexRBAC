@@ -14,7 +14,7 @@
                     <RadzenStack AlignItems="AlignItems.Center" Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End">
                         <RadzenProfileMenu Visible="@Security.IsAuthenticated()" Click="@ProfileMenuClick" ShowIcon="false">
                             <ChildContent>
-                                <RadzenProfileMenuItem Text="Logout" Value="Logout" Icon="power_settings_new" />
+                                <RadzenProfileMenuItem Text="Logout" Value="Logout" Icon="<i class='fa fa-sign-out'></i>" />
                             </ChildContent>
                             <Template>
                                 @Security.User?.CustomerName

@@ -78,13 +78,13 @@
                         <RadzenDataGridColumn TItem="RoleAccess" Filterable="false" Sortable="false" TextAlign="TextAlign.Center">
                             <Template Context="roleaccess">
                                 <RadzenButton ButtonStyle="ButtonStyle.Success" Size="ButtonSize.Medium"
-                                              Shade="Shade.Default" Variant="Variant.Text"
+                                              Shade="Shade.Default" title="Edit" Variant="Variant.Text"
                                               Click=@(args => EditRow(roleaccess)) @onclick:stopPropagation="true">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </RadzenButton>
 
                                 <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="delete" Size="ButtonSize.Medium"
-                                              Shade="Shade.Default" Variant="Variant.Text"
+                                              Shade="Shade.Default" title="Deactivate" Variant="Variant.Text"
                                               Click=@(args => DeleteRow(args, roleaccess)) @onclick:stopPropagation="true">
                                     <i class="fa fa-ban" aria-hidden="true"></i>
                                 </RadzenButton>
