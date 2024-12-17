@@ -19,3 +19,6 @@
 /Poc/.vs
 /Poc/SampleWebApp/bin
 /Poc/SampleWebApp/obj
+/src/RBAC/obj
+/src/RBAC/bin
+/src/RBAC/.vs
