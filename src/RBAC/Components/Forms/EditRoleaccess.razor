@@ -1,0 +1,69 @@
+﻿@attribute [Authorize(Policy = RbacConstants.AuthenticationSchema)]
+<PageTitle>Edit RoleAccess</PageTitle>
+
+<RadzenColumn SizeMD=12>
+
+    <RadzenAlert Shade="Shade.Lighter" Variant="Variant.Flat" Size="AlertSize.Small" AlertStyle="AlertStyle.Danger" Visible="@ErrorVisible">Cannot save roleaccess</RadzenAlert>
+
+    @if(Roleaccess != null && Roleaccess.Role != null && Roleaccess.Access != null){
+        <RadzenTemplateForm TItem="RoleAccess" Data="@Roleaccess" Submit="@FormSubmit">
+
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Role" Component="role" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenTextBox @bind-Value=@Roleaccess.Role.Name ReadOnly=true style="width: 100%" />
+                </RadzenColumn>
+            </RadzenRow>
+
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Access" Component="access" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenTextBox @bind-Value=@Roleaccess.Access.Name ReadOnly=true style="width: 100%" />
+                </RadzenColumn>
+            </RadzenRow>
+
+
+            <RadzenRow style="margin-bottom: 1rem">
+                <RadzenColumn SizeMD="3">
+                    <RadzenLabel Text="Is OverWrite" Component="isoverwrite" style="width: 100%" />
+                </RadzenColumn>
+                <RadzenColumn SizeMD="9">
+                    <RadzenCheckBox @bind-Value=@Roleaccess.IsOverwrite Name="isoverwrite" />
+                </RadzenColumn>
+            </RadzenRow>
+
+            @if (Roleaccess.IsOverwrite)
+            {
+                @if(PermissionItems != null)
+                {
+                    <RadzenRow style="gap: revert-layer;margin-bottom: 1rem;">
+                        <RadzenLabel Text="Permission Set" style="width: 100%" />
+                        <RadzenCheckBoxList Value="@MetaDataValues" TValue="Guid" Change="@UpdateMetaDataValues">
+                            <Items>
+                                @foreach (var item in PermissionItems)
+                                {
+                                    <RadzenCheckBoxListItem Text="@item.Label" Value="@item.Id" Style="width: 18.1%;" />
+                                }
+                            </Items>
+                        </RadzenCheckBoxList>
+                    </RadzenRow>
+                }
+
+            }
+
+
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="<i class='fas fa-save'></i>" Text="Save" Variant="Variant.Flat" />
+                <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancel" Variant="Variant.Flat" Click="@Cancel" />
+            </RadzenStack>
+
+        </RadzenTemplateForm>
+
+    }
+    
+</RadzenColumn>
+

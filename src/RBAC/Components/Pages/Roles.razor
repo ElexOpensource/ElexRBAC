@@ -1,0 +1,116 @@
+﻿@page "/Roles"
+@attribute [Authorize(Policy = RbacConstants.AuthenticationSchema)]
+
+<PageTitle>Roles</PageTitle>
+
+<RadzenStack>
+
+    <RadzenRow AlignItems="AlignItems.Center">
+
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenText Text="Roles" TextStyle="TextStyle.H3" TagName="TagName.H1" style="margin: 0" />
+        </RadzenColumn>
+
+    </RadzenRow>
+
+    <RadzenRow AlignItems="AlignItems.Center">
+
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" Gap="10px" Style="width: 100%">
+                <RadzenTextBox Placeholder="Search ..." style="display: block;" @oninput="@Search" aria-label="Search by all string columns" />
+                <RadzenDropDown Data="@RbacConstants.StatusOptions" TextProperty="Value" ValueProperty="Key" AllowClear="false" Multiple="false"
+                                Placeholder="Choose access" Style="display: block;" Change="@LoadGridData" @bind-Value="@IsActive" Name="isActive" />
+            </RadzenStack>
+        </RadzenColumn>
+
+        <RadzenColumn Size="12" SizeMD="6">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.End" Gap="0.5rem">
+                <RadzenButton Click="@AddRow" Variant="Variant.Text" ButtonStyle="ButtonStyle.Primary">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <span>Add</span>
+                </RadzenButton>
+                <RadzenButton Click="@RefreshGrid" Variant="Variant.Text" ButtonStyle="ButtonStyle.Secondary">
+                    <i class="fa fa-arrows-rotate" aria-hidden="true"></i>
+                    <span>Refresh</span>
+                </RadzenButton>
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+
+    <RadzenRow>
+
+        <RadzenColumn SizeMD=12>
+            <div style="position: relative;">
+                @if (IsLoading)
+                {
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: transparent; display: flex; align-items: center; justify-content: center; z-index: 9999; pointer-events: none;">
+                        <i class="fa fa-spinner fa-spin" style="font-size: 3rem; color: #007BFF; width: 60px; height: 60px; text-align: center;"></i>
+                    </div>
+                }
+
+            <RadzenDataGrid @ref="RoleGrid" AllowPaging="true" AllowSorting="true" ShowPagingSummary="true" PagerHorizontalAlign="HorizontalAlign.Left"
+                            PageSizeOptions=@(new int[]{10, 20, 50, 100}) Data="@FilteredItems" AllowColumnResize="true"
+                            Count="@Count" TItem="Role">
+
+                <Columns>
+
+                    <RadzenDataGridColumn TItem="Role" Property="Id" Title="Id"></RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Role" Property="Name" Title="Name"></RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Role" Property="TypeMaster.Name" Title="Type"></RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Role" Property="Parent.Name" Title="Parent"></RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Role" Property="CreatedOn" Title="Created On">
+                        <Template Context="data">
+                            @((data as Role).CreatedOn.ToString("dd/MM/yyyy hh:mm tt"))
+                        </Template>
+                    </RadzenDataGridColumn>
+
+                    <RadzenDataGridColumn TItem="Role" Filterable="false" Sortable="false" TextAlign="TextAlign.Center">
+                        <Template Context="role">
+                            @if (IsActive)
+                            {
+                                <RadzenButton Click=@(args => EditRow(role)) @onclick:stopPropagation="true" Variant="Variant.Text"
+                                              Disabled="@(!IsActive)" ButtonStyle="ButtonStyle.Success" Size="ButtonSize.Medium" title="Edit" Shade="Shade.Default">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </RadzenButton>
+
+                                <RadzenButton Click=@(args => ChangeStatus(role, RecordStatus.Inactive)) @onclick:stopPropagation="true"
+                                              Variant="Variant.Text" ButtonStyle="ButtonStyle.Danger" Shade="Shade.Default" title="Deactivate" Size="ButtonSize.Medium">
+                                    <i class="fa fa-ban" aria-hidden="true"></i>
+                                </RadzenButton>
+                            }
+                            else
+                            {
+                               <RadzenButton ButtonStyle="ButtonStyle.Success" Size="ButtonSize.Medium"
+                                      Shade="Shade.Default" Variant="Variant.Text" title="Activate"
+                                      Click=@(args => ChangeStatus(role, RecordStatus.Active)) @onclick:stopPropagation="true">
+                                      <i class="fa fa-check" aria-hidden="true"></i>
+                                 </RadzenButton/>
+
+                                <RadzenButton ButtonStyle="ButtonStyle.Danger" Size="ButtonSize.Medium"
+                                        Shade="Shade.Default" Variant="Variant.Text" title="Delete"
+                                        Click=@(args => ChangeStatus(role, RecordStatus.Delete)) @onclick:stopPropagation="true">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                </RadzenButton>
+                            }
+                        </Template>
+
+                    </RadzenDataGridColumn>
+
+                </Columns>
+
+                <EmptyTemplate>
+                    <p style="color: lightgrey; font-size: 24px; text-align: center; margin: 2rem;">No records to display.</p>
+                </EmptyTemplate>
+
+            </RadzenDataGrid>
+            </div>
+
+        </RadzenColumn>
+
+    </RadzenRow>
+
+</RadzenStack>
