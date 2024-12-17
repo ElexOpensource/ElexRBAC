@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\RBAC.props" />
-</Project>
